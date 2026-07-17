@@ -1,0 +1,46 @@
+{
+  "name": "records",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "db:migrate": "prisma migrate dev",
+    "db:deploy": "prisma migrate deploy",
+    "db:seed": "prisma db seed",
+    "reset-password": "node prisma/reset-password.js"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  },
+  "dependencies": {
+    "@dnd-kit/core": "^6.3.1",
+    "@dnd-kit/sortable": "^10.0.0",
+    "@dnd-kit/utilities": "^3.2.2",
+    "@prisma/client": "^6.19.3",
+    "bcrypt": "^6.0.0",
+    "framer-motion": "^12.42.2",
+    "geist": "^1.7.2",
+    "iron-session": "^8.0.4",
+    "lucide-react": "^1.25.0",
+    "next": "16.2.10",
+    "node-cron": "^4.6.0",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "react-virtuoso": "^4.18.11"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/bcrypt": "^6.0.0",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.10",
+    "prisma": "^6.19.3",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

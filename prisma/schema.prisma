@@ -1,0 +1,66 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           Int      @id @default(autoincrement())
+  passwordHash String
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model Record {
+  id            Int       @id @default(autoincrement())
+  // Discogs collection instance id: one entry per physical copy, so the same
+  // album owned on both CD and vinyl yields two rows. Discogs ids exceed
+  // 32-bit integers, hence BigInt.
+  instanceId    BigInt    @unique
+  releaseId     BigInt
+  title         String
+  artist        String
+  artistSort    String
+  searchText    String    @default("")
+  year          Int?
+  format        String // VINYL | CD | OTHER
+  formatDetail  String?
+  label         String?
+  catalogNumber String?
+  country       String?
+  genres        String    @default("[]") // JSON string[]
+  styles        String    @default("[]") // JSON string[]
+  tracklist     String? // JSON {position,title,duration}[]
+  coverUrl      String?
+  coverFile     String?
+  discogsUrl    String?
+  addedAt       DateTime // date the item was added to the Discogs collection
+  syncedAt      DateTime
+  // Soft delete: set when the item disappears from the Discogs collection.
+  // Favorites and custom order survive an accidental removal + re-add.
+  archivedAt    DateTime?
+  isFavorite    Boolean   @default(false)
+  customOrder   Int?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  @@index([archivedAt])
+  @@index([addedAt])
+  @@index([customOrder])
+}
+
+model SyncLog {
+  id         Int       @id @default(autoincrement())
+  startedAt  DateTime  @default(now())
+  finishedAt DateTime?
+  status     String    @default("running") // running | success | error
+  added      Int       @default(0)
+  updated    Int       @default(0)
+  archived   Int       @default(0)
+  restored   Int       @default(0)
+  total      Int       @default(0)
+  error      String?
+}
