@@ -108,7 +108,7 @@ export default function Gallery() {
         total={total}
       />
 
-      <main className="mx-auto max-w-[1800px] pt-32">
+      <main className="mx-auto max-w-[1800px] pt-40 sm:pt-32 pb-32">
         {loading && items.length === 0 ? (
           <div className="grid grid-cols-2 gap-6 px-6 pb-24 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7">
             {Array.from({ length: 21 }).map((_, i) => (

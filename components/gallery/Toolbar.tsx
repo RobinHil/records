@@ -108,7 +108,7 @@ export default function Toolbar({
       </div>
 
       {/* Row 2: sort + filters, kept slim and quiet */}
-      <div className="mx-auto flex max-w-[1800px] items-center gap-2 px-6 pb-3 text-xs">
+      <div className="mx-auto flex max-w-[1800px] flex-wrap items-center gap-2 px-6 pb-3 text-xs">
         <Popover
           trigger={(open) => (
             <button
