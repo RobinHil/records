@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -35,11 +35,15 @@ export default function Popover({
     function place() {
       const rect = rootRef.current?.getBoundingClientRect();
       if (!rect) return;
-      setPos(
-        align === "right"
-          ? { top: rect.bottom + 8, right: window.innerWidth - rect.right }
-          : { top: rect.bottom + 8, left: rect.left }
-      );
+      const margin = 8;
+      if (align === "right") {
+        setPos({
+          top: rect.bottom + 8,
+          right: Math.max(margin, window.innerWidth - rect.right),
+        });
+        return;
+      }
+      setPos({ top: rect.bottom + 8, left: rect.left });
     }
     place();
     window.addEventListener("resize", place);
@@ -64,6 +68,20 @@ export default function Popover({
     };
   }, [open, align, onOpenChange]);
 
+  // The panel width is only measurable once it has mounted, so clamping into
+  // the viewport happens here rather than in place(): this runs in the same
+  // commit that renders the panel, before the browser paints.
+  useLayoutEffect(() => {
+    if (!open || !pos || pos.left === undefined) return;
+    const margin = 8;
+    const width = panelRef.current?.offsetWidth ?? 0;
+    const clamped = Math.max(
+      margin,
+      Math.min(pos.left, window.innerWidth - width - margin)
+    );
+    if (clamped !== pos.left) setPos({ ...pos, left: clamped });
+  }, [open, pos]);
+
   return (
     <div ref={rootRef} className="relative">
       <div onClick={() => setOpen((v) => !v)}>{trigger(open)}</div>
@@ -78,7 +96,7 @@ export default function Popover({
                 exit={{ opacity: 0, y: -4, scale: 0.98 }}
                 transition={{ duration: 0.16, ease: [0.32, 0.72, 0, 1] }}
                 style={{ top: pos.top, left: pos.left, right: pos.right }}
-                className="fixed z-50 min-w-52 overflow-hidden rounded-xl border border-white/60 bg-[var(--glass-strong)] shadow-[inset_0_1px_0_rgba(255,255,255,0.8),0_18px_50px_-16px_rgba(19,19,22,0.35)] backdrop-blur-2xl backdrop-saturate-150"
+                className="fixed z-50 min-w-52 max-w-[calc(100vw-16px)] overflow-hidden rounded-xl border border-white/60 bg-[var(--glass-strong)] shadow-[inset_0_1px_0_rgba(255,255,255,0.8),0_18px_50px_-16px_rgba(19,19,22,0.35)] backdrop-blur-2xl backdrop-saturate-150"
               >
                 {children}
               </motion.div>
