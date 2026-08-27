@@ -13,7 +13,8 @@ Docker + nginx. Package manager: pnpm.
 
 ## Prerequisites
 
-- Node.js 20.9+ (22 recommended) and pnpm - or just Docker with Compose.
+- Node.js 22.12+ (24, the current LTS, is what the Docker image uses) and
+  pnpm - or just Docker with Compose.
 - A Discogs account holding your collection.
 
 ## 1. Get your Discogs credentials
