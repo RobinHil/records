@@ -30,5 +30,9 @@ COPY --from=build /app/public ./public
 COPY --from=build /app/prisma ./prisma
 COPY docker/entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
+# Le conteneur tournait en root : on repasse sur l'utilisateur non privilégie
+# fourni par l'image node. /data est le volume (base SQLite + pochettes).
+RUN mkdir -p /data && chown -R node:node /app /data
+USER node
 EXPOSE 3000
 ENTRYPOINT ["/entrypoint.sh"]

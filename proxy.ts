@@ -1,6 +1,6 @@
 import { getIronSession } from "iron-session";
 import { NextResponse, type NextRequest } from "next/server";
-import { sessionOptions, type SessionData } from "@/lib/session";
+import { getSessionOptions, type SessionData } from "@/lib/session";
 
 export async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
@@ -11,7 +11,7 @@ export async function proxy(request: NextRequest) {
   const session = await getIronSession<SessionData>(
     request,
     response,
-    sessionOptions
+    getSessionOptions()
   );
   if (session.isAdmin !== true) {
     const url = request.nextUrl.clone();

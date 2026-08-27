@@ -13,6 +13,7 @@ const SORTS: SortKey[] = [
   "added",
 ];
 const FORMATS: FormatFilter[] = ["vinyl", "cd", "both"];
+const MAX_PER_PAGE = 500;
 
 export async function GET(request: Request) {
   const params = new URL(request.url).searchParams;
@@ -29,7 +30,9 @@ export async function GET(request: Request) {
     recent: Number.isFinite(recentParam) && recentParam > 0 ? recentParam : undefined,
     sort: sortParam && SORTS.includes(sortParam) ? sortParam : "custom",
     page: Math.max(1, Number(params.get("page")) || 1),
-    perPage: Math.max(1, Number(params.get("perPage")) || 120),
+    // Borne haute : sans elle, ?perPage=1000000 fait charger toute la
+    // collection en une requête.
+    perPage: Math.min(MAX_PER_PAGE, Math.max(1, Number(params.get("perPage")) || 120)),
   });
 
   return NextResponse.json(page);
