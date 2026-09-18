@@ -43,10 +43,10 @@ next-env.d.ts
 # keep the env template
 !.env.example
 
-# local database and cached covers
-*.db
-*.db-journal
-/data/
+# Les pochettes sont retelechargees par la synchronisation et mises en cache
+# par le workflow : une collection entiere de JPEG n'a pas a grossir le depot.
+# data/, en revanche, est versionne : il porte l'etat de la collection.
+/public/covers/
 
 # Fichiers d'instructions pour agents IA
 AGENTS.md

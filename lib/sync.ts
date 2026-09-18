@@ -1,4 +1,10 @@
-import { prisma } from "@/lib/db";
+import { existsSync } from "node:fs";
+import {
+  readLibrary,
+  writeLibrary,
+  type Library,
+  type LibraryRecord,
+} from "@/lib/library";
 import {
   fetchFullCollection,
   fetchRelease,
@@ -8,23 +14,27 @@ import {
   releaseUrl,
   type DiscogsCollectionItem,
 } from "@/lib/discogs";
-import { coverFileName, downloadCover, removeCover } from "@/lib/covers";
+import { coverFileName, coverPath, downloadCover, removeCover } from "@/lib/covers";
 
-let syncRunning = false;
-
-export function isSyncRunning() {
-  return syncRunning;
-}
-
-interface SyncResult {
+export interface SyncResult {
   added: number;
   updated: number;
   archived: number;
   restored: number;
   total: number;
+  details: number;
+  covers: number;
 }
 
-function mapItem(item: DiscogsCollectionItem) {
+/** Les champs qui viennent de Discogs, et que la synchronisation rafraichit. */
+type DiscogsFields = Pick<
+  LibraryRecord,
+  | "instanceId" | "releaseId" | "title" | "artist" | "artistSort" | "searchText"
+  | "year" | "format" | "formatDetail" | "label" | "catalogNumber"
+  | "genres" | "styles" | "coverUrl" | "discogsUrl" | "addedAt"
+>;
+
+function mapItem(item: DiscogsCollectionItem): DiscogsFields {
   const info = item.basic_information;
   const artist = joinArtists(info.artists);
   const title = info.title.trim();
@@ -45,141 +55,113 @@ function mapItem(item: DiscogsCollectionItem) {
         .join(" / ") || null,
     label: info.labels[0]?.name?.replace(/\s+\(\d+\)$/, "") ?? null,
     catalogNumber: info.labels[0]?.catno || null,
-    genres: JSON.stringify(info.genres ?? []),
-    styles: JSON.stringify(info.styles ?? []),
+    genres: info.genres ?? [],
+    styles: info.styles ?? [],
     coverUrl: info.cover_image || null,
     discogsUrl: releaseUrl(info.id),
-    addedAt: new Date(item.date_added),
+    addedAt: new Date(item.date_added).toISOString(),
   };
 }
 
+/**
+ * Synchronise data/collection.json avec la collection Discogs.
+ *
+ * Tout ce qui coute un appel reseau est fait une seule fois par disque, jamais
+ * deux : c'est le fichier d'etat, versionne, qui s'en souvient d'une execution
+ * a l'autre. Discogs est appele a 1,1 seconde d'intervalle, retelecharger une
+ * collection entiere chaque nuit prendrait des dizaines de minutes pour rien.
+ */
 export async function runSync(): Promise<SyncResult> {
-  if (syncRunning) throw new Error("A sync is already running");
-  syncRunning = true;
-  const log = await prisma.syncLog.create({ data: {} });
+  const library = await readLibrary();
+  const collection = await fetchFullCollection();
+  const now = new Date().toISOString();
 
-  try {
-    const collection = await fetchFullCollection();
-    const now = new Date();
-    const result: SyncResult = {
-      added: 0,
-      updated: 0,
-      archived: 0,
-      restored: 0,
-      total: collection.length,
-    };
+  const byInstanceId = new Map(library.records.map((r) => [r.instanceId, r]));
+  const seen = new Set<number>();
+  const result: SyncResult = {
+    added: 0,
+    updated: 0,
+    archived: 0,
+    restored: 0,
+    total: collection.length,
+    details: 0,
+    covers: 0,
+  };
 
-    const existing = await prisma.record.findMany({
-      select: {
-        id: true,
-        instanceId: true,
-        coverUrl: true,
-        coverFile: true,
-        tracklist: true,
-        archivedAt: true,
-      },
-    });
-    const byInstanceId = new Map(existing.map((r) => [Number(r.instanceId), r]));
-    const seen = new Set<number>();
+  for (const item of collection) {
+    const fields = mapItem(item);
+    seen.add(fields.instanceId);
+    const prev = byInstanceId.get(fields.instanceId);
 
-    for (const item of collection) {
-      const data = mapItem(item);
-      seen.add(data.instanceId);
-      const prev = byInstanceId.get(data.instanceId);
-
-      if (!prev) {
-        await prisma.record.create({
-          data: { ...data, syncedAt: now },
-        });
-        result.added += 1;
-      } else {
-        if (prev.archivedAt) result.restored += 1;
-        else result.updated += 1;
-        await prisma.record.update({
-          where: { instanceId: data.instanceId },
-          data: { ...data, syncedAt: now, archivedAt: null },
-        });
-      }
-    }
-
-    // Details (tracklist, country) come from a per-release endpoint; only
-    // fetch them for records that never got them, to spare the rate limit.
-    const needDetails = await prisma.record.findMany({
-      where: { archivedAt: null, tracklist: null },
-      select: { instanceId: true, releaseId: true },
-    });
-    for (const rec of needDetails) {
-      try {
-        const release = await fetchRelease(rec.releaseId);
-        await prisma.record.update({
-          where: { instanceId: rec.instanceId },
-          data: {
-            country: release.country ?? null,
-            tracklist: JSON.stringify(
-              (release.tracklist ?? [])
-                .filter((t) => t.type_ === "track" || !t.type_)
-                .map((t) => ({
-                  position: t.position,
-                  title: t.title,
-                  duration: t.duration,
-                }))
-            ),
-          },
-        });
-      } catch (e) {
-        console.error(`[sync] release ${rec.releaseId} details failed:`, e);
-      }
-    }
-
-    // Cache covers locally so the UI never hotlinks Discogs.
-    const needCovers = await prisma.record.findMany({
-      where: { archivedAt: null, coverUrl: { not: null } },
-      select: { instanceId: true, coverUrl: true, coverFile: true },
-    });
-    for (const rec of needCovers) {
-      const url = rec.coverUrl as string;
-      const expected = coverFileName(rec.instanceId, url);
-      if (rec.coverFile === expected) continue;
-      try {
-        const file = await downloadCover(rec.instanceId, url);
-        await removeCover(rec.coverFile);
-        await prisma.record.update({
-          where: { instanceId: rec.instanceId },
-          data: { coverFile: file },
-        });
-      } catch (e) {
-        console.error(`[sync] cover for ${rec.instanceId} failed:`, e);
-      }
-    }
-
-    // Soft-delete records that disappeared from the Discogs collection.
-    const gone = existing.filter(
-      (r) => !seen.has(Number(r.instanceId)) && !r.archivedAt
-    );
-    for (const rec of gone) {
-      await prisma.record.update({
-        where: { instanceId: rec.instanceId },
-        data: { archivedAt: now },
+    if (!prev) {
+      byInstanceId.set(fields.instanceId, {
+        ...fields,
+        country: null,
+        tracklist: null,
+        coverFile: null,
+        archivedAt: null,
+        isFavorite: false,
+        customOrder: null,
       });
+      result.added += 1;
+    } else {
+      if (prev.archivedAt) result.restored += 1;
+      else result.updated += 1;
+      // mapItem ne produit que les champs Discogs : le favori, l'ordre manuel,
+      // la tracklist, le pays et la pochette deja prise survivent a l'ecrasement.
+      Object.assign(prev, fields, { archivedAt: null });
+    }
+  }
+
+  const live = [...byInstanceId.values()].filter((r) => !r.archivedAt);
+
+  // Tracklist et pays viennent d'un point d'entree par sortie, bien plus cher
+  // que la collection elle-meme : on ne le demande que pour les disques qui ne
+  // l'ont jamais eu.
+  for (const rec of live.filter((r) => r.tracklist === null)) {
+    try {
+      const release = await fetchRelease(rec.releaseId);
+      rec.country = release.country ?? null;
+      rec.tracklist = (release.tracklist ?? [])
+        .filter((t) => t.type_ === "track" || !t.type_)
+        .map((t) => ({
+          position: t.position,
+          title: t.title,
+          duration: t.duration,
+        }));
+      result.details += 1;
+    } catch (e) {
+      console.error(`[sync] release ${rec.releaseId} details failed:`, e);
+    }
+  }
+
+  // Les pochettes sont mises en cache localement pour que le site ne pointe
+  // jamais vers Discogs. Elles ne sont pas versionnees : le nom enregistre ne
+  // suffit donc pas, il faut verifier que le fichier est bien la.
+  for (const rec of live.filter((r) => r.coverUrl)) {
+    const url = rec.coverUrl as string;
+    const expected = coverFileName(rec.instanceId, url);
+    if (rec.coverFile === expected && existsSync(coverPath(expected))) continue;
+    try {
+      const file = await downloadCover(rec.instanceId, url);
+      if (rec.coverFile && rec.coverFile !== file) await removeCover(rec.coverFile);
+      rec.coverFile = file;
+      result.covers += 1;
+    } catch (e) {
+      console.error(`[sync] cover for ${rec.instanceId} failed:`, e);
+    }
+  }
+
+  // Suppression douce de ce qui a quitte la collection Discogs : le favori et
+  // l'ordre manuel d'un disque retire puis remis sont ainsi preserves.
+  for (const rec of byInstanceId.values()) {
+    if (!seen.has(rec.instanceId) && !rec.archivedAt) {
+      rec.archivedAt = now;
       result.archived += 1;
     }
-
-    await prisma.syncLog.update({
-      where: { id: log.id },
-      data: { ...result, status: "success", finishedAt: new Date() },
-    });
-    return result;
-  } catch (e) {
-    await prisma.syncLog.update({
-      where: { id: log.id },
-      data: {
-        status: "error",
-        finishedAt: new Date(),
-        error: e instanceof Error ? e.message : String(e),
-      },
-    });
-    throw e;
-  } finally {
-    syncRunning = false;
   }
+
+  const next: Library = { syncedAt: now, records: [...byInstanceId.values()] };
+  await writeLibrary(next);
+  return result;
 }

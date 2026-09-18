@@ -3,14 +3,18 @@ import { mkdir, writeFile, unlink } from "node:fs/promises";
 import path from "node:path";
 import { fetchImage } from "@/lib/discogs";
 
+// Les pochettes sont telechargees dans public/, d'ou Next les copie telles
+// quelles dans la sortie statique : elles deviennent des fichiers du site,
+// servis sous /covers/, et ne transitent plus par une route d'API.
+//
+// Elles n'entrent pas dans git : la synchronisation les retelecharge, et une
+// collection entiere de pochettes ferait grossir le depot pour rien.
 export function coversDir(): string {
-  return process.env.COVERS_DIR || "./data/covers";
+  return process.env.COVERS_DIR || "./public/covers";
 }
 
-// Runtime data directory (Docker volume) - excluded from build-time file
-// tracing on purpose.
 export function coverPath(file: string): string {
-  return path.join(/*turbopackIgnore: true*/ coversDir(), file);
+  return path.join(coversDir(), file);
 }
 
 function hash8(input: string): string {

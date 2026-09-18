@@ -10,17 +10,10 @@ import {
   X,
 } from "lucide-react";
 import Popover from "@/components/gallery/Popover";
+// Les filtres sont definis avec le code qui les applique, pas avec la barre
+// d'outils qui les edite : le filtrage se fait desormais dans le navigateur.
+import type { GalleryFilters } from "@/components/gallery/filtering";
 import type { FormatFilter, SortKey } from "@/lib/types";
-
-export interface GalleryFilters {
-  q: string;
-  format: FormatFilter;
-  sort: SortKey;
-  genres: string[];
-  favorites: boolean;
-  recentEnabled: boolean;
-  recentCount: number;
-}
 
 const SORT_LABELS: Record<SortKey, string> = {
   custom: "My order",

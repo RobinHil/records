@@ -3,18 +3,19 @@
 A minimal, gallery-style web app for browsing a personal vinyl and CD collection.
 The collection itself lives on [Discogs](https://www.discogs.com) - you add and
 remove records there (site, app, barcode scan). This app synchronizes your
-Discogs collection into its own SQLite database and layers on what Discogs does
-not offer: a premium wall-of-records display, custom manual ordering, favorites,
-and fast filtering.
+Discogs collection and layers on what Discogs does not offer: a premium
+wall-of-records display, custom manual ordering, favorites, and fast filtering.
 
-Stack: Next.js (App Router, TypeScript), TailwindCSS, Framer Motion,
-Prisma + SQLite, iron-session + bcrypt, react-virtuoso, dnd-kit, node-cron,
-Docker + nginx. Package manager: pnpm.
+The site is **fully static**. The build synchronizes the collection, writes it
+to a single `collection.json`, and the browser does the searching, filtering and
+sorting. Nothing runs in production: no database, no session, no API.
+
+Stack: Next.js (App Router, TypeScript, static export), TailwindCSS, Framer
+Motion, react-virtuoso. No database. Package manager: pnpm.
 
 ## Prerequisites
 
-- Node.js 22.12+ (24, the current LTS, is what the Docker image uses) and
-  pnpm - or just Docker with Compose.
+- Node.js 24 (see `.nvmrc`) and pnpm.
 - A Discogs account holding your collection.
 
 ## 1. Get your Discogs credentials
@@ -26,103 +27,129 @@ Docker + nginx. Package manager: pnpm.
    **Generate new token**. This token lets the app read your collection even if
    it is private. Treat it like a password.
 
-## 2. Configure the environment
+For the deployed site, both go in the repository secrets, as `DISCOGS_TOKEN`
+and `DISCOGS_USERNAME`. Nothing else is needed: the workflow asks GitHub Pages
+for the address the site will be served under.
 
-```sh
-cp .env.example .env
-```
+## 2. Build it locally
 
-Fill in:
-
-| Variable | Purpose |
-| --- | --- |
-| `DISCOGS_USERNAME` | Your Discogs username |
-| `DISCOGS_TOKEN` | The personal access token from step 1 |
-| `ADMIN_PASSWORD` | Initial admin password, hashed into the database on first launch |
-| `SESSION_SECRET` | 32+ char secret for the session cookie (`openssl rand -base64 32`) |
-| `SYNC_CRON` | Daily sync schedule, cron syntax (default `0 4 * * *`) |
-| `DATABASE_URL` / `COVERS_DIR` | Leave the defaults; docker-compose overrides them to the persistent volume |
-
-## 3a. Run with Docker (recommended)
-
-```sh
-docker compose up --build
-```
-
-Then open <http://localhost:8080>. That single command:
-
-- builds and starts the Next.js app (`app` service),
-- puts nginx in front as a reverse proxy (`nginx` service, port 8080),
-- stores the SQLite file and cached covers in the `records-data` volume, so
-  data survives rebuilds and redeployments,
-- applies database migrations and creates the admin account on startup,
-- schedules the daily Discogs sync inside the app process (node-cron, using
-  `SYNC_CRON`).
-
-## 3b. Run locally without Docker
-
-```sh
+```bash
+cp .env.example .env     # then fill DISCOGS_USERNAME and DISCOGS_TOKEN
 pnpm install
-pnpm prisma migrate dev   # creates prisma/dev.db
-pnpm db:seed              # creates the admin user from ADMIN_PASSWORD
-pnpm dev                  # http://localhost:3000
+pnpm sync                # updates data/collection.json, downloads covers
+pnpm dev                 # http://localhost:3000
 ```
 
-## 4. First login and first sync
-
-1. Open `/admin` and sign in with `ADMIN_PASSWORD`.
-2. Click **Sync now**. The first sync fetches every release plus its tracklist
-   and cover, throttled to respect Discogs rate limits (60 req/min) - allow a
-   few minutes for a ~200 record collection. Later syncs only fetch what
-   changed and are much faster.
+`pnpm build` produces the static site in `out/`. It reads
+`data/collection.json` and calls nothing: only `pnpm sync` talks to Discogs.
 
 ## How synchronization works
 
-- **Automatic**: once a day (cron expression `SYNC_CRON`, default 04:00 server
-  time), scheduled by node-cron inside the Next.js server process.
-- **Manual**: the **Sync now** button in `/admin`, with progress indication and
-  a per-run result (added / updated / archived / restored) plus a small history
-  log.
-- **Upsert logic**: every Discogs collection entry is created or updated by its
-  `instance_id`. Owning the same album on CD and vinyl means two distinct
-  Discogs entries, so both appear side by side in the wall.
-- **Soft delete**: records that disappear from your Discogs collection are
-  *archived*, not deleted - they vanish from the public gallery but keep their
-  favorite flag and custom order, so re-adding them on Discogs restores them
-  intact. Archived records are listed at the bottom of the admin view under
-  "Missing from last sync".
-- **Local-only fields**: favorites and custom order are never touched by a
-  sync; only Discogs metadata is refreshed.
-- Covers are downloaded once and cached locally (`COVERS_DIR`), so the gallery
-  never hotlinks Discogs.
+The state of the collection lives in `data/collection.json`, **committed to the
+repository**. `pnpm sync` brings it up to date with Discogs:
 
-## Admin features
+1. Fetches the full Discogs collection, one request per 100 records.
+2. Inserts new records, refreshes the Discogs fields of existing ones, and
+   **soft-deletes** records that disappeared - they are kept with an
+   `archivedAt` date, not erased, so favorites and manual order survive an
+   accidental removal and re-add.
+3. Fetches the tracklist and country **only for records that never got them**.
+4. Downloads **only the covers that are missing** from `public/covers/`.
 
-- **Sync now** with last-sync status and history.
-- **Drag & drop** reordering of the whole collection ("My order" in the public
-  sort menu).
-- **Reset order** from an automatic sort (album, artist, or release year) as a
-  starting point - asks for confirmation, then you refine by hand.
-- **Favorites** toggle per record, usable as a public filter.
+That file is what makes the nightly run cheap. Discogs calls are spaced 1.1
+seconds apart to stay under its rate limit, so re-fetching every tracklist and
+every cover each night would take roughly 2.2 seconds per record - tens of
+minutes, for data that has not changed. With the state committed, a night where
+nothing was added costs exactly one request.
 
-## Changing the admin password
+The covers are not committed: a whole collection of JPEGs has no business
+growing the repository. The workflow caches them between runs and re-downloads
+what the cache lost, which is why `sync` checks that the file is actually on
+disk and not merely named in the state.
 
-```sh
-ADMIN_PASSWORD="new-password" pnpm run reset-password
+## Favorites and manual order
+
+Discogs knows neither. They are fields of each record in
+`data/collection.json`, edited by hand, and every synchronization preserves
+them - `sync` only ever overwrites the fields that come from Discogs.
+
+```json
+{
+  "instanceId": 1234567890,
+  "title": "Kind of Blue",
+  "isFavorite": true,
+  "customOrder": 1
+}
 ```
 
-(Inside Docker: `docker compose exec app node /app/prisma/seed.js` will not
-overwrite an existing user; use
-`docker compose exec -e ADMIN_PASSWORD="new-password" app node /app/prisma/reset-password.js`.)
+`customOrder` sorts ascending under the "My order" sort; records without one
+come after those that have one.
+
+To carry over the favorites and ordering from the old server deployment, read
+them out of its SQLite database and paste them into the matching records:
+
+```bash
+sqlite3 records.db "
+  SELECT instanceId, isFavorite, customOrder
+  FROM Record
+  WHERE isFavorite = 1 OR customOrder IS NOT NULL
+  ORDER BY customOrder;
+"
+```
+
+## Deployment
+
+[.github/workflows/pages.yml](.github/workflows/pages.yml) builds and publishes
+to GitHub Pages. Pages must be set to "GitHub Actions" in Settings > Pages,
+and `DISCOGS_TOKEN` and `DISCOGS_USERNAME` must exist as repository secrets.
+
+Who syncs, and when:
+
+- **A push to `main`** rebuilds from the committed state and calls nothing.
+  Publishing a fix should not depend on Discogs, and a pull request has no
+  business touching the secrets.
+- **The daily run**, at 04:00 UTC - the hour the server's cron used to run -
+  synchronizes, commits `data/collection.json` back if it changed, and
+  republishes. The commit is made with `GITHUB_TOKEN`, which by design does not
+  trigger another run, so there is no loop.
+- **A manual run** synchronizes only if you tick the box.
+- As a bootstrap, a sync also happens whenever the state file is still empty,
+  so the very first deployment does not publish an empty gallery.
+
+## What the move to static removed
+
+The app had an admin back-office: a password login, a favorites toggle, manual
+drag-and-drop ordering, and a button to trigger a sync. A static host executes
+nothing, so there is no server to hold a session or accept a write, and an
+editing interface would have had nothing to write to.
+
+The public gallery never wrote anything, so it lost no feature: favorites and
+manual order are still displayed and still filterable. What changed is how they
+are edited - by hand in `data/collection.json` instead of by dragging tiles.
+
+Prisma and SQLite went with it. The database had become a file that only the
+build read, once; the state it used to hold is now the versioned JSON, which a
+human can read and a diff can show.
+
+Also gone with the server: the security headers `next.config.ts` used to set.
+GitHub Pages sets no custom headers. Behind a reverse proxy, that proxy has to
+put them back.
 
 ## Project structure
 
 ```
-app/            App Router pages and API routes
-  api/          records, sync, auth, covers, admin endpoints
-  admin/        admin dashboard + login
-components/     gallery/ (public UI) and admin/ UI
-lib/            Prisma client, Discogs client, sync logic, session, queries
-prisma/         schema, migrations, seed scripts
-docker/         nginx config and container entrypoint
+app/
+  page.tsx                  the gallery page
+  collection.json/route.ts  force-static handler: writes out/collection.json
+components/gallery/
+  filtering.ts              search, filters and sorts, in the browser
+  Gallery.tsx               loads collection.json, renders the virtualized grid
+lib/
+  discogs.ts                Discogs API client
+  library.ts                reads and writes data/collection.json
+  sync.ts                   the synchronization itself
+  records.ts                turns the state into what the site publishes
+  base-path.ts              deployment sub-path, for the URLs the code builds
+scripts/sync.ts             pnpm sync
+data/collection.json        the state: collection, favorites, manual order
 ```

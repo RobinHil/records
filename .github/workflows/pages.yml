@@ -1,0 +1,271 @@
+name: Pages
+
+# Records est un site statique : `next build` en mode export rend l'unique page
+# et le fichier de collection dans out/, et un hebergeur de fichiers sert le
+# tout. Il n'y a ni base, ni session, ni API.
+#
+# L'etat de la collection vit dans data/collection.json, versionne. C'est ce
+# qui rend la synchronisation quotidienne bon marche : Discogs n'est interroge
+# que pour ce qui est nouveau. Sans cet etat, chaque nuit retelechargerait
+# toutes les tracklists et toutes les pochettes, a 1,1 seconde par appel.
+#
+# Deux secrets sont necessaires : DISCOGS_TOKEN et DISCOGS_USERNAME.
+# Pages doit etre regle sur "GitHub Actions" dans Settings > Pages.
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    # 04:00 UTC, l'heure qu'avait SYNC_CRON dans le serveur.
+    - cron: "0 4 * * *"
+  workflow_dispatch:
+    inputs:
+      sync:
+        description: "Synchroniser depuis Discogs avant de construire"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build and check
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    permissions:
+      # Ecriture : une synchronisation modifie data/collection.json, qui doit
+      # etre committe pour que la suivante sache ce qui est deja connu.
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+
+      # pnpm avant setup-node, qui a besoin de le trouver dans le PATH pour
+      # mettre en cache son store. La version vient de `packageManager` dans
+      # package.json, les deux ne peuvent donc pas diverger.
+      - uses: pnpm/action-setup@v6
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - run: pnpm lint
+
+      # Qui synchronise, et quand.
+      #
+      # Un push ne fait que reconstruire a partir de l'etat committe : publier
+      # une correction ne doit pas dependre de Discogs, et une pull request n'a
+      # pas a toucher aux secrets. La synchronisation est le travail de
+      # l'execution planifiee, ou d'un declenchement manuel qui la demande.
+      #
+      # Exception : tant que data/collection.json est vide, il faut bien un
+      # premier remplissage, sinon le tout premier deploiement publierait un
+      # site sans disques.
+      - name: Decide whether to sync
+        id: decide
+        run: |
+          set -euo pipefail
+          count=$(node -e 'process.stdout.write(String(require("./data/collection.json").records.length))')
+          echo "etat actuel : $count disques"
+          if [ "${{ github.event_name }}" = "schedule" ] \
+            || [ "${{ inputs.sync }}" = "true" ] \
+            || [ "$count" = "0" ]; then
+            echo "sync=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "sync=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      # Les pochettes ne sont pas versionnees : une collection entiere de JPEG
+      # n'a pas a grossir le depot. Le cache les reporte d'une execution a la
+      # suivante ; la cle suit l'etat de la collection, et la cle de repli
+      # restaure le cache le plus recent, de sorte qu'un disque ajoute ne fait
+      # retelecharger que sa propre pochette.
+      - uses: actions/cache@v4
+        with:
+          path: public/covers
+          key: covers-${{ hashFiles('data/collection.json') }}
+          restore-keys: covers-
+
+      - name: Sync the collection from Discogs
+        if: steps.decide.outputs.sync == 'true'
+        env:
+          DISCOGS_TOKEN: ${{ secrets.DISCOGS_TOKEN }}
+          DISCOGS_USERNAME: ${{ secrets.DISCOGS_USERNAME }}
+        run: |
+          set -euo pipefail
+          test -n "$DISCOGS_TOKEN" || { echo "secret DISCOGS_TOKEN manquant"; exit 1; }
+          test -n "$DISCOGS_USERNAME" || { echo "secret DISCOGS_USERNAME manquant"; exit 1; }
+          pnpm sync
+
+      # Ce que la synchronisation a appris doit survivre au runner, sinon la
+      # suivante repart de zero. Rien n'est committe si rien n'a change, et un
+      # commit signe du GITHUB_TOKEN ne redeclenche pas de workflow : pas de
+      # boucle.
+      - name: Commit the updated collection
+        if: steps.decide.outputs.sync == 'true' && github.event_name != 'pull_request'
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- data/collection.json; then
+            echo "collection inchangee, rien a committer"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/collection.json
+          git commit -m "Update the collection from Discogs"
+          git push
+
+      - uses: actions/configure-pages@v6
+        id: pages
+
+      # base_path vaut "/records" ou "" (site utilisateur), jamais "/".
+      # next.config.ts le lit dans BASE_PATH et le passe a la fois a `basePath`
+      # et au code client, qui en a besoin pour l'URL de collection.json.
+      - name: Build the static site
+        env:
+          BASE_PATH: ${{ steps.pages.outputs.base_path }}
+        run: pnpm build
+
+      # Ce que le build est cense avoir produit, verifie plutot que suppose.
+      # Le point fragile est le chemin de base : il apparait a trois endroits
+      # sans rapport - les assets de Next, l'URL que le bundle appelle, et le
+      # champ coverSrc incorpore dans le JSON au moment du rendu.
+      - name: Assert the build is complete
+        env:
+          BASE_PATH: ${{ steps.pages.outputs.base_path }}
+        run: |
+          set -euo pipefail
+          cd out
+          base="${BASE_PATH%/}"
+
+          for file in index.html 404.html collection.json; do
+            test -f "$file" || { echo "missing: $file"; exit 1; }
+          done
+
+          # La collection n'est pas vide, ne contient aucun disque archive, et
+          # porte bien les colonnes dont le filtrage du navigateur depend.
+          node -e '
+            const fs = require("node:fs");
+            const base = process.argv[1];
+            const c = JSON.parse(fs.readFileSync("collection.json", "utf8"));
+            if (!Array.isArray(c.records) || c.records.length === 0) {
+              throw new Error("collection.json ne contient aucun disque");
+            }
+            if (!Array.isArray(c.genres) || c.genres.length === 0) {
+              throw new Error("collection.json ne contient aucun genre");
+            }
+            for (const r of c.records) {
+              if (typeof r.searchText !== "string" || typeof r.artistSort !== "string") {
+                throw new Error(`champ de tri manquant sur ${r.title}`);
+              }
+              if ("archivedAt" in r) {
+                throw new Error(`disque archive publie : ${r.title}`);
+              }
+              // Une pochette locale doit porter le chemin de base et exister.
+              if (r.coverSrc && !/^https?:/.test(r.coverSrc)) {
+                if (!r.coverSrc.startsWith(base + "/covers/")) {
+                  throw new Error(`coverSrc sans chemin de base : ${r.coverSrc}`);
+                }
+                const file = "." + r.coverSrc.slice(base.length);
+                if (!fs.existsSync(file)) throw new Error(`pochette absente : ${file}`);
+              }
+            }
+            const withCover = c.records.filter((r) => r.coverSrc).length;
+            console.log(`${c.records.length} disques, ${c.genres.length} genres, ${withCover} pochettes`);
+          ' "$base"
+
+          # Les assets de Next portent le chemin de base, et existent.
+          for asset in $(grep -oE '(src|href)="[^"]*/_next/[^"]*"' index.html | cut -d'"' -f2 | sort -u); do
+            case "$asset" in
+              "$base"/_next/*) ;;
+              *) echo "asset sans chemin de base : $asset"; exit 1 ;;
+            esac
+            test -f ".${asset#"$base"}" || { echo "dangling asset: $asset"; exit 1; }
+          done
+
+          # Le bundle appelle bien collection.json sous le chemin de base :
+          # c'est la seule URL que le code construit lui-meme, donc la seule
+          # que Next ne prefixe pas tout seul.
+          grep -rq "$base/collection.json" _next/static/chunks/ \
+            || { echo "le bundle n'appelle pas $base/collection.json"; exit 1; }
+
+          echo "out is complete:"
+          du -sh .
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: out
+
+  # Publie ce que le build a verifie. Pages exige ces permissions et cet
+  # environnement ; le groupe de concurrence est celui que partagent les
+  # deploiements Pages, et il n'annule pas un deploiement en cours.
+  deploy:
+    name: Deploy to GitHub Pages
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    outputs:
+      page_url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5
+
+  # Repose les memes questions au site publie, par le reseau : un deploiement
+  # qui se declare reussi puis sert autre chose, ca arrive. C'est aussi la
+  # seule etape qui exerce le vrai chemin de base.
+  verify:
+    name: Verify what is published
+    if: github.event_name != 'pull_request'
+    needs: deploy
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Fetch the published site
+        env:
+          SITE: ${{ needs.deploy.outputs.page_url }}
+        run: |
+          set -euo pipefail
+          site="${SITE%/}"
+          echo "site: $site"
+
+          for attempt in 1 2 3 4 5; do
+            if curl -fsS "$site/" -o /tmp/index.html; then break; fi
+            echo "attempt $attempt failed, waiting"
+            sleep 10
+          done
+
+          grep -q "Records" /tmp/index.html
+          curl -fsS "$site/collection.json" -o /tmp/collection.json
+
+          # Une pochette prise dans le jeu de donnees publie : c'est le test de
+          # bout en bout du chemin de base, puisque le chemin vient du JSON.
+          cover=$(node -e '
+            const c = require("/tmp/collection.json");
+            const r = c.records.find((r) => r.coverSrc && !/^https?:/.test(r.coverSrc));
+            process.stdout.write(r ? r.coverSrc : "");
+          ')
+          if [ -n "$cover" ]; then
+            origin=$(printf '%s' "$site" | sed -E 's#^(https?://[^/]+).*#\1#')
+            curl -fsS -o /dev/null "$origin$cover"
+            echo "pochette servie : $cover"
+          fi
+
+          echo "verified $site"

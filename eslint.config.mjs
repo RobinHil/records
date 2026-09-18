@@ -12,8 +12,6 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
-    // Plain-JS maintenance scripts run with node, CommonJS on purpose
-    "prisma/*.js",
   ]),
 ]);
 

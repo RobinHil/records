@@ -1,126 +1,64 @@
-import type { Prisma, Record as DbRecord } from "@prisma/client";
-import { prisma } from "@/lib/db";
-import type {
-  FormatFilter,
-  RecordDTO,
-  RecordsPage,
-  SortKey,
-  Track,
-} from "@/lib/types";
+import { readLibrary, type LibraryRecord } from "@/lib/library";
+import type { Collection, RecordDTO } from "@/lib/types";
 
-export function toDTO(r: DbRecord): RecordDTO {
+/*
+ * Ce que le build publie, a partir de l'etat versionne.
+ *
+ * Il y avait ici une couche de requetes SQL - recherche, filtres, tri,
+ * pagination - appelee a chaque frappe depuis la galerie. Le site est
+ * statique : le build ecrit la collection entiere dans un fichier et c'est le
+ * navigateur qui filtre et trie (components/gallery/filtering.ts).
+ */
+
+function toDTO(r: LibraryRecord, basePath: string): RecordDTO {
   return {
-    id: r.id,
-    // BigInt columns; Discogs ids stay well under 2^53 so Number is safe
-    instanceId: Number(r.instanceId),
-    releaseId: Number(r.releaseId),
+    instanceId: r.instanceId,
+    releaseId: r.releaseId,
     title: r.title,
     artist: r.artist,
     year: r.year,
-    format: r.format as RecordDTO["format"],
+    format: r.format,
     formatDetail: r.formatDetail,
     label: r.label,
     catalogNumber: r.catalogNumber,
     country: r.country,
-    genres: JSON.parse(r.genres) as string[],
-    styles: JSON.parse(r.styles) as string[],
-    tracklist: r.tracklist ? (JSON.parse(r.tracklist) as Track[]) : null,
-    coverSrc: r.coverFile ? `/api/covers/${r.coverFile}` : r.coverUrl,
+    genres: r.genres,
+    styles: r.styles,
+    tracklist: r.tracklist,
+    // Les pochettes sont des fichiers de public/covers, copies tels quels dans
+    // la sortie. Le chemin de base est incorpore ici, au build : le composant
+    // qui les affiche n'a ainsi rien a savoir du deploiement.
+    coverSrc: r.coverFile ? `${basePath}/covers/${r.coverFile}` : r.coverUrl,
     discogsUrl: r.discogsUrl,
-    addedAt: r.addedAt.toISOString(),
+    addedAt: r.addedAt,
     isFavorite: r.isFavorite,
     customOrder: r.customOrder,
-    archived: r.archivedAt !== null,
+    searchText: r.searchText,
+    artistSort: r.artistSort,
   };
 }
 
-export interface RecordsQuery {
-  q?: string;
-  format?: FormatFilter;
-  genres?: string[];
-  favorites?: boolean;
-  recent?: number;
-  sort?: SortKey;
-  page?: number;
-  perPage?: number;
-}
+/**
+ * La collection vivante et ses genres.
+ *
+ * L'ordre du tableau n'a pas d'importance : la galerie trie toujours
+ * elle-meme, selon le tri choisi, dont "custom" par defaut. Les disques
+ * sortent donc dans l'ordre du fichier, qui est celui des instanceId - stable,
+ * donc sans diff parasite d'un build a l'autre.
+ */
+export async function loadCollection(basePath = ""): Promise<Collection> {
+  const library = await readLibrary();
+  const live = library.records.filter((r) => r.archivedAt === null);
 
-function orderBy(
-  sort: SortKey
-): Prisma.RecordOrderByWithRelationInput[] {
-  switch (sort) {
-    case "album":
-      return [{ title: "asc" }, { artistSort: "asc" }];
-    case "artist":
-      return [{ artistSort: "asc" }, { year: "asc" }, { title: "asc" }];
-    case "year_asc":
-      return [{ year: { sort: "asc", nulls: "last" } }, { artistSort: "asc" }];
-    case "year_desc":
-      return [{ year: { sort: "desc", nulls: "last" } }, { artistSort: "asc" }];
-    case "added":
-      return [{ addedAt: "desc" }];
-    case "custom":
-    default:
-      return [
-        { customOrder: { sort: "asc", nulls: "last" } },
-        { artistSort: "asc" },
-        { title: "asc" },
-      ];
-  }
-}
-
-export async function queryRecords(query: RecordsQuery): Promise<RecordsPage> {
-  const page = Math.max(1, query.page ?? 1);
-  const perPage = Math.min(500, Math.max(1, query.perPage ?? 120));
-
-  const where: Prisma.RecordWhereInput = { archivedAt: null };
-
-  if (query.q) {
-    where.searchText = { contains: query.q.toLowerCase() };
-  }
-  if (query.format === "vinyl") where.format = "VINYL";
-  if (query.format === "cd") where.format = "CD";
-  if (query.favorites) where.isFavorite = true;
-  if (query.genres && query.genres.length > 0) {
-    // genres/styles are stored as JSON arrays; a quoted substring match is an
-    // exact element match ("Rock" will not match "Post Rock").
-    where.OR = query.genres.flatMap((g) => {
-      const needle = JSON.stringify(g);
-      return [{ genres: { contains: needle } }, { styles: { contains: needle } }];
-    });
-  }
-  if (query.recent && query.recent > 0) {
-    const newest = await prisma.record.findMany({
-      where: { archivedAt: null },
-      orderBy: { addedAt: "desc" },
-      take: query.recent,
-      select: { id: true },
-    });
-    where.id = { in: newest.map((r) => r.id) };
+  const genres = new Set<string>();
+  for (const r of live) {
+    for (const g of r.genres) genres.add(g);
+    for (const s of r.styles) genres.add(s);
   }
 
-  const [total, rows] = await Promise.all([
-    prisma.record.count({ where }),
-    prisma.record.findMany({
-      where,
-      orderBy: orderBy(query.sort ?? "custom"),
-      skip: (page - 1) * perPage,
-      take: perPage,
-    }),
-  ]);
-
-  return { items: rows.map(toDTO), total, page, perPage };
-}
-
-export async function listGenres(): Promise<string[]> {
-  const rows = await prisma.record.findMany({
-    where: { archivedAt: null },
-    select: { genres: true, styles: true },
-  });
-  const set = new Set<string>();
-  for (const row of rows) {
-    for (const g of JSON.parse(row.genres) as string[]) set.add(g);
-    for (const s of JSON.parse(row.styles) as string[]) set.add(s);
-  }
-  return [...set].sort((a, b) => a.localeCompare(b));
+  return {
+    records: live.map((r) => toDTO(r, basePath)),
+    genres: [...genres].sort((a, b) => a.localeCompare(b)),
+    generatedAt: new Date().toISOString(),
+  };
 }
