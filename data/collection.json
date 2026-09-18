@@ -1,4 +1,6545 @@
 {
-  "syncedAt": null,
-  "records": []
+  "syncedAt": "2026-09-18T10:11:32.213Z",
+  "records": [
+    {
+      "instanceId": 2154457300,
+      "releaseId": 23023862,
+      "title": "On The Level",
+      "artist": "Status Quo",
+      "artistSort": "status quo",
+      "searchText": "on the level status quo",
+      "year": 1975,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album, Stereo",
+      "label": "Vertigo",
+      "catalogNumber": "9102 002",
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Rock & Roll",
+        "Classic Rock"
+      ],
+      "coverUrl": "https://i.discogs.com/U7jZeAhWOx0Bo_x9CV20TJIinM-PehFkV-5gdivIL7k/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzMDIz/ODYyLTE2NTEwODUw/NjQtODcyNi5qcGVn.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/23023862",
+      "addedAt": "2026-06-12T19:51:56.000Z",
+      "country": "UK",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Little Lady",
+          "duration": "3:05"
+        },
+        {
+          "position": "A2",
+          "title": "Most Of The Time",
+          "duration": "3:21"
+        },
+        {
+          "position": "A3",
+          "title": "I Saw The Light",
+          "duration": "3:55"
+        },
+        {
+          "position": "A4",
+          "title": "Over And Done",
+          "duration": "3:55"
+        },
+        {
+          "position": "A5",
+          "title": "Nightride",
+          "duration": "3:52"
+        },
+        {
+          "position": "B1",
+          "title": "Down Down",
+          "duration": "5:24"
+        },
+        {
+          "position": "B2",
+          "title": "Broken Man",
+          "duration": "4:13"
+        },
+        {
+          "position": "B3",
+          "title": "What To Do",
+          "duration": "3:15"
+        },
+        {
+          "position": "B4",
+          "title": "Where I Am",
+          "duration": "3:10"
+        },
+        {
+          "position": "B5",
+          "title": "Bye Bye Johnny",
+          "duration": "4:35"
+        }
+      ],
+      "coverFile": "2154457300-82dc5494.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2154459030,
+      "releaseId": 14541226,
+      "title": "Era Vulgaris",
+      "artist": "Queens Of The Stone Age",
+      "artistSort": "queens of the stone age",
+      "searchText": "era vulgaris queens of the stone age",
+      "year": 2019,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album, Reissue",
+      "label": "Interscope Records",
+      "catalogNumber": "00602508108259",
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Stoner Rock",
+        "Indie Rock",
+        "Alternative Rock"
+      ],
+      "coverUrl": "https://i.discogs.com/YbZ_bamHsa1ykN1zyKfWROuRePIYP--9iS8WayC5GIo/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0NTQx/MjI2LTE1NzY2NzY1/NDUtOTA0MC5qcGVn.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/14541226",
+      "addedAt": "2026-06-12T19:57:50.000Z",
+      "country": "Europe",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Turnin' On The Screw",
+          "duration": "5:20"
+        },
+        {
+          "position": "A2",
+          "title": "Sick, Sick, Sick",
+          "duration": "3:34"
+        },
+        {
+          "position": "A3",
+          "title": "I'm Designer",
+          "duration": "4:04"
+        },
+        {
+          "position": "A4",
+          "title": "Into The Hollow",
+          "duration": "3:42"
+        },
+        {
+          "position": "A5",
+          "title": "Misfit Love",
+          "duration": "5:39"
+        },
+        {
+          "position": "A6",
+          "title": "Running Joke ",
+          "duration": "2:57"
+        },
+        {
+          "position": "B1",
+          "title": "Battery Acid",
+          "duration": "4:06"
+        },
+        {
+          "position": "B2",
+          "title": "Make It Wit Chu",
+          "duration": "4:50"
+        },
+        {
+          "position": "B3",
+          "title": "3's & 7's",
+          "duration": "3:34"
+        },
+        {
+          "position": "B4",
+          "title": "Suture Up Your Future",
+          "duration": "4:37"
+        },
+        {
+          "position": "B5",
+          "title": "River In The Road",
+          "duration": "3:19"
+        },
+        {
+          "position": "B6",
+          "title": "Run, Pig, Run",
+          "duration": "4:40"
+        }
+      ],
+      "coverFile": "2154459030-ac56ba1d.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2154460373,
+      "releaseId": 35906401,
+      "title": "Wish You Were Here",
+      "artist": "Pink Floyd",
+      "artistSort": "pink floyd",
+      "searchText": "wish you were here pink floyd",
+      "year": 2025,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album, Limited Edition, Reissue, Remastered, Stereo",
+      "label": "Columbia",
+      "catalogNumber": "8887518426IA",
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Art Rock",
+        "Prog Rock"
+      ],
+      "coverUrl": "https://i.discogs.com/uHhs04G-oTVCK08dJz-lb5K3f5Uxw7fINL84cTiX7Eg/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM1OTA2/NDAxLTE3NjU1NDU4/MzUtNjMyNS5qcGVn.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/35906401",
+      "addedAt": "2026-06-12T20:02:22.000Z",
+      "country": "Worldwide",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Shine On You Crazy Diamond (Parts 1-5)",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Welcome To The Machine",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "Have A Cigar ",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Wish You Were Here",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "Shine On You Crazy Diamond (Parts 6-9)",
+          "duration": ""
+        }
+      ],
+      "coverFile": "2154460373-5783dedb.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2154461611,
+      "releaseId": 243351,
+      "title": "The Breaks Of Love Vol. i",
+      "artist": "DJ D-Love",
+      "artistSort": "dj d-love",
+      "searchText": "the breaks of love vol. i dj d-love",
+      "year": 1995,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, 12\"",
+      "label": "Outlandz Records",
+      "catalogNumber": "OUTY001",
+      "genres": [
+        "Electronic"
+      ],
+      "styles": [
+        "House",
+        "Acid",
+        "Breaks"
+      ],
+      "coverUrl": "https://i.discogs.com/jyBjEvLrN6Py9VqzUqrgkK1sZXB97oVZRZLBW96hNCw/rs:fit/g:sm/q:90/h:460/w:474/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0MzM1/MS0xMzA3MDcxNjg5/LmpwZWc.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/243351",
+      "addedAt": "2026-06-12T20:06:14.000Z",
+      "country": "US",
+      "tracklist": [
+        {
+          "position": "A",
+          "title": "Paranoia",
+          "duration": ""
+        },
+        {
+          "position": "B",
+          "title": "Running From The Love",
+          "duration": ""
+        }
+      ],
+      "coverFile": "2154461611-e73e4532.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2154462076,
+      "releaseId": 29277010,
+      "title": "Discovery",
+      "artist": "Daft Punk",
+      "artistSort": "daft punk",
+      "searchText": "discovery daft punk",
+      "year": 2023,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album, Reissue, Stereo",
+      "label": "ADA",
+      "catalogNumber": "0190296617164",
+      "genres": [
+        "Electronic"
+      ],
+      "styles": [
+        "Disco",
+        "House",
+        "Electro",
+        "French House"
+      ],
+      "coverUrl": "https://i.discogs.com/9omVF7Ur_lP25cJS_AUeKEXhSWncOr_VllpR1UdVHV4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5Mjc3/MDEwLTE3MzMwODAz/ODEtMzE5Ni5qcGVn.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/29277010",
+      "addedAt": "2026-06-12T20:07:56.000Z",
+      "country": "Europe",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "One More Time",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Aerodynamic",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Digital Love",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "Harder, Better, Faster, Stronger",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Crescendolls",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "Nightvision",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "Superheroes",
+          "duration": ""
+        },
+        {
+          "position": "C1",
+          "title": "High Life",
+          "duration": ""
+        },
+        {
+          "position": "C2",
+          "title": "Something About Us",
+          "duration": ""
+        },
+        {
+          "position": "C3",
+          "title": "Voyager",
+          "duration": ""
+        },
+        {
+          "position": "C4",
+          "title": "Veridis Quo",
+          "duration": ""
+        },
+        {
+          "position": "D1",
+          "title": "Short Circuit",
+          "duration": ""
+        },
+        {
+          "position": "D2",
+          "title": "Face To Face",
+          "duration": ""
+        },
+        {
+          "position": "D3",
+          "title": "Too Long",
+          "duration": ""
+        }
+      ],
+      "coverFile": "2154462076-f6d1cdfa.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2154463196,
+      "releaseId": 7098957,
+      "title": "Maxime Le Forestier",
+      "artist": "Maxime Le Forestier",
+      "artistSort": "maxime le forestier",
+      "searchText": "maxime le forestier maxime le forestier",
+      "year": 1972,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album",
+      "label": "Polydor",
+      "catalogNumber": "2393 040",
+      "genres": [
+        "Folk, World, & Country"
+      ],
+      "styles": [
+        "Chanson"
+      ],
+      "coverUrl": "https://i.discogs.com/iUbpDVAiw7tiyrQDZETF0u6d38B3H1XQArW26pyWHac/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcwOTg5/NTctMTQzMzcwMDUy/Mi04MjE5LmpwZWc.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/7098957",
+      "addedAt": "2026-06-12T20:11:59.000Z",
+      "country": "France",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Mon Frère",
+          "duration": "3:32"
+        },
+        {
+          "position": "A2",
+          "title": "Éducation Sentimentale",
+          "duration": "2:30"
+        },
+        {
+          "position": "A3",
+          "title": "La Rouille",
+          "duration": "2:48"
+        },
+        {
+          "position": "A4",
+          "title": "Mourir Pour Une Nuit",
+          "duration": "4:24"
+        },
+        {
+          "position": "A5",
+          "title": "Marie, Pierre Et Charlemagne",
+          "duration": "2:40"
+        },
+        {
+          "position": "B1",
+          "title": "Comme Un Arbre",
+          "duration": "3:08"
+        },
+        {
+          "position": "B2",
+          "title": "Fontenay-Aux-Roses",
+          "duration": "1:40"
+        },
+        {
+          "position": "B3",
+          "title": "Parachutiste",
+          "duration": "2:30"
+        },
+        {
+          "position": "B4",
+          "title": "Je Ne Sais Rien Faire",
+          "duration": "2:20"
+        },
+        {
+          "position": "B5",
+          "title": "San Francisco",
+          "duration": "2:45"
+        },
+        {
+          "position": "B6",
+          "title": "Ça Sert À Quoi",
+          "duration": "3:26"
+        }
+      ],
+      "coverFile": "2154463196-d915445e.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2154465010,
+      "releaseId": 534378,
+      "title": "Maxime Le Forestier",
+      "artist": "Maxime Le Forestier",
+      "artistSort": "maxime le forestier",
+      "searchText": "maxime le forestier maxime le forestier",
+      "year": 1973,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album",
+      "label": "Polydor",
+      "catalogNumber": "2473 025",
+      "genres": [
+        "Pop"
+      ],
+      "styles": [
+        "Chanson"
+      ],
+      "coverUrl": "https://i.discogs.com/_I9s-fOjjU1I1jhh4T13QBEh9SM79tJfhsc2ww8rSDI/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUzNDM3/OC0xMjkxMTMzMDk0/LmpwZWc.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/534378",
+      "addedAt": "2026-06-12T20:18:47.000Z",
+      "country": "France",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Le Steak Ou \"Complainte De Ceux Qui Ont Le Ventre Vide, Considérée Comme Une Gaudriole Par Ceux Qui Ont Le Ventre Plein\"",
+          "duration": "2:41"
+        },
+        {
+          "position": "A2",
+          "title": "Février De Cette Année Là",
+          "duration": "4:26"
+        },
+        {
+          "position": "A3",
+          "title": "Parlez-moi De Saison",
+          "duration": "2:57"
+        },
+        {
+          "position": "A4",
+          "title": "Entre 14 Et 40 Ans",
+          "duration": "3:08"
+        },
+        {
+          "position": "A5",
+          "title": "Si Tu Etais Né En Mai",
+          "duration": "3:32"
+        },
+        {
+          "position": "B6",
+          "title": "Dialogue",
+          "duration": "1:40"
+        },
+        {
+          "position": "B7",
+          "title": "Mauve",
+          "duration": "3:42"
+        },
+        {
+          "position": "B8",
+          "title": "La Où",
+          "duration": "3:46"
+        },
+        {
+          "position": "B9",
+          "title": "Les Lianes Du Temps",
+          "duration": "2:55"
+        },
+        {
+          "position": "B10",
+          "title": "Autre Dialogue",
+          "duration": "2:40"
+        },
+        {
+          "position": "B11",
+          "title": "J'm'en Fous D'la France",
+          "duration": "2:14"
+        }
+      ],
+      "coverFile": "2154465010-0c185c48.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2155726810,
+      "releaseId": 1396797,
+      "title": "War",
+      "artist": "U2",
+      "artistSort": "u2",
+      "searchText": "war u2",
+      "year": 1983,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album, Stereo",
+      "label": "Island Records",
+      "catalogNumber": "811 148-1",
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Pop Rock",
+        "New Wave"
+      ],
+      "coverUrl": "https://i.discogs.com/ZD3mORkrr584luqZ_E6nYt0r9zOd4e9b2KvenXKLuy8/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzOTY3/OTctMTcyMzcyMzM5/Ni02NTYzLmpwZWc.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/1396797",
+      "addedAt": "2026-06-16T18:28:56.000Z",
+      "country": "France",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Sunday Bloody Sunday",
+          "duration": "4:38"
+        },
+        {
+          "position": "A2",
+          "title": "Seconds",
+          "duration": "3:24"
+        },
+        {
+          "position": "A3",
+          "title": "New Year's Day",
+          "duration": "5:38"
+        },
+        {
+          "position": "A4",
+          "title": "Like A Song...",
+          "duration": "4:48"
+        },
+        {
+          "position": "A5",
+          "title": "Drowning Man",
+          "duration": "4:12"
+        },
+        {
+          "position": "B1",
+          "title": "The Refugee",
+          "duration": "3:40"
+        },
+        {
+          "position": "B2",
+          "title": "Two Hearts Beat As One",
+          "duration": "4:10"
+        },
+        {
+          "position": "B3",
+          "title": "Red Light",
+          "duration": "4:09"
+        },
+        {
+          "position": "B4",
+          "title": "Surrender",
+          "duration": "5:33"
+        },
+        {
+          "position": "B5",
+          "title": "\"40\"",
+          "duration": "2:38"
+        }
+      ],
+      "coverFile": "2155726810-34d33fdf.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2155729946,
+      "releaseId": 1968183,
+      "title": "Imagine",
+      "artist": "John Lennon, Plastic Ono Band",
+      "artistSort": "john lennon, plastic ono band",
+      "searchText": "imagine john lennon, plastic ono band",
+      "year": null,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album, Reissue",
+      "label": "Apple Records",
+      "catalogNumber": "2C 070 04914",
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Pop Rock"
+      ],
+      "coverUrl": "https://i.discogs.com/w7fNtGCwNZ9hbyWQfqtF-vvGsqggwm7IfhiF9rIbTaY/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5Njgx/ODMtMTI1NTY3NjA5/OC5qcGVn.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/1968183",
+      "addedAt": "2026-06-16T18:39:53.000Z",
+      "country": "France",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Imagine",
+          "duration": "2:59"
+        },
+        {
+          "position": "A2",
+          "title": "Crippled Inside",
+          "duration": "3:43"
+        },
+        {
+          "position": "A3",
+          "title": "Jealous Guy",
+          "duration": "4:10"
+        },
+        {
+          "position": "A4",
+          "title": "It's So Hard",
+          "duration": "2:22"
+        },
+        {
+          "position": "A5",
+          "title": "I Don't Want To Be A Soldier",
+          "duration": "6:01"
+        },
+        {
+          "position": "B1",
+          "title": "Give Me Some Truth",
+          "duration": "3:11"
+        },
+        {
+          "position": "B2",
+          "title": "Oh My Love",
+          "duration": "2:40"
+        },
+        {
+          "position": "B3",
+          "title": "How Do You Sleep",
+          "duration": "5:29"
+        },
+        {
+          "position": "B4",
+          "title": "How?",
+          "duration": "3:37"
+        },
+        {
+          "position": "B5",
+          "title": "Oh Yoko!",
+          "duration": "4:18"
+        }
+      ],
+      "coverFile": "2155729946-6273e867.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2155732894,
+      "releaseId": 6280483,
+      "title": "Breakfast In America",
+      "artist": "Supertramp",
+      "artistSort": "supertramp",
+      "searchText": "breakfast in america supertramp",
+      "year": 1979,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album, Stereo",
+      "label": "A&M Records",
+      "catalogNumber": "AMLK 64747",
+      "genres": [
+        "Rock",
+        "Pop"
+      ],
+      "styles": [
+        "Pop Rock"
+      ],
+      "coverUrl": "https://i.discogs.com/HxF4WEsGE32Mcmvgof6OLS7YP6Dr2W-6vtjLIRVNzwY/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyODA0/ODMtMTQ1Mzk3MDky/OC03MDcxLmpwZWc.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/6280483",
+      "addedAt": "2026-06-16T18:50:07.000Z",
+      "country": "Europe",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Gone Hollywood",
+          "duration": "5:15"
+        },
+        {
+          "position": "A2",
+          "title": "The Logical Song",
+          "duration": "4:12"
+        },
+        {
+          "position": "A3",
+          "title": "Goodbye Stranger",
+          "duration": "5:44"
+        },
+        {
+          "position": "A4",
+          "title": "Breakfast In America",
+          "duration": "2:40"
+        },
+        {
+          "position": "A5",
+          "title": "Oh Darling",
+          "duration": "4:10"
+        },
+        {
+          "position": "B1",
+          "title": "Take The Long Way Home",
+          "duration": "5:09"
+        },
+        {
+          "position": "B2",
+          "title": "Lord Is It Mine",
+          "duration": "4:03"
+        },
+        {
+          "position": "B3",
+          "title": "Just Another Nervous Wreck",
+          "duration": "4:32"
+        },
+        {
+          "position": "B4",
+          "title": "Casual Conversations",
+          "duration": "2:53"
+        },
+        {
+          "position": "B5",
+          "title": "Child Of Vision",
+          "duration": "7:12"
+        }
+      ],
+      "coverFile": "2155732894-57c02729.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2155734959,
+      "releaseId": 5976176,
+      "title": "Crime Of The Century",
+      "artist": "Supertramp",
+      "artistSort": "supertramp",
+      "searchText": "crime of the century supertramp",
+      "year": null,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album, Reissue, Stereo",
+      "label": "A&M Records",
+      "catalogNumber": "AMLS 68258",
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Art Rock",
+        "Pop Rock"
+      ],
+      "coverUrl": "https://i.discogs.com/Bltgahb5ZmfcqIWU0Zbbmz6SKqQIWlXUIf0OkoAVN_I/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU5NzYx/NzYtMTcxMzg1ODI5/Mi04MjkwLmpwZWc.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/5976176",
+      "addedAt": "2026-06-16T18:57:19.000Z",
+      "country": "Europe",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "School",
+          "duration": "5:35"
+        },
+        {
+          "position": "A2",
+          "title": "Bloody Well Right",
+          "duration": "4:26"
+        },
+        {
+          "position": "A3",
+          "title": "Hide In Your Shell",
+          "duration": "6:52"
+        },
+        {
+          "position": "A4",
+          "title": "Asylum",
+          "duration": "6:30"
+        },
+        {
+          "position": "B1",
+          "title": "Dreamer",
+          "duration": "3:33"
+        },
+        {
+          "position": "B2",
+          "title": "Rudy",
+          "duration": "7:18"
+        },
+        {
+          "position": "B3",
+          "title": "If Everyone Was Listening",
+          "duration": "4:01"
+        },
+        {
+          "position": "B4",
+          "title": "Crime Of The Century",
+          "duration": "5:30"
+        }
+      ],
+      "coverFile": "2155734959-f79d2fc7.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169414081,
+      "releaseId": 10382943,
+      "title": "Lust For Life",
+      "artist": "Iggy Pop",
+      "artistSort": "iggy pop",
+      "searchText": "lust for life iggy pop",
+      "year": 2017,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album, Reissue, Remastered",
+      "label": "Virgin",
+      "catalogNumber": "B0026275-01",
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Garage Rock",
+        "Punk"
+      ],
+      "coverUrl": "https://i.discogs.com/hTuUM6wOFV_k3OIOZIHsRPHZ1OjxVle0Fzsz8tkSgnI/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMzgy/OTQzLTE0OTY4NTYx/MzQtNTEzNi5qcGVn.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/10382943",
+      "addedAt": "2026-08-01T09:01:33.000Z",
+      "country": "Europe",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Lust For Life",
+          "duration": "5:12"
+        },
+        {
+          "position": "A2",
+          "title": "Sixteen",
+          "duration": "2:23"
+        },
+        {
+          "position": "A3",
+          "title": "Some Weird Sin",
+          "duration": "3:40"
+        },
+        {
+          "position": "A4",
+          "title": "The Passenger",
+          "duration": "4:40"
+        },
+        {
+          "position": "A5",
+          "title": "Tonight",
+          "duration": "3:38"
+        },
+        {
+          "position": "B1",
+          "title": "Success",
+          "duration": "4:23"
+        },
+        {
+          "position": "B2",
+          "title": "Turn Blue",
+          "duration": "6:53"
+        },
+        {
+          "position": "B3",
+          "title": "Neighborhood Threat",
+          "duration": "3:22"
+        },
+        {
+          "position": "B4",
+          "title": "Fall In Love With Me",
+          "duration": "6:30"
+        }
+      ],
+      "coverFile": "2169414081-b1979c22.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169421799,
+      "releaseId": 23723198,
+      "title": "OK Computer",
+      "artist": "Radiohead",
+      "artistSort": "radiohead",
+      "searchText": "ok computer radiohead",
+      "year": 2021,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album, Reissue, Stereo",
+      "label": "XL Recordings",
+      "catalogNumber": "XLLP781",
+      "genres": [
+        "Electronic",
+        "Rock"
+      ],
+      "styles": [
+        "Alternative Rock"
+      ],
+      "coverUrl": "https://i.discogs.com/pfroyXpbmYcY-VAwtehfWCJTkFp846Z83468DHSuckY/rs:fit/g:sm/q:90/h:591/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzNzIz/MTk4LTE3MTkwNzg1/MDktMTM2Mi5qcGVn.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/23723198",
+      "addedAt": "2026-08-01T09:40:17.000Z",
+      "country": "Europe",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Airbag",
+          "duration": "4:44"
+        },
+        {
+          "position": "A2",
+          "title": "Paranoid Android",
+          "duration": "6:23"
+        },
+        {
+          "position": "A3",
+          "title": "Subterranean Homesick Alien",
+          "duration": "4:27"
+        },
+        {
+          "position": "B1",
+          "title": "Exit Music (For A Film)",
+          "duration": "4:24"
+        },
+        {
+          "position": "B2",
+          "title": "Let Down",
+          "duration": "4:59"
+        },
+        {
+          "position": "B3",
+          "title": "Karma Police",
+          "duration": "4:21"
+        },
+        {
+          "position": "C1",
+          "title": "Fitter Happier",
+          "duration": "1:57"
+        },
+        {
+          "position": "C2",
+          "title": "Electioneering",
+          "duration": "3:50"
+        },
+        {
+          "position": "C3",
+          "title": "Climbing Up The Walls",
+          "duration": "4:45"
+        },
+        {
+          "position": "C4",
+          "title": "No Surprises",
+          "duration": "3:48"
+        },
+        {
+          "position": "D1",
+          "title": "Lucky",
+          "duration": "4:19"
+        },
+        {
+          "position": "D2",
+          "title": "The Tourist",
+          "duration": "5:24"
+        }
+      ],
+      "coverFile": "2169421799-fb56c247.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169423014,
+      "releaseId": 22247773,
+      "title": "AM",
+      "artist": "Arctic Monkeys",
+      "artistSort": "arctic monkeys",
+      "searchText": "am arctic monkeys",
+      "year": 2021,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album, Reissue",
+      "label": "Domino",
+      "catalogNumber": "WIGLP317",
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Alternative Rock",
+        "Indie Rock"
+      ],
+      "coverUrl": "https://i.discogs.com/ywG8qE88HyLz0MuktLAcD3XhPQHgBNbEHMG544MH0Sw/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyMjQ3/NzczLTE2NTExNzMx/MjEtMzM3Ny5qcGVn.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/22247773",
+      "addedAt": "2026-08-01T09:46:32.000Z",
+      "country": "Europe",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Do I Wanna Know?",
+          "duration": "4:32"
+        },
+        {
+          "position": "A2",
+          "title": "R U Mine?",
+          "duration": "3:21"
+        },
+        {
+          "position": "A3",
+          "title": "One For The Road",
+          "duration": "3:26"
+        },
+        {
+          "position": "A4",
+          "title": "Arabella",
+          "duration": "3:27"
+        },
+        {
+          "position": "A5",
+          "title": "I Want It All",
+          "duration": "3:05"
+        },
+        {
+          "position": "A6",
+          "title": "No.1 Party Anthem",
+          "duration": "4:03"
+        },
+        {
+          "position": "B1",
+          "title": "Mad Sounds",
+          "duration": "3:25"
+        },
+        {
+          "position": "B2",
+          "title": "Fireside",
+          "duration": "3:01"
+        },
+        {
+          "position": "B3",
+          "title": "Why'd You Only Call Me When You're High?",
+          "duration": "2:41"
+        },
+        {
+          "position": "B4",
+          "title": "Snap Out Of It ",
+          "duration": "3:13"
+        },
+        {
+          "position": "B5",
+          "title": "Knee Socks",
+          "duration": "4:17"
+        },
+        {
+          "position": "B6",
+          "title": "I Wanna Be Yours",
+          "duration": "3:04"
+        }
+      ],
+      "coverFile": "2169423014-1d266cdc.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169447371,
+      "releaseId": 28759786,
+      "title": "Lost In The Waves - The Complete Edition",
+      "artist": "Landmvrks",
+      "artistSort": "landmvrks",
+      "searchText": "lost in the waves - the complete edition landmvrks",
+      "year": 2023,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album, Limited Edition, Stereo",
+      "label": "Arising Empire",
+      "catalogNumber": "none",
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Metalcore"
+      ],
+      "coverUrl": "https://i.discogs.com/BXMzM5eslHgu6Bu0XXu362YH8mxUBZVR5ytjfl5Boe4/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4NzU5/Nzg2LTE3MTIyMzg4/NjAtOTIxNS5qcGVn.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/28759786",
+      "addedAt": "2026-08-01T11:35:50.000Z",
+      "country": "Germany",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Death",
+          "duration": "3:43"
+        },
+        {
+          "position": "A2",
+          "title": "Suffocate",
+          "duration": "3:18"
+        },
+        {
+          "position": "A3",
+          "title": "Self-Made Black Hole ",
+          "duration": "4:14"
+        },
+        {
+          "position": "A4",
+          "title": "Lost in a wave ",
+          "duration": "3:44"
+        },
+        {
+          "position": "A5",
+          "title": "Rainfall ",
+          "duration": "3:14"
+        },
+        {
+          "position": "A6",
+          "title": "Silent",
+          "duration": "3:17"
+        },
+        {
+          "position": "B1",
+          "title": "Visage",
+          "duration": "3:14"
+        },
+        {
+          "position": "B2",
+          "title": "Tired of it all ",
+          "duration": "3:37"
+        },
+        {
+          "position": "B3",
+          "title": "Say no word ",
+          "duration": "2:29"
+        },
+        {
+          "position": "B4",
+          "title": "Always",
+          "duration": "4:14"
+        },
+        {
+          "position": "B5",
+          "title": "Shoreline",
+          "duration": "0:34"
+        },
+        {
+          "position": "B6",
+          "title": "Overrated ",
+          "duration": "3:25"
+        },
+        {
+          "position": "B7",
+          "title": "Paralysed ",
+          "duration": "3:35"
+        },
+        {
+          "position": "C1",
+          "title": "Les vagues - live",
+          "duration": "1:40"
+        },
+        {
+          "position": "C2",
+          "title": "Lost in a wave - live",
+          "duration": "3:45"
+        },
+        {
+          "position": "C3",
+          "title": "Rainfall - live ",
+          "duration": "3:26"
+        },
+        {
+          "position": "C4",
+          "title": "Blistering - live",
+          "duration": "5:04"
+        },
+        {
+          "position": "C5",
+          "title": "Winter - live",
+          "duration": "4:34"
+        },
+        {
+          "position": "D1",
+          "title": "Say no word - live ",
+          "duration": "2:30"
+        },
+        {
+          "position": "D2",
+          "title": "Visage - live ",
+          "duration": "3:10"
+        },
+        {
+          "position": "D3",
+          "title": "Scars - live",
+          "duration": "4:12"
+        },
+        {
+          "position": "D4",
+          "title": "Tired of it all - live ",
+          "duration": "3:38"
+        },
+        {
+          "position": "D5",
+          "title": "Fantasy - live ",
+          "duration": "3:56"
+        }
+      ],
+      "coverFile": "2169447371-1de53acd.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169449406,
+      "releaseId": 7082120,
+      "title": "The Colour And The Shape",
+      "artist": "Foo Fighters",
+      "artistSort": "foo fighters",
+      "searchText": "the colour and the shape foo fighters",
+      "year": 2015,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album, Reissue, Repress",
+      "label": "Roswell Records",
+      "catalogNumber": "88697983221RE1",
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Alternative Rock"
+      ],
+      "coverUrl": "https://i.discogs.com/cGrdge6yF-6Aj8MCf9i_D-kjXTHaLGPLPwMe6-QQ9Kc/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcwODIx/MjAtMTQ2MDU3MTk4/NC01NTE4LmpwZWc.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/7082120",
+      "addedAt": "2026-08-01T11:43:21.000Z",
+      "country": "Europe",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Doll",
+          "duration": "1:23"
+        },
+        {
+          "position": "A2",
+          "title": "Monkey Wrench",
+          "duration": "3:51"
+        },
+        {
+          "position": "A3",
+          "title": "Hey, Johnny Park!",
+          "duration": "4:08"
+        },
+        {
+          "position": "A4",
+          "title": "My Poor Brain",
+          "duration": "3:34"
+        },
+        {
+          "position": "B1",
+          "title": "Wind Up",
+          "duration": "2:31"
+        },
+        {
+          "position": "B2",
+          "title": "Up In Arms",
+          "duration": "2:15"
+        },
+        {
+          "position": "B3",
+          "title": "My Hero",
+          "duration": "4:20"
+        },
+        {
+          "position": "B4",
+          "title": "See You",
+          "duration": "2:27"
+        },
+        {
+          "position": "C1",
+          "title": "Enough Space",
+          "duration": "2:36"
+        },
+        {
+          "position": "C2",
+          "title": "February Stars",
+          "duration": "4:49"
+        },
+        {
+          "position": "C3",
+          "title": "Everlong",
+          "duration": "4:10"
+        },
+        {
+          "position": "D1",
+          "title": "Walking After You",
+          "duration": "5:04"
+        },
+        {
+          "position": "D2",
+          "title": "New Way Home",
+          "duration": "5:40"
+        }
+      ],
+      "coverFile": "2169449406-9740307d.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169450637,
+      "releaseId": 30328208,
+      "title": "Californication",
+      "artist": "Red Hot Chili Peppers",
+      "artistSort": "red hot chili peppers",
+      "searchText": "californication red hot chili peppers",
+      "year": 2023,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album, Reissue",
+      "label": "Warner Records",
+      "catalogNumber": "093624738619",
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Alternative Rock"
+      ],
+      "coverUrl": "https://i.discogs.com/IL5OPPgMHWaNepsZFc1EnNyIEgHPuO2YpKXaKYQcSHM/rs:fit/g:sm/q:90/h:591/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwMzI4/MjA4LTE3MTI0ODI3/MjItNjk3NS5qcGVn.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/30328208",
+      "addedAt": "2026-08-01T11:47:57.000Z",
+      "country": "Europe",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Around The World",
+          "duration": "3:59"
+        },
+        {
+          "position": "A2",
+          "title": "Parallel Universe",
+          "duration": "4:31"
+        },
+        {
+          "position": "A3",
+          "title": "Scar Tissue",
+          "duration": "3:37"
+        },
+        {
+          "position": "A4",
+          "title": "Otherside",
+          "duration": "4:16"
+        },
+        {
+          "position": "B1",
+          "title": "Get On Top",
+          "duration": "3:18"
+        },
+        {
+          "position": "B2",
+          "title": "Californication",
+          "duration": "5:21"
+        },
+        {
+          "position": "B3",
+          "title": "Easily",
+          "duration": "3:51"
+        },
+        {
+          "position": "C1",
+          "title": "Porcelain",
+          "duration": "2:44"
+        },
+        {
+          "position": "C2",
+          "title": "Emit Remmus",
+          "duration": "4:00"
+        },
+        {
+          "position": "C3",
+          "title": "I Like Dirt",
+          "duration": "2:37"
+        },
+        {
+          "position": "C4",
+          "title": "This Velvet Glove",
+          "duration": "3:45"
+        },
+        {
+          "position": "D1",
+          "title": "Savior",
+          "duration": "4:52"
+        },
+        {
+          "position": "D2",
+          "title": "Purple Stain",
+          "duration": "4:13"
+        },
+        {
+          "position": "D3",
+          "title": "Right On Time",
+          "duration": "1:53"
+        },
+        {
+          "position": "D4",
+          "title": "Road Trippin'",
+          "duration": "3:26"
+        }
+      ],
+      "coverFile": "2169450637-7093f384.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169452612,
+      "releaseId": 32299247,
+      "title": "From Zero",
+      "artist": "Linkin Park",
+      "artistSort": "linkin park",
+      "searchText": "from zero linkin park",
+      "year": 2024,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album, Limited Edition, Stereo",
+      "label": "Warner Records",
+      "catalogNumber": "093624839880",
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Alternative Rock",
+        "Nu Metal"
+      ],
+      "coverUrl": "https://i.discogs.com/8TdUpdnXn2ra7zl47RwItAbwQB0kKE3a39GhV8ralf8/rs:fit/g:sm/q:90/h:591/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyMjk5/MjQ3LTE3MzE4NzAz/NzUtODUyMi5qcGVn.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/32299247",
+      "addedAt": "2026-08-01T11:55:46.000Z",
+      "country": "UK & US",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "From Zero (Intro)",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "The Emptiness Machine",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Cut The Bridge",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "Heavy Is The Crown",
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "title": "Over Each Other",
+          "duration": ""
+        },
+        {
+          "position": "A6",
+          "title": "Casualty",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "Overflow",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Two Faced",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "Stained",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "IGYEIH",
+          "duration": ""
+        },
+        {
+          "position": "B5",
+          "title": "Good Things Go",
+          "duration": ""
+        }
+      ],
+      "coverFile": "2169452612-65ab7785.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169454141,
+      "releaseId": 27031743,
+      "title": "Random Access Memories (10th Anniversary Edition)",
+      "artist": "Daft Punk",
+      "artistSort": "daft punk",
+      "searchText": "random access memories (10th anniversary edition) daft punk",
+      "year": 2023,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album, Reissue, Stereo",
+      "label": "Columbia",
+      "catalogNumber": "19658773731",
+      "genres": [
+        "Electronic",
+        "Funk / Soul",
+        "Pop"
+      ],
+      "styles": [
+        "Electro",
+        "Disco",
+        "Funk",
+        "Synth-pop"
+      ],
+      "coverUrl": "https://i.discogs.com/f8_B05PM2c1GRREU9cQNr1pYBr2C_7qmvVhLM48NYXo/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI3MDMx/NzQzLTE2ODM5Nzk2/MjEtMzE1My5qcGVn.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/27031743",
+      "addedAt": "2026-08-01T12:01:40.000Z",
+      "country": "Worldwide",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Give Life Back To Music",
+          "duration": "4:35"
+        },
+        {
+          "position": "A2",
+          "title": "The Game Of Love",
+          "duration": "5:22"
+        },
+        {
+          "position": "A3",
+          "title": "Giorgio By Moroder",
+          "duration": "9:04"
+        },
+        {
+          "position": "B1",
+          "title": "Within",
+          "duration": "3:48"
+        },
+        {
+          "position": "B2",
+          "title": "Instant Crush",
+          "duration": "5:37"
+        },
+        {
+          "position": "B3",
+          "title": "Lose Yourself To Dance",
+          "duration": "5:53"
+        },
+        {
+          "position": "C1",
+          "title": "Touch",
+          "duration": "8:18"
+        },
+        {
+          "position": "C2",
+          "title": "Get Lucky",
+          "duration": "6:09"
+        },
+        {
+          "position": "C3",
+          "title": "Beyond",
+          "duration": "4:50"
+        },
+        {
+          "position": "D1",
+          "title": "Motherboard",
+          "duration": "5:41"
+        },
+        {
+          "position": "D2",
+          "title": "Fragments Of Time",
+          "duration": "4:39"
+        },
+        {
+          "position": "D3",
+          "title": "Doin’ It Right",
+          "duration": "4:11"
+        },
+        {
+          "position": "D4",
+          "title": "Contact",
+          "duration": "6:23"
+        },
+        {
+          "position": "E1",
+          "title": "Horizon Ouverture",
+          "duration": "2:08"
+        },
+        {
+          "position": "E2",
+          "title": "Horizon (Japan CD)",
+          "duration": "4:23"
+        },
+        {
+          "position": "E3",
+          "title": "GLBTM (Studio Outtakes)",
+          "duration": "6:22"
+        },
+        {
+          "position": "E4",
+          "title": "Infinity Repeating (2013 Demo)",
+          "duration": "3:59"
+        },
+        {
+          "position": "E5",
+          "title": "GL (Early Take)",
+          "duration": "0:33"
+        },
+        {
+          "position": "F1",
+          "title": "Prime (2012 Unfinished)",
+          "duration": "4:46"
+        },
+        {
+          "position": "F2",
+          "title": "LYTD (Vocoder Tests)",
+          "duration": "2:08"
+        },
+        {
+          "position": "F3",
+          "title": "The Writing Of Fragments Of Time",
+          "duration": "8:17"
+        },
+        {
+          "position": "F4",
+          "title": "Touch (2021 Epilogue)",
+          "duration": "3:00"
+        }
+      ],
+      "coverFile": "2169454141-ab31f583.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169454284,
+      "releaseId": 28784020,
+      "title": "Kill 'Em All",
+      "artist": "Metallica",
+      "artistSort": "metallica",
+      "searchText": "kill 'em all metallica",
+      "year": 2023,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album, Limited Edition, Reissue, Remastered, Repress",
+      "label": "Blackened",
+      "catalogNumber": "BLCKND003R-1U",
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Thrash",
+        "Speed Metal"
+      ],
+      "coverUrl": "https://i.discogs.com/MII9hX6N15fHbyYn5EOVj5lesaHh3oVMLQopMtjgavI/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4Nzg0/MDIwLTE2OTkwMDkw/MjEtNDk2Ny5qcGVn.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/28784020",
+      "addedAt": "2026-08-01T12:02:15.000Z",
+      "country": "Europe",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Hit The Lights",
+          "duration": "4:17"
+        },
+        {
+          "position": "A2",
+          "title": "The Four Horsemen",
+          "duration": "7:08"
+        },
+        {
+          "position": "A3",
+          "title": "Motorbreath",
+          "duration": "3:03"
+        },
+        {
+          "position": "A4",
+          "title": "Jump In The Fire",
+          "duration": "4:50"
+        },
+        {
+          "position": "A5",
+          "title": "(Anesthesia)-Pulling Teeth",
+          "duration": "3:27"
+        },
+        {
+          "position": "A6",
+          "title": "Whiplash",
+          "duration": "4:06"
+        },
+        {
+          "position": "B1",
+          "title": "Phantom Lord",
+          "duration": "4:52"
+        },
+        {
+          "position": "B2",
+          "title": "No Remorse",
+          "duration": "6:24"
+        },
+        {
+          "position": "B3",
+          "title": "Seek & Destroy",
+          "duration": "6:50"
+        },
+        {
+          "position": "B4",
+          "title": "Metal Militia",
+          "duration": "6:06"
+        }
+      ],
+      "coverFile": "2169454284-288d6119.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169454970,
+      "releaseId": 11150792,
+      "title": "Greatest Hits: God's Favorite Band",
+      "artist": "Green Day",
+      "artistSort": "green day",
+      "searchText": "greatest hits: god's favorite band green day",
+      "year": 2017,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Compilation, Stereo",
+      "label": "Reprise Records",
+      "catalogNumber": "564901-1",
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Pop Punk",
+        "Power Pop"
+      ],
+      "coverUrl": "https://i.discogs.com/Pss7s4iQnom5h7W1pLA-9Nm2zSVWsc2Yt3x-Xlu0Wlc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMTUw/NzkyLTE1MjEyMDA4/NDQtNTU1NS5qcGVn.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/11150792",
+      "addedAt": "2026-08-01T12:04:59.000Z",
+      "country": "USA & Europe",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "2000 Light Years Away",
+          "duration": "2:24"
+        },
+        {
+          "position": "A2",
+          "title": "Longview",
+          "duration": "3:59"
+        },
+        {
+          "position": "A3",
+          "title": "Welcome To Paradise",
+          "duration": "3:44"
+        },
+        {
+          "position": "A4",
+          "title": "Basket Case",
+          "duration": "3:03"
+        },
+        {
+          "position": "A5",
+          "title": "When I Come Around",
+          "duration": "2:58"
+        },
+        {
+          "position": "A6",
+          "title": "She",
+          "duration": "2:14"
+        },
+        {
+          "position": "B1",
+          "title": "Brain Stew",
+          "duration": "3:12"
+        },
+        {
+          "position": "B2",
+          "title": "Hitchin' A Ride",
+          "duration": "2:51"
+        },
+        {
+          "position": "B3",
+          "title": "Good Riddance (Time Of Your Life)",
+          "duration": "2:34"
+        },
+        {
+          "position": "B4",
+          "title": "Minority",
+          "duration": "2:49"
+        },
+        {
+          "position": "B5",
+          "title": "Warning",
+          "duration": "3:42"
+        },
+        {
+          "position": "B6",
+          "title": "American Idiot",
+          "duration": "2:54"
+        },
+        {
+          "position": "C1",
+          "title": "Holiday",
+          "duration": "3:52"
+        },
+        {
+          "position": "C2",
+          "title": "Boulevard Of Broken Dreams",
+          "duration": "4:20"
+        },
+        {
+          "position": "C3",
+          "title": "Wake Me Up When September Ends",
+          "duration": "4:45"
+        },
+        {
+          "position": "C4",
+          "title": "Know Your Enemy",
+          "duration": "3:10"
+        },
+        {
+          "position": "C5",
+          "title": "21 Guns",
+          "duration": "5:21"
+        },
+        {
+          "position": "D1",
+          "title": "Oh Love",
+          "duration": "5:03"
+        },
+        {
+          "position": "D2",
+          "title": "Bang Bang",
+          "duration": "3:24"
+        },
+        {
+          "position": "D3",
+          "title": "Still Breathing",
+          "duration": "3:44"
+        },
+        {
+          "position": "D4",
+          "title": "Ordinary World",
+          "duration": "3:02"
+        },
+        {
+          "position": "D5",
+          "title": "Back In The USA",
+          "duration": "2:36"
+        }
+      ],
+      "coverFile": "2169454970-95d265a4.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169456233,
+      "releaseId": 18518461,
+      "title": "Elvis As Recorded At Madison Square Garden",
+      "artist": "Elvis Presley",
+      "artistSort": "elvis presley",
+      "searchText": "elvis as recorded at madison square garden elvis presley",
+      "year": 1972,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album, Stereo",
+      "label": "RCA Victor",
+      "catalogNumber": "443.045",
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Rock & Roll",
+        "Pop Rock"
+      ],
+      "coverUrl": "https://i.discogs.com/6s9Qoq11t24xp8aB0ekJ_JgOz0QTlyfNzwUJGTN6scw/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4NTE4/NDYxLTE2MjA4MTE4/MDMtMzI2OC5qcGVn.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/18518461",
+      "addedAt": "2026-08-01T12:09:56.000Z",
+      "country": "France",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Introduction: Also Sprach Zarathustra (Theme From 2001: A Space Odyssey)",
+          "duration": "0:57"
+        },
+        {
+          "position": "A2",
+          "title": "That's All Right",
+          "duration": "2:07"
+        },
+        {
+          "position": "A3",
+          "title": "Proud Mary",
+          "duration": "2:33"
+        },
+        {
+          "position": "A4",
+          "title": "Never Been To Spain",
+          "duration": "3:23"
+        },
+        {
+          "position": "A5",
+          "title": "You Don't Have To Say You Love Me",
+          "duration": "1:57"
+        },
+        {
+          "position": "A6",
+          "title": "You've Lost That Lovin' Feelin'",
+          "duration": "4:08"
+        },
+        {
+          "position": "A7",
+          "title": "Polk Salad Annie",
+          "duration": "2:46"
+        },
+        {
+          "position": "A8",
+          "title": "Love Me",
+          "duration": "1:37"
+        },
+        {
+          "position": "A9",
+          "title": "All Shook Up",
+          "duration": "0:56"
+        },
+        {
+          "position": "A10",
+          "title": "Heartbreak Hotel",
+          "duration": "1:42"
+        },
+        {
+          "position": "A12",
+          "title": "Love Me Tender",
+          "duration": "1:36"
+        },
+        {
+          "position": "B1",
+          "title": "The Impossible Dream",
+          "duration": "2:23"
+        },
+        {
+          "position": "B2",
+          "title": "Introductions By Elvis",
+          "duration": "1:39"
+        },
+        {
+          "position": "B3",
+          "title": "Hound Dog",
+          "duration": "1:17"
+        },
+        {
+          "position": "B4",
+          "title": "Suspicious Minds",
+          "duration": "4:04"
+        },
+        {
+          "position": "B5",
+          "title": "For The Good Times",
+          "duration": "3:00"
+        },
+        {
+          "position": "B6",
+          "title": "American Trilogy",
+          "duration": "4:01"
+        },
+        {
+          "position": "B7",
+          "title": "Funny How Time Slips Away",
+          "duration": "2:40"
+        },
+        {
+          "position": "B8",
+          "title": "I Can't Stop Loving You",
+          "duration": "2:36"
+        },
+        {
+          "position": "B9",
+          "title": "Can't Help Falling In Love",
+          "duration": "1:42"
+        }
+      ],
+      "coverFile": "2169456233-1a37dafa.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169456870,
+      "releaseId": 33342842,
+      "title": "Iowa",
+      "artist": "Slipknot",
+      "artistSort": "slipknot",
+      "searchText": "iowa slipknot",
+      "year": 2022,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album, Limited Edition, Reissue, Unofficial Release",
+      "label": "Roadrunner Records",
+      "catalogNumber": "12 085641",
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Nu Metal"
+      ],
+      "coverUrl": "https://i.discogs.com/bUJGyjYbc_3DznL63e6eunQQbjPuXKAapKOn7bM58j8/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzMzQy/ODQyLTE3NDEzOTE0/NDMtMTgwOS5qcGVn.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/33342842",
+      "addedAt": "2026-08-01T12:12:37.000Z",
+      "country": "US",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "(515)",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "People = Shit",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Disasterpiece",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "My Plague",
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "title": "Everything Ends",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "The Heretic Anthem",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Gently",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "Left Behind",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "The Shape",
+          "duration": ""
+        },
+        {
+          "position": "C1",
+          "title": "I Am Hated",
+          "duration": ""
+        },
+        {
+          "position": "C2",
+          "title": "Skin Ticket",
+          "duration": ""
+        },
+        {
+          "position": "C3",
+          "title": "New Abortion",
+          "duration": ""
+        },
+        {
+          "position": "C4",
+          "title": "Metabolic",
+          "duration": ""
+        },
+        {
+          "position": "D",
+          "title": "Iowa",
+          "duration": ""
+        }
+      ],
+      "coverFile": "2169456870-0e0e40d5.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169457685,
+      "releaseId": 5639456,
+      "title": "Louise Attaque",
+      "artist": "Louise Attaque",
+      "artistSort": "louise attaque",
+      "searchText": "louise attaque louise attaque",
+      "year": 2014,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album, Reissue",
+      "label": "Barclay",
+      "catalogNumber": "067 507 1",
+      "genres": [
+        "Rock",
+        "Folk, World, & Country"
+      ],
+      "styles": [
+        "Pop Rock"
+      ],
+      "coverUrl": "https://i.discogs.com/WwGQ9u5qXBH7SP5TPKtZvikieQ2PaikGpk9i_itOaUE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU2Mzk0/NTYtMTM5ODY3MjEy/NC00MjA1LmpwZWc.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/5639456",
+      "addedAt": "2026-08-01T12:15:55.000Z",
+      "country": "France",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Amours",
+          "duration": "1:56"
+        },
+        {
+          "position": "A2",
+          "title": "J't'emmène Au Vent",
+          "duration": "3:05"
+        },
+        {
+          "position": "A3",
+          "title": "Ton Invitation",
+          "duration": "2:39"
+        },
+        {
+          "position": "A4",
+          "title": "La Brune",
+          "duration": "1:55"
+        },
+        {
+          "position": "A5",
+          "title": "Les Nuits Parisiennes",
+          "duration": "2:32"
+        },
+        {
+          "position": "A6",
+          "title": "L'Imposture",
+          "duration": "2:24"
+        },
+        {
+          "position": "A7",
+          "title": "Savoir",
+          "duration": "1:46"
+        },
+        {
+          "position": "A8",
+          "title": "Arrache-Moi",
+          "duration": "2:01"
+        },
+        {
+          "position": "B1",
+          "title": "Léa",
+          "duration": "3:18"
+        },
+        {
+          "position": "B2",
+          "title": "Fatigante",
+          "duration": "2:51"
+        },
+        {
+          "position": "B3",
+          "title": "Tes Yeux Se Moquent",
+          "duration": "3:09"
+        },
+        {
+          "position": "B4",
+          "title": "Vous Avez L'Heure",
+          "duration": "2:26"
+        },
+        {
+          "position": "B5",
+          "title": "Toute Cette Histoire",
+          "duration": "5:27"
+        },
+        {
+          "position": "B6",
+          "title": "Cracher Nos Souhaits",
+          "duration": "3:26"
+        }
+      ],
+      "coverFile": "2169457685-31e40e52.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169458231,
+      "releaseId": 25600777,
+      "title": "Songs For The Deaf",
+      "artist": "Queens Of The Stone Age",
+      "artistSort": "queens of the stone age",
+      "searchText": "songs for the deaf queens of the stone age",
+      "year": 2022,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album, Reissue",
+      "label": "Interscope Records",
+      "catalogNumber": "00602508108587",
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Stoner Rock",
+        "Hard Rock"
+      ],
+      "coverUrl": "https://i.discogs.com/u3-u_Cv6SZVIhOyofct2Dq5okuVXOrrz_Gv19VIlTR8/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1NjAw/Nzc3LTE2ODAwNjMw/NjMtNzMyOC5qcGVn.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/25600777",
+      "addedAt": "2026-08-01T12:18:02.000Z",
+      "country": "Europe",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "You Think I Ain't Worth A Dollar, But I Feel Like A Millionaire",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "No One Knows",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "First It Giveth",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "Song For The Dead",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "The Sky Is Fallin'",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Six Shooter",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "Hanging Tree",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "Go With The Flow",
+          "duration": ""
+        },
+        {
+          "position": "B5",
+          "title": "Gonna Leave You",
+          "duration": ""
+        },
+        {
+          "position": "C1",
+          "title": "Do It Again",
+          "duration": ""
+        },
+        {
+          "position": "C2",
+          "title": "God Is In The Radio",
+          "duration": ""
+        },
+        {
+          "position": "C3",
+          "title": "Another Love Song",
+          "duration": ""
+        },
+        {
+          "position": "D1",
+          "title": "Song For The Deaf",
+          "duration": ""
+        },
+        {
+          "position": "D2",
+          "title": "Mosquito Song",
+          "duration": ""
+        }
+      ],
+      "coverFile": "2169458231-19a2d357.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169458455,
+      "releaseId": 28447540,
+      "title": "En Public",
+      "artist": "Noir Désir",
+      "artistSort": "noir désir",
+      "searchText": "en public noir désir",
+      "year": 2023,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album, Reissue, Remastered",
+      "label": "Universal Music France",
+      "catalogNumber": "539 601 2",
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Alternative Rock"
+      ],
+      "coverUrl": "https://i.discogs.com/V7l4aoCgLHUD9eJwFtUn9qRgRQVfASneUgtk776MG3E/rs:fit/g:sm/q:90/h:600/w:591/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4NDQ3/NTQwLTE2OTYwMTAy/NDgtNjk1Ny5qcGVn.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/28447540",
+      "addedAt": "2026-08-01T12:18:48.000Z",
+      "country": "France",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Si Rien Ne Bouge",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Septembre En Attendant",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "One Trip One Noise",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "À L'envers",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Les Écorchés",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "Le Grand Incendie",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "Le Fleuve",
+          "duration": ""
+        },
+        {
+          "position": "C1",
+          "title": "La Chaleur",
+          "duration": ""
+        },
+        {
+          "position": "C2",
+          "title": "Des Armes",
+          "duration": ""
+        },
+        {
+          "position": "C3",
+          "title": "Ernestine",
+          "duration": ""
+        },
+        {
+          "position": "C4",
+          "title": "Tostaky",
+          "duration": ""
+        },
+        {
+          "position": "C5",
+          "title": "Aux Sombres Héros de L'amer",
+          "duration": ""
+        },
+        {
+          "position": "D1",
+          "title": "Lazy",
+          "duration": ""
+        },
+        {
+          "position": "D2",
+          "title": "Pyromane",
+          "duration": ""
+        },
+        {
+          "position": "D3",
+          "title": "À L'arrière Des Taxis",
+          "duration": ""
+        },
+        {
+          "position": "D4",
+          "title": "Lolita Nie En Bloc",
+          "duration": ""
+        },
+        {
+          "position": "E1",
+          "title": "L'homme Pressé",
+          "duration": ""
+        },
+        {
+          "position": "E2",
+          "title": "Des Visages Des Figures",
+          "duration": ""
+        },
+        {
+          "position": "E3",
+          "title": "Bouquets de Nerfs",
+          "duration": ""
+        },
+        {
+          "position": "E4",
+          "title": "Le Vent Nous Portera",
+          "duration": ""
+        },
+        {
+          "position": "E5",
+          "title": "Comme Elle Vient",
+          "duration": ""
+        },
+        {
+          "position": "F1",
+          "title": "Ces Gens-Là",
+          "duration": ""
+        },
+        {
+          "position": "F2",
+          "title": "À Ton Etoile",
+          "duration": ""
+        },
+        {
+          "position": "F3",
+          "title": "Ce N'est Pas Moi Qui Clame",
+          "duration": ""
+        }
+      ],
+      "coverFile": "2169458455-a4610b4e.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169459547,
+      "releaseId": 910326,
+      "title": "Magical Mystery Tour Plus Other Songs",
+      "artist": "The Beatles",
+      "artistSort": "beatles",
+      "searchText": "magical mystery tour plus other songs the beatles",
+      "year": 1976,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Repress, Compilation",
+      "label": "Apple Records",
+      "catalogNumber": "1C 062-04 449",
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Pop Rock",
+        "Psychedelic Rock"
+      ],
+      "coverUrl": "https://i.discogs.com/sVOfNe7rxYFhWnaVo7oMRpWeJEZHNw4ll6LDiYRKXxQ/rs:fit/g:sm/q:90/h:591/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkxMDMy/Ni0xNzYyMjgwNjcy/LTI4NTcuanBlZw.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/910326",
+      "addedAt": "2026-08-01T12:22:30.000Z",
+      "country": "Germany",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Magical Mystery Tour",
+          "duration": "2:46"
+        },
+        {
+          "position": "A2",
+          "title": "The Fool On The Hill",
+          "duration": "2:55"
+        },
+        {
+          "position": "A3",
+          "title": "Flying",
+          "duration": "2:11"
+        },
+        {
+          "position": "A4",
+          "title": "Blue Jay Way",
+          "duration": "3:51"
+        },
+        {
+          "position": "A5",
+          "title": "Your Mother Should Know",
+          "duration": "2:24"
+        },
+        {
+          "position": "A6",
+          "title": "I Am The Walrus (\"No You're Not!\" Said Little Nicola)",
+          "duration": "4:33"
+        },
+        {
+          "position": "B1",
+          "title": "Hello Goodbye",
+          "duration": "3:25"
+        },
+        {
+          "position": "B2",
+          "title": "Strawberry Fields Forever",
+          "duration": "4:04"
+        },
+        {
+          "position": "B3",
+          "title": "Penny Lane",
+          "duration": "2:57"
+        },
+        {
+          "position": "B4",
+          "title": "Baby You're A Rich Man",
+          "duration": "3:03"
+        },
+        {
+          "position": "B5",
+          "title": "All You Need Is Love",
+          "duration": "3:58"
+        }
+      ],
+      "coverFile": "2169459547-5d25407a.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169460276,
+      "releaseId": 24900935,
+      "title": "(Pronounced 'Lĕh-'nérd 'Skin-'nérd)",
+      "artist": "Lynyrd Skynyrd",
+      "artistSort": "lynyrd skynyrd",
+      "searchText": "(pronounced 'lĕh-'nérd 'skin-'nérd) lynyrd skynyrd",
+      "year": 2022,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album, Reissue",
+      "label": "Geffen Records",
+      "catalogNumber": "5355016",
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Southern Rock",
+        "Blues Rock",
+        "Hard Rock"
+      ],
+      "coverUrl": "https://i.discogs.com/HjlzPqYcxUDZUSJBCxp_nf2aWL3YSddKv94Gsu4isoY/rs:fit/g:sm/q:90/h:600/w:590/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0OTAw/OTM1LTE2Nzg2NjI0/MDQtNTkxNi5qcGVn.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/24900935",
+      "addedAt": "2026-08-01T12:25:04.000Z",
+      "country": "USA & Europe",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "I Aint the One",
+          "duration": "3:51"
+        },
+        {
+          "position": "A2",
+          "title": "Tuesday's Gone",
+          "duration": "7:32"
+        },
+        {
+          "position": "A3",
+          "title": "Gimme Three Steps",
+          "duration": "4:30"
+        },
+        {
+          "position": "A4",
+          "title": "Simple Man",
+          "duration": "5:57"
+        },
+        {
+          "position": "B1",
+          "title": "Things Goin' On",
+          "duration": "4:57"
+        },
+        {
+          "position": "B2",
+          "title": "Mississippi Kid",
+          "duration": "3:57"
+        },
+        {
+          "position": "B3",
+          "title": "Poison Whiskey",
+          "duration": "3:11"
+        },
+        {
+          "position": "B4",
+          "title": "Free Bird",
+          "duration": "9:08"
+        }
+      ],
+      "coverFile": "2169460276-f0c26335.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169460657,
+      "releaseId": 28205623,
+      "title": "Meteora",
+      "artist": "Linkin Park",
+      "artistSort": "linkin park",
+      "searchText": "meteora linkin park",
+      "year": 2023,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album, Reissue",
+      "label": "Warner Records",
+      "catalogNumber": "093624853343",
+      "genres": [
+        "Hip Hop",
+        "Rock"
+      ],
+      "styles": [
+        "Alternative Metal",
+        "Alternative Rock",
+        "Emo",
+        "Nu Metal",
+        "Pop Rock"
+      ],
+      "coverUrl": "https://i.discogs.com/kmpVtKNbN0voyWFyLD2eHK30h1To98_NoTbJ5jp1i-E/rs:fit/g:sm/q:90/h:600/w:591/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4MjA1/NjIzLTE3MDQyMTI1/ODctNjA0Mi5qcGVn.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/28205623",
+      "addedAt": "2026-08-01T12:26:28.000Z",
+      "country": "Europe",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Foreword",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Don't Stay",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Somewhere I Belong",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "Lying From You",
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "title": "Hit The Floor",
+          "duration": ""
+        },
+        {
+          "position": "A6",
+          "title": "Easier To Run",
+          "duration": ""
+        },
+        {
+          "position": "A7",
+          "title": "Faint",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "Figure.09",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Breaking The Habit",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "From The Inside",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "Nobody's Listening",
+          "duration": ""
+        },
+        {
+          "position": "B5",
+          "title": "Session",
+          "duration": ""
+        },
+        {
+          "position": "B6",
+          "title": "Numb",
+          "duration": ""
+        }
+      ],
+      "coverFile": "2169460657-2e544701.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169461742,
+      "releaseId": 9096150,
+      "title": "Marche Ou Crève",
+      "artist": "Trust",
+      "artistSort": "trust",
+      "searchText": "marche ou crève trust",
+      "year": 1981,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album",
+      "label": "Epic",
+      "catalogNumber": "EPC 85238",
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Hard Rock"
+      ],
+      "coverUrl": "https://i.discogs.com/zDW6Sy3kXkKNKJXHLUOaoIf322KlTPO9ye3ZRtXj7Ok/rs:fit/g:sm/q:90/h:586/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkwOTYx/NTAtMTQ3NDcxNDU4/OC01MDI0LmpwZWc.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/9096150",
+      "addedAt": "2026-08-01T12:30:44.000Z",
+      "country": "France",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "La Grande Illusion",
+          "duration": "5:45"
+        },
+        {
+          "position": "A2",
+          "title": "Le Sauvage",
+          "duration": "3:52"
+        },
+        {
+          "position": "A3",
+          "title": "Répression",
+          "duration": "3:57"
+        },
+        {
+          "position": "A4",
+          "title": "La Junte",
+          "duration": "4:50"
+        },
+        {
+          "position": "A5",
+          "title": "Misère",
+          "duration": "3:00"
+        },
+        {
+          "position": "B1",
+          "title": "Les Brutes",
+          "duration": "5:50"
+        },
+        {
+          "position": "B2",
+          "title": "Certitude... Solitude...",
+          "duration": "4:00"
+        },
+        {
+          "position": "B3",
+          "title": "Marche Ou Crève",
+          "duration": "3:56"
+        },
+        {
+          "position": "B4",
+          "title": "Les Templiers",
+          "duration": "3:12"
+        },
+        {
+          "position": "B5",
+          "title": "Ton Dernier Acte",
+          "duration": "5:12"
+        }
+      ],
+      "coverFile": "2169461742-5e88e4e5.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169463670,
+      "releaseId": 14820313,
+      "title": "Hybrid Theory",
+      "artist": "Linkin Park",
+      "artistSort": "linkin park",
+      "searchText": "hybrid theory linkin park",
+      "year": 2020,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album, Reissue",
+      "label": "Warner Records",
+      "catalogNumber": "093624941422",
+      "genres": [
+        "Hip Hop",
+        "Rock"
+      ],
+      "styles": [
+        "Nu Metal",
+        "Alternative Rock"
+      ],
+      "coverUrl": "https://i.discogs.com/IxtYuVyECCK6SaPyv0WolhIQbhDoDFps5SnF7gqF3Cs/rs:fit/g:sm/q:90/h:589/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0ODIw/MzEzLTE1OTA4NTM0/NjMtODQ3OS5wbmc.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/14820313",
+      "addedAt": "2026-08-01T12:38:14.000Z",
+      "country": "Europe",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Papercut",
+          "duration": "3:05"
+        },
+        {
+          "position": "A2",
+          "title": "One Step Closer",
+          "duration": "2:37"
+        },
+        {
+          "position": "A3",
+          "title": "With You",
+          "duration": "3:23"
+        },
+        {
+          "position": "A4",
+          "title": "Points Of Authority",
+          "duration": "3:20"
+        },
+        {
+          "position": "A5",
+          "title": "Crawling",
+          "duration": "3:29"
+        },
+        {
+          "position": "A6",
+          "title": "Runaway",
+          "duration": "3:04"
+        },
+        {
+          "position": "B1",
+          "title": "By Myself",
+          "duration": "3:10"
+        },
+        {
+          "position": "B2",
+          "title": "In The End",
+          "duration": "3:36"
+        },
+        {
+          "position": "B3",
+          "title": "A Place For My Head",
+          "duration": "3:05"
+        },
+        {
+          "position": "B4",
+          "title": "Forgotten",
+          "duration": "3:14"
+        },
+        {
+          "position": "B5",
+          "title": "Cure For The Itch",
+          "duration": "2:37"
+        },
+        {
+          "position": "B6",
+          "title": "Pushing Me Away",
+          "duration": "3:11"
+        }
+      ],
+      "coverFile": "2169463670-805964d0.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169464585,
+      "releaseId": 11400290,
+      "title": "MTV Unplugged In New York",
+      "artist": "Nirvana",
+      "artistSort": "nirvana",
+      "searchText": "mtv unplugged in new york nirvana",
+      "year": 2017,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album, Reissue, Remastered, Repress",
+      "label": "Geffen Records",
+      "catalogNumber": "0720642472712",
+      "genres": [
+        "Rock",
+        "Blues"
+      ],
+      "styles": [
+        "Acoustic",
+        "Grunge"
+      ],
+      "coverUrl": "https://i.discogs.com/GCNPRSAsHiTRxtsZj1uTFk48NDTNSh3DRt7YrpHUmMc/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNDAw/MjkwLTE1NTE1ODQ1/MzEtODczNi5qcGVn.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/11400290",
+      "addedAt": "2026-08-01T12:41:46.000Z",
+      "country": "Europe",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "About A Girl",
+          "duration": "3:37"
+        },
+        {
+          "position": "A2",
+          "title": "Come As You Are",
+          "duration": "4:14"
+        },
+        {
+          "position": "A3",
+          "title": "Jesus Doesn't Want Me For A Sunbeam",
+          "duration": "4:37"
+        },
+        {
+          "position": "A4",
+          "title": "The Man Who Sold The World",
+          "duration": "4:20"
+        },
+        {
+          "position": "A5",
+          "title": "Pennyroyal Tea",
+          "duration": "3:40"
+        },
+        {
+          "position": "A6",
+          "title": "Dumb",
+          "duration": "2:52"
+        },
+        {
+          "position": "A7",
+          "title": "Polly",
+          "duration": "3:16"
+        },
+        {
+          "position": "B1",
+          "title": "On A Plain",
+          "duration": "3:44"
+        },
+        {
+          "position": "B2",
+          "title": "Something In The Way",
+          "duration": "4:01"
+        },
+        {
+          "position": "B3",
+          "title": "Plateau",
+          "duration": "3:38"
+        },
+        {
+          "position": "B4",
+          "title": "Oh Me",
+          "duration": "3:26"
+        },
+        {
+          "position": "B5",
+          "title": "Lake Of Fire",
+          "duration": "2:55"
+        },
+        {
+          "position": "B6",
+          "title": "All Apologies",
+          "duration": "4:23"
+        },
+        {
+          "position": "B7",
+          "title": "Where Did You Sleep Last Night",
+          "duration": "5:07"
+        }
+      ],
+      "coverFile": "2169464585-b8ba6aaa.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169465090,
+      "releaseId": 7097051,
+      "title": "Nevermind",
+      "artist": "Nirvana",
+      "artistSort": "nirvana",
+      "searchText": "nevermind nirvana",
+      "year": 2015,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album, Reissue, Repress",
+      "label": "DGC",
+      "catalogNumber": "424 425-1",
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Alternative Rock",
+        "Grunge"
+      ],
+      "coverUrl": "https://i.discogs.com/uCeQtLv9OSNjC5_AjarCojZNepI9vqcnYeqsImnzXyg/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcwOTcw/NTEtMTU1NjQ0NDE4/MC03NTA1LmpwZWc.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/7097051",
+      "addedAt": "2026-08-01T12:43:40.000Z",
+      "country": "Europe",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Smells Like Teen Spirit",
+          "duration": "5:00"
+        },
+        {
+          "position": "A2",
+          "title": "In Bloom",
+          "duration": "4:13"
+        },
+        {
+          "position": "A3",
+          "title": "Come As You Are",
+          "duration": "3:38"
+        },
+        {
+          "position": "A4",
+          "title": "Breed",
+          "duration": "3:03"
+        },
+        {
+          "position": "A5",
+          "title": "Lithium",
+          "duration": "4:16"
+        },
+        {
+          "position": "A6",
+          "title": "Polly",
+          "duration": "2:56"
+        },
+        {
+          "position": "B1",
+          "title": "Territorial Pissings",
+          "duration": "2:22"
+        },
+        {
+          "position": "B2",
+          "title": "Drain You",
+          "duration": "3:43"
+        },
+        {
+          "position": "B3",
+          "title": "Lounge Act",
+          "duration": "2:35"
+        },
+        {
+          "position": "B4",
+          "title": "Stay Away",
+          "duration": "3:30"
+        },
+        {
+          "position": "B5",
+          "title": "On A Plain",
+          "duration": "3:12"
+        },
+        {
+          "position": "B6",
+          "title": "Something In The Way",
+          "duration": "3:43"
+        }
+      ],
+      "coverFile": "2169465090-70829637.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169466641,
+      "releaseId": 764910,
+      "title": "Hotel California",
+      "artist": "Eagles",
+      "artistSort": "eagles",
+      "searchText": "hotel california eagles",
+      "year": 1976,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album, Stereo",
+      "label": "Asylum Records",
+      "catalogNumber": "53 051",
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Classic Rock",
+        "Country Rock"
+      ],
+      "coverUrl": "https://i.discogs.com/D-Yif--Zbu0QaoAmUCjQMRIiu78VN4OBmCv7SoaIffI/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc2NDkx/MC0xNzIyMDc2Njkx/LTM0ODMuanBlZw.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/764910",
+      "addedAt": "2026-08-01T12:49:31.000Z",
+      "country": "France",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Hotel California",
+          "duration": "6:30"
+        },
+        {
+          "position": "A2",
+          "title": "New Kid In Town",
+          "duration": "5:04"
+        },
+        {
+          "position": "A3",
+          "title": "Life In The Fast Lane",
+          "duration": "4:46"
+        },
+        {
+          "position": "A4",
+          "title": "Wasted Time",
+          "duration": "4:55"
+        },
+        {
+          "position": "B1",
+          "title": "Wasted Time (Reprise)",
+          "duration": "1:22"
+        },
+        {
+          "position": "B2",
+          "title": "Victim Of Love",
+          "duration": "4:11"
+        },
+        {
+          "position": "B3",
+          "title": "Pretty Maids All In A Row",
+          "duration": "4:05"
+        },
+        {
+          "position": "B4",
+          "title": "Try And Love Again",
+          "duration": "5:10"
+        },
+        {
+          "position": "B5",
+          "title": "The Last Resort",
+          "duration": "7:25"
+        }
+      ],
+      "coverFile": "2169466641-3f85cce2.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169467083,
+      "releaseId": 7545132,
+      "title": "In Utero",
+      "artist": "Nirvana",
+      "artistSort": "nirvana",
+      "searchText": "in utero nirvana",
+      "year": 2015,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album, Repress",
+      "label": "Geffen Records",
+      "catalogNumber": "0720642453612",
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Grunge",
+        "Alternative Rock"
+      ],
+      "coverUrl": "https://i.discogs.com/Yfw2q-x33fMF0FcNJMqGGk038yweqbt8c0733k11Vq0/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc1NDUx/MzItMTc2NzIwMTkx/Mi01Mjc2LmpwZWc.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/7545132",
+      "addedAt": "2026-08-01T12:51:22.000Z",
+      "country": "Europe",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Serve The Servants",
+          "duration": "3:34"
+        },
+        {
+          "position": "A2",
+          "title": "Scentless Apprentice",
+          "duration": "3:47"
+        },
+        {
+          "position": "A3",
+          "title": "Heart-Shaped Box",
+          "duration": "4:39"
+        },
+        {
+          "position": "A4",
+          "title": "Rape Me",
+          "duration": "2:49"
+        },
+        {
+          "position": "A5",
+          "title": "Frances Farmer Will Have Her Revenge On Seattle",
+          "duration": "4:07"
+        },
+        {
+          "position": "A6",
+          "title": "Dumb",
+          "duration": "2:29"
+        },
+        {
+          "position": "B1",
+          "title": "Very Ape",
+          "duration": "1:55"
+        },
+        {
+          "position": "B2",
+          "title": "Milk It",
+          "duration": "3:52"
+        },
+        {
+          "position": "B3",
+          "title": "Pennyroyal Tea",
+          "duration": "3:36"
+        },
+        {
+          "position": "B4",
+          "title": "Radio Friendly Unit Shifter",
+          "duration": "4:49"
+        },
+        {
+          "position": "B5",
+          "title": "Tourette's",
+          "duration": "1:33"
+        },
+        {
+          "position": "B6",
+          "title": "All Apologies",
+          "duration": "3:50"
+        }
+      ],
+      "coverFile": "2169467083-16a7bda6.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169467449,
+      "releaseId": 7205875,
+      "title": "Live",
+      "artist": "AC/DC",
+      "artistSort": "ac/dc",
+      "searchText": "live ac/dc",
+      "year": 2009,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album, Remastered, Repress, Stereo",
+      "label": "Columbia",
+      "catalogNumber": "5128361",
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Hard Rock",
+        "Blues Rock"
+      ],
+      "coverUrl": "https://i.discogs.com/Xv5ob3yT7aGmm-7Narl-TCvxbUIJ0471bNHYT4l4kYE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcyMDU4/NzUtMTUwNzU1MDU5/MS0zMDE1LmpwZWc.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/7205875",
+      "addedAt": "2026-08-01T12:52:45.000Z",
+      "country": "Europe",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Thunderstruck",
+          "duration": "6:34"
+        },
+        {
+          "position": "A2",
+          "title": "Shoot To Thrill",
+          "duration": "5:23"
+        },
+        {
+          "position": "A3",
+          "title": "Back In Black",
+          "duration": "4:28"
+        },
+        {
+          "position": "A4",
+          "title": "Sin City",
+          "duration": "5:40"
+        },
+        {
+          "position": "A5",
+          "title": "Who Made Who",
+          "duration": "5:16"
+        },
+        {
+          "position": "A6",
+          "title": "Fire Your Guns",
+          "duration": "3:40"
+        },
+        {
+          "position": "B1",
+          "title": "Jailbreak",
+          "duration": "14:43"
+        },
+        {
+          "position": "B2",
+          "title": "The Jack",
+          "duration": "6:56"
+        },
+        {
+          "position": "B3",
+          "title": "The Razor's Edge",
+          "duration": "4:35"
+        },
+        {
+          "position": "B4",
+          "title": "Dirty Deeds Done Dirt Cheap",
+          "duration": "5:02"
+        },
+        {
+          "position": "C1",
+          "title": "Hells Bells",
+          "duration": "6:01"
+        },
+        {
+          "position": "C2",
+          "title": "Heatseeker",
+          "duration": "3:37"
+        },
+        {
+          "position": "C3",
+          "title": "That's The Way I Wanna Rock 'N' Roll",
+          "duration": "3:57"
+        },
+        {
+          "position": "C4",
+          "title": "High Voltage",
+          "duration": "10:32"
+        },
+        {
+          "position": "C5",
+          "title": "You Shook Me All Night Long",
+          "duration": "3:54"
+        },
+        {
+          "position": "D1",
+          "title": "Whole Lotta Rosie",
+          "duration": "4:30"
+        },
+        {
+          "position": "D2",
+          "title": "Let There Be Rock",
+          "duration": "12:17"
+        },
+        {
+          "position": "D3",
+          "title": "Highway To Hell",
+          "duration": "3:53"
+        },
+        {
+          "position": "D4",
+          "title": "T.N.T.",
+          "duration": "3:48"
+        },
+        {
+          "position": "D5",
+          "title": "For Those About Rock (We Salute You)",
+          "duration": "7:09"
+        }
+      ],
+      "coverFile": "2169467449-adaf3d5e.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169467858,
+      "releaseId": 5759979,
+      "title": "Never Mind The Bollocks, Here's The Sex Pistols",
+      "artist": "Sex Pistols",
+      "artistSort": "sex pistols",
+      "searchText": "never mind the bollocks, here's the sex pistols sex pistols",
+      "year": 2014,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album, Reissue, Remastered, Stereo",
+      "label": "Universal Music Group International",
+      "catalogNumber": "SexPisLP77",
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Punk"
+      ],
+      "coverUrl": "https://i.discogs.com/6Rpky0lc5XfRJiZMR7Lnnh3FyL7TAsw54sw2YXd_DdE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU3NTk5/NzktMTU1NjgyMDgx/OS0yMjE0LnBuZw.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/5759979",
+      "addedAt": "2026-08-01T12:54:12.000Z",
+      "country": "Europe",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Holidays In The Sun",
+          "duration": "3:22"
+        },
+        {
+          "position": "A2",
+          "title": "Bodies",
+          "duration": "2:41"
+        },
+        {
+          "position": "A3",
+          "title": "No Feelings",
+          "duration": "2:53"
+        },
+        {
+          "position": "A4",
+          "title": "Liar",
+          "duration": "3:20"
+        },
+        {
+          "position": "A5",
+          "title": "God Save The Queen",
+          "duration": "4:11"
+        },
+        {
+          "position": "A6",
+          "title": "Problems",
+          "duration": "2:02"
+        },
+        {
+          "position": "B1",
+          "title": "Seventeen",
+          "duration": "3:32"
+        },
+        {
+          "position": "B2",
+          "title": "Anarchy In The U.K",
+          "duration": "3:03"
+        },
+        {
+          "position": "B3",
+          "title": "Submission",
+          "duration": "4:12"
+        },
+        {
+          "position": "B4",
+          "title": "Pretty Vacant",
+          "duration": "3:18"
+        },
+        {
+          "position": "B5",
+          "title": "New York",
+          "duration": "3:07"
+        },
+        {
+          "position": "B6",
+          "title": "EMI",
+          "duration": "3:10"
+        }
+      ],
+      "coverFile": "2169467858-29c4cd92.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169468447,
+      "releaseId": 2598174,
+      "title": "Tom Jones By Sugar",
+      "artist": "Sugar",
+      "artistSort": "sugar",
+      "searchText": "tom jones by sugar sugar",
+      "year": null,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Stereo",
+      "label": "Productions VYG",
+      "catalogNumber": "10123",
+      "genres": [
+        "Funk / Soul",
+        "Pop"
+      ],
+      "styles": [],
+      "coverUrl": "https://i.discogs.com/TXQ5mfYtXF6yUoMsRoiK5MrRKxzGJ6RyRj2H3U0U_fg/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1OTgx/NzQtMTUzNjc1MDA3/My00MDc4LmpwZWc.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/2598174",
+      "addedAt": "2026-08-01T12:56:32.000Z",
+      "country": "France",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "It's Not Unusual",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Detroit City",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Green Green Grass Of Home",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "I'll Never Fall In Love Again",
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "title": "Without Love",
+          "duration": ""
+        },
+        {
+          "position": "A6",
+          "title": "Daughter Of Darkness",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "Help Yourself",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Love Me Tonight",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "A Minute Of Your Time",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "I'm Coming Home",
+          "duration": ""
+        },
+        {
+          "position": "B5",
+          "title": "Delilah",
+          "duration": ""
+        },
+        {
+          "position": "B6",
+          "title": "Till",
+          "duration": ""
+        }
+      ],
+      "coverFile": "2169468447-0dd1ca86.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169469374,
+      "releaseId": 2212759,
+      "title": "Rubber Soul",
+      "artist": "The Beatles",
+      "artistSort": "beatles",
+      "searchText": "rubber soul the beatles",
+      "year": 1972,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album, Reissue, Stereo",
+      "label": "Odeon",
+      "catalogNumber": "2 C 062 - 4115",
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Pop Rock"
+      ],
+      "coverUrl": "https://i.discogs.com/DQCiiWPS1LYZ8fXRCvwyeOsSKFr5D9KvxaDw-vXsqzw/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyMTI3/NTktMTczMDEzNTQz/Mi05NzI3LmpwZWc.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/2212759",
+      "addedAt": "2026-08-01T13:00:17.000Z",
+      "country": "France",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Drive My Car",
+          "duration": "2:21"
+        },
+        {
+          "position": "A2",
+          "title": "Norwegian Wood",
+          "duration": "2:00"
+        },
+        {
+          "position": "A3",
+          "title": "You Won't See Me",
+          "duration": "3:18"
+        },
+        {
+          "position": "A4",
+          "title": "Nowhere Man",
+          "duration": "2:37"
+        },
+        {
+          "position": "A5",
+          "title": "Think For Yourself",
+          "duration": "2:15"
+        },
+        {
+          "position": "A6",
+          "title": "The Word",
+          "duration": "2:57"
+        },
+        {
+          "position": "A7",
+          "title": "Michelle",
+          "duration": "2:30"
+        },
+        {
+          "position": "B1",
+          "title": "What Goes On",
+          "duration": "2:42"
+        },
+        {
+          "position": "B2",
+          "title": "Girl",
+          "duration": "2:26"
+        },
+        {
+          "position": "B3",
+          "title": "I'm Looking Through You",
+          "duration": "2:25"
+        },
+        {
+          "position": "B4",
+          "title": "In My Life",
+          "duration": "2:20"
+        },
+        {
+          "position": "B5",
+          "title": "Wait",
+          "duration": "2:10"
+        },
+        {
+          "position": "B6",
+          "title": "If I Needed Someone",
+          "duration": "2:18"
+        },
+        {
+          "position": "B7",
+          "title": "Run For Your Life",
+          "duration": "2:17"
+        }
+      ],
+      "coverFile": "2169469374-a9b79224.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169471131,
+      "releaseId": 8640704,
+      "title": "Rock 'N' Roll Music",
+      "artist": "The Beatles",
+      "artistSort": "beatles",
+      "searchText": "rock 'n' roll music the beatles",
+      "year": 1976,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Compilation",
+      "label": "Parlophone",
+      "catalogNumber": "2 C 182-06137/8",
+      "genres": [
+        "Rock",
+        "Pop"
+      ],
+      "styles": [
+        "Pop Rock",
+        "Rock & Roll"
+      ],
+      "coverUrl": "https://i.discogs.com/lxnjnl_EWdssqoamO68KHIOxz9VweTn4U_UVWCC_L2c/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg2NDA3/MDQtMTQ2NTcyNjQ5/NC00ODU4LmpwZWc.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/8640704",
+      "addedAt": "2026-08-01T13:07:50.000Z",
+      "country": "France",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Twist And Shout",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "I Saw Her Standing There",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "You Can't Do That",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "I Wanna Be Your Man",
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "title": "I Call Your Name",
+          "duration": ""
+        },
+        {
+          "position": "A6",
+          "title": "Boys",
+          "duration": ""
+        },
+        {
+          "position": "A7",
+          "title": "Long Tall Sally",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "Rock 'n' Roll Music",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Slow Down",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "Kansas City",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "Money (That's What I Want)",
+          "duration": ""
+        },
+        {
+          "position": "B5",
+          "title": "Bad Boy",
+          "duration": ""
+        },
+        {
+          "position": "B6",
+          "title": "Matchbox",
+          "duration": ""
+        },
+        {
+          "position": "B7",
+          "title": "Roll Over Beethoven",
+          "duration": ""
+        },
+        {
+          "position": "C1",
+          "title": "Dizzy Miss Lizzy",
+          "duration": ""
+        },
+        {
+          "position": "C2",
+          "title": "Anytime At All",
+          "duration": ""
+        },
+        {
+          "position": "C3",
+          "title": "Drive My Car",
+          "duration": ""
+        },
+        {
+          "position": "C4",
+          "title": "Everybody's Trying To Be My Baby",
+          "duration": ""
+        },
+        {
+          "position": "C5",
+          "title": "The Night Before",
+          "duration": ""
+        },
+        {
+          "position": "C6",
+          "title": "I'm Down",
+          "duration": ""
+        },
+        {
+          "position": "C7",
+          "title": "Revolution",
+          "duration": ""
+        },
+        {
+          "position": "D1",
+          "title": "Back In The U.S.S.R.",
+          "duration": ""
+        },
+        {
+          "position": "D2",
+          "title": "Helter Skelter",
+          "duration": ""
+        },
+        {
+          "position": "D3",
+          "title": "Taxman",
+          "duration": ""
+        },
+        {
+          "position": "D4",
+          "title": "Got To Get You Into My Life",
+          "duration": ""
+        },
+        {
+          "position": "D5",
+          "title": "Hey Bulldog",
+          "duration": ""
+        },
+        {
+          "position": "D6",
+          "title": "Birthday",
+          "duration": ""
+        },
+        {
+          "position": "D7",
+          "title": "Get Back",
+          "duration": ""
+        }
+      ],
+      "coverFile": "2169471131-e829ab7a.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169472516,
+      "releaseId": 1110268,
+      "title": "Club At The End Of The Street",
+      "artist": "Elton John",
+      "artistSort": "elton john",
+      "searchText": "club at the end of the street elton john",
+      "year": 1990,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, 12\", 45 RPM",
+      "label": "The Rocket Record Company",
+      "catalogNumber": "875 435-1",
+      "genres": [
+        "Rock",
+        "Pop"
+      ],
+      "styles": [
+        "Pop Rock",
+        "Classic Rock"
+      ],
+      "coverUrl": "https://i.discogs.com/Svby7x-iBR4KMcEDmND3XhfD97fdjfXY0cHcsIy04LA/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMTAy/NjgtMTI5MTEyMTM0/Ny5qcGVn.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/1110268",
+      "addedAt": "2026-08-01T13:12:48.000Z",
+      "country": "Germany",
+      "tracklist": [
+        {
+          "position": "A",
+          "title": "Club At The End Of The Street",
+          "duration": "4:49"
+        },
+        {
+          "position": "B1",
+          "title": "Give Peace A Chance",
+          "duration": "3:46"
+        },
+        {
+          "position": "B2",
+          "title": "I Don't Wanna Go On With You Like That (Live Verona, Italy)",
+          "duration": "5:37"
+        }
+      ],
+      "coverFile": "2169472516-f7d78aff.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169473749,
+      "releaseId": 1027206,
+      "title": "Sleeping With The Past",
+      "artist": "Elton John",
+      "artistSort": "elton john",
+      "searchText": "sleeping with the past elton john",
+      "year": 1989,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album, Stereo",
+      "label": "The Rocket Record Company",
+      "catalogNumber": "838 839-1",
+      "genres": [
+        "Rock",
+        "Pop"
+      ],
+      "styles": [
+        "Pop Rock",
+        "Soft Rock"
+      ],
+      "coverUrl": "https://i.discogs.com/bQhikp0uQsYuwvubRzCEKWghgLNj4Y3F9vAeJIlK2t0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMjcy/MDYtMTQ4NjQ5NTg5/Mi0zMTU3LmpwZWc.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/1027206",
+      "addedAt": "2026-08-01T13:17:07.000Z",
+      "country": "Europe",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Durban Deep",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Healing Hands",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Whispers",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "Club At The End Of The Street",
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "title": "Sleeping With The Past",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "Stone's Throw From Hurtin'",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Sacrifice",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "I Never Knew Her Name",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "Amazes Me",
+          "duration": ""
+        },
+        {
+          "position": "B5",
+          "title": "Blue Avenue",
+          "duration": ""
+        }
+      ],
+      "coverFile": "2169473749-2e73334b.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169474080,
+      "releaseId": 1415468,
+      "title": "Anthology",
+      "artist": "The Temptations",
+      "artistSort": "temptations",
+      "searchText": "anthology the temptations",
+      "year": 1974,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Compilation, Stereo",
+      "label": "Tamla Motown",
+      "catalogNumber": "2C 064-95106",
+      "genres": [
+        "Funk / Soul"
+      ],
+      "styles": [
+        "Soul",
+        "Funk"
+      ],
+      "coverUrl": "https://i.discogs.com/HnORReX9X2jMT_WOZyR41oo-ddSZxq-j93x0g81qKaM/rs:fit/g:sm/q:90/h:600/w:584/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MTU0/NjgtMTM5NzgyNDM2/MC0zMzA0LmpwZWc.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/1415468",
+      "addedAt": "2026-08-01T13:18:21.000Z",
+      "country": "France",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "The Way You Do The Things You Do",
+          "duration": "2:44"
+        },
+        {
+          "position": "A2",
+          "title": "My Girl",
+          "duration": "2:53"
+        },
+        {
+          "position": "A3",
+          "title": "Get Ready",
+          "duration": "2:37"
+        },
+        {
+          "position": "A4",
+          "title": "Ain't Too Proud To Beg",
+          "duration": "2:32"
+        },
+        {
+          "position": "A5",
+          "title": "(I Know) I'm Losing You",
+          "duration": "2:26"
+        },
+        {
+          "position": "A6",
+          "title": "I Wish It Would Rain",
+          "duration": "2:51"
+        },
+        {
+          "position": "A7",
+          "title": "Cloud Nine",
+          "duration": "3:27"
+        },
+        {
+          "position": "A8",
+          "title": "Runaway Child, Runnin' Wild",
+          "duration": "4:47"
+        },
+        {
+          "position": "B1",
+          "title": "I Can't Get Next To You",
+          "duration": "2:52"
+        },
+        {
+          "position": "B2",
+          "title": "Psychedelic Shack",
+          "duration": "3:53"
+        },
+        {
+          "position": "B3",
+          "title": "Funky Music Sho Nuff Turns Me On",
+          "duration": "2:56"
+        },
+        {
+          "position": "B4",
+          "title": "Papa Was A Rollin' Stone",
+          "duration": "6:58"
+        },
+        {
+          "position": "B5",
+          "title": "Masterpiece",
+          "duration": "6:40"
+        }
+      ],
+      "coverFile": "2169474080-8e1857d2.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169475253,
+      "releaseId": 2303612,
+      "title": "The King Of Rock",
+      "artist": "Bill Haley And The Comets",
+      "artistSort": "bill haley and the comets",
+      "searchText": "the king of rock bill haley and the comets",
+      "year": null,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Compilation, Reissue, Stereo",
+      "label": "Disques Festival",
+      "catalogNumber": "Album 137",
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Rock & Roll"
+      ],
+      "coverUrl": "https://i.discogs.com/qa75Ywf7CLvVeeh7VByS99tarmtLGeTI9n4KXg0lK4E/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzMDM2/MTItMTY4Mjc1NzUy/Ny0zNDAwLmpwZWc.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/2303612",
+      "addedAt": "2026-08-01T13:22:29.000Z",
+      "country": "France",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Rock Around The Clock",
+          "duration": "2:14"
+        },
+        {
+          "position": "A2",
+          "title": "Skinnie Minnie",
+          "duration": "2:34"
+        },
+        {
+          "position": "A3",
+          "title": "Ling-Ting-Tong",
+          "duration": "2:16"
+        },
+        {
+          "position": "A4",
+          "title": "Rock The Joint",
+          "duration": "2:20"
+        },
+        {
+          "position": "A5",
+          "title": "Rock-A-Beatin'Boogie",
+          "duration": "2:20"
+        },
+        {
+          "position": "B1",
+          "title": "See You Later Alligator",
+          "duration": "2:10"
+        },
+        {
+          "position": "B2",
+          "title": "Flip Flop And Fly",
+          "duration": "3:20"
+        },
+        {
+          "position": "B3",
+          "title": "Love Letter In The Sand",
+          "duration": "1:59"
+        },
+        {
+          "position": "B4",
+          "title": "The Saints Rock And Roll",
+          "duration": "3:32"
+        },
+        {
+          "position": "B5",
+          "title": "Shake, Rattle And Roll",
+          "duration": "3:15"
+        },
+        {
+          "position": "C1",
+          "title": "Me And Bobby McGee",
+          "duration": "3:40"
+        },
+        {
+          "position": "C2",
+          "title": "How Many",
+          "duration": "2:23"
+        },
+        {
+          "position": "C3",
+          "title": "Who'll Stop The Rain",
+          "duration": "2:00"
+        },
+        {
+          "position": "C4",
+          "title": "Pink Eyed Pussycat",
+          "duration": "2:17"
+        },
+        {
+          "position": "C5",
+          "title": "Travelin' Band",
+          "duration": "2:20"
+        },
+        {
+          "position": "C6",
+          "title": "No Letter Today",
+          "duration": "2:30"
+        },
+        {
+          "position": "D1",
+          "title": "Dance Around The Clock",
+          "duration": "2:12"
+        },
+        {
+          "position": "D2",
+          "title": "Games People Play",
+          "duration": "3:27"
+        },
+        {
+          "position": "D3",
+          "title": "A Little Piece At  A Time",
+          "duration": "3:02"
+        },
+        {
+          "position": "D4",
+          "title": "I Wouldn't Have Missed It For The World",
+          "duration": "2:45"
+        },
+        {
+          "position": "D5",
+          "title": "Bony Maronie",
+          "duration": "2:27"
+        },
+        {
+          "position": "D6",
+          "title": "There's A New Moon Over My Shoulder",
+          "duration": "3:36"
+        }
+      ],
+      "coverFile": "2169475253-2a5c9175.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169476095,
+      "releaseId": 472931,
+      "title": "Grease (Bande Originale Du Film)",
+      "artist": "Various",
+      "artistSort": "various",
+      "searchText": "grease (bande originale du film) various",
+      "year": 1978,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album, Repress",
+      "label": "RSO",
+      "catalogNumber": "2658 125",
+      "genres": [
+        "Rock",
+        "Pop",
+        "Stage & Screen"
+      ],
+      "styles": [
+        "Soundtrack",
+        "Rock & Roll",
+        "Doo Wop",
+        "Pop Rock"
+      ],
+      "coverUrl": "https://i.discogs.com/XQaC5yQnlak88chThs1A2t-0GKihlH8xoItGNj-LA6s/rs:fit/g:sm/q:90/h:583/w:581/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ3Mjkz/MS0xMjQxODAzOTYy/LmpwZWc.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/472931",
+      "addedAt": "2026-08-01T13:25:47.000Z",
+      "country": "France",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Grease",
+          "duration": "3:24"
+        },
+        {
+          "position": "A2",
+          "title": "Summer Nights",
+          "duration": "3:36"
+        },
+        {
+          "position": "A3",
+          "title": "Hopelessly Devoted To You",
+          "duration": "3:00"
+        },
+        {
+          "position": "A4",
+          "title": "You're The One That I Want",
+          "duration": "2:47"
+        },
+        {
+          "position": "A5",
+          "title": "Sandy",
+          "duration": "2:30"
+        },
+        {
+          "position": "B1",
+          "title": "Beauty School Drop-Out",
+          "duration": "4:02"
+        },
+        {
+          "position": "B2",
+          "title": "Look At Me, I'm Sandra Dee",
+          "duration": "1:38"
+        },
+        {
+          "position": "B3",
+          "title": "Greased Lightnin'",
+          "duration": "3:12"
+        },
+        {
+          "position": "B4",
+          "title": "It's Raining On Prom Night",
+          "duration": "2:57"
+        },
+        {
+          "position": "B5",
+          "title": "Alone At The Drive-In Movie (Instrumental)",
+          "duration": "2:22"
+        },
+        {
+          "position": "B6",
+          "title": "Blue Moon",
+          "duration": "2:18"
+        },
+        {
+          "position": "C1",
+          "title": "Rock 'N Roll Is Here To Stay",
+          "duration": "2:00"
+        },
+        {
+          "position": "C2",
+          "title": "Those Magic Changes",
+          "duration": "2:15"
+        },
+        {
+          "position": "C3",
+          "title": "Hound Dog",
+          "duration": "1:23"
+        },
+        {
+          "position": "C4",
+          "title": "Born To Hand-Jive",
+          "duration": "4:39"
+        },
+        {
+          "position": "C5",
+          "title": "Tears On My Pillow",
+          "duration": "2:06"
+        },
+        {
+          "position": "C6",
+          "title": "Mooning",
+          "duration": "2:12"
+        },
+        {
+          "position": "D1",
+          "title": "Freddy, My Love",
+          "duration": "2:40"
+        },
+        {
+          "position": "D2",
+          "title": "Rock 'N Roll Party Queen",
+          "duration": "2:08"
+        },
+        {
+          "position": "D3",
+          "title": "There Are Worse Things I Could Do",
+          "duration": "2:18"
+        },
+        {
+          "position": "D4",
+          "title": "Look At Me, I'm Sandra Dee (Reprise)",
+          "duration": "1:20"
+        },
+        {
+          "position": "D5",
+          "title": "We Go Together",
+          "duration": "3:14"
+        },
+        {
+          "position": "D6",
+          "title": "Love Is A Many Splendored Thing (Instrumental)",
+          "duration": "1:23"
+        },
+        {
+          "position": "D7",
+          "title": "Grease (Reprise)",
+          "duration": "3:24"
+        }
+      ],
+      "coverFile": "2169476095-c4942369.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169476801,
+      "releaseId": 9293599,
+      "title": "Guitar Boogie",
+      "artist": "Arthur Smith And His Cracker-Jacks",
+      "artistSort": "arthur smith and his cracker-jacks",
+      "searchText": "guitar boogie arthur smith and his cracker-jacks",
+      "year": 1969,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album",
+      "label": "MGM Records",
+      "catalogNumber": "662 003",
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Folk Rock",
+        "Acoustic"
+      ],
+      "coverUrl": "https://i.discogs.com/CPbD49qAeAL8TxOdRsPNTJzcGhvjzJR7OOK1u33Klu8/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkyOTM1/OTktMTQ3ODEwMDMy/Ni02NDExLmpwZWc.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/9293599",
+      "addedAt": "2026-08-01T13:28:20.000Z",
+      "country": "France",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Guitar Boogie",
+          "duration": "3:20"
+        },
+        {
+          "position": "A2",
+          "title": "Boomerang",
+          "duration": "2:37"
+        },
+        {
+          "position": "A3",
+          "title": "Mandolin Boogie",
+          "duration": "3:02"
+        },
+        {
+          "position": "A4",
+          "title": "12th Street Rag",
+          "duration": "2:45"
+        },
+        {
+          "position": "A5",
+          "title": "Hard Boiled Boogie",
+          "duration": "2:00"
+        },
+        {
+          "position": "B1",
+          "title": "Banjo Boogie",
+          "duration": "2:41"
+        },
+        {
+          "position": "B2",
+          "title": "I. H. Boogie",
+          "duration": "2:15"
+        },
+        {
+          "position": "B3",
+          "title": "Mountain Be Bop",
+          "duration": "2:41"
+        },
+        {
+          "position": "B4",
+          "title": "Banjo Rag",
+          "duration": "2:22"
+        },
+        {
+          "position": "B5",
+          "title": "Hi Lo Boogie",
+          "duration": "2:00"
+        }
+      ],
+      "coverFile": "2169476801-54b8feed.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169477717,
+      "releaseId": 24914072,
+      "title": "Mellon Collie And The Infinite Sadness",
+      "artist": "The Smashing Pumpkins",
+      "artistSort": "smashing pumpkins",
+      "searchText": "mellon collie and the infinite sadness the smashing pumpkins",
+      "year": 2022,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album, Unofficial Release",
+      "label": "Hut Recordings",
+      "catalogNumber": "HUTTLP 30",
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Alternative Rock"
+      ],
+      "coverUrl": "https://i.discogs.com/Il2s8YfuUjMQQ5eZIcrmxT9PUqaHQzYcsIwVVL9A8Sg/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0OTE0/MDcyLTE2NjY1NDkz/NDEtNzMyNC5qcGVn.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/24914072",
+      "addedAt": "2026-08-01T13:31:44.000Z",
+      "country": "Europe",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Mellon Collie And The Infinite Sadness",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Tonight, Tonight",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Thirty-Three",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "In The Arms Of Sleep",
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "title": "Take Me Down",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "Jellybelly",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Bodies",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "To Forgive",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "Here Is No Why",
+          "duration": ""
+        },
+        {
+          "position": "B5",
+          "title": "Porcelina Of The Vast Oceans",
+          "duration": ""
+        },
+        {
+          "position": "C1",
+          "title": "Bullet With Butterfly Wings",
+          "duration": ""
+        },
+        {
+          "position": "C2",
+          "title": "Thru The Eyes Of Ruby",
+          "duration": ""
+        },
+        {
+          "position": "C3",
+          "title": "Muzzle",
+          "duration": ""
+        },
+        {
+          "position": "C4",
+          "title": "Galapogos",
+          "duration": ""
+        },
+        {
+          "position": "C5",
+          "title": "Tales Of A Scorched Earth",
+          "duration": ""
+        },
+        {
+          "position": "D1",
+          "title": "1979",
+          "duration": ""
+        },
+        {
+          "position": "D2",
+          "title": "Beautiful",
+          "duration": ""
+        },
+        {
+          "position": "D3",
+          "title": "Cupid De Locke",
+          "duration": ""
+        },
+        {
+          "position": "D4",
+          "title": "By Starlight",
+          "duration": ""
+        },
+        {
+          "position": "D5",
+          "title": "We Only Come Out At Night",
+          "duration": ""
+        },
+        {
+          "position": "E1",
+          "title": "Where Boys Fear To Tread",
+          "duration": ""
+        },
+        {
+          "position": "E2",
+          "title": "Zero",
+          "duration": ""
+        },
+        {
+          "position": "E3",
+          "title": "An Ode To No One",
+          "duration": ""
+        },
+        {
+          "position": "E4",
+          "title": "Love",
+          "duration": ""
+        },
+        {
+          "position": "E5",
+          "title": "X.Y.U.",
+          "duration": ""
+        },
+        {
+          "position": "F1",
+          "title": "Stumbleine",
+          "duration": ""
+        },
+        {
+          "position": "F2",
+          "title": "Lily (My One And Only)",
+          "duration": ""
+        },
+        {
+          "position": "F3",
+          "title": "Tonite Reprise",
+          "duration": ""
+        },
+        {
+          "position": "F4",
+          "title": "Farewell And Goodnight",
+          "duration": ""
+        },
+        {
+          "position": "F5",
+          "title": "Infinite Sadness",
+          "duration": ""
+        }
+      ],
+      "coverFile": "2169477717-5e3158ee.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169478412,
+      "releaseId": 3319182,
+      "title": "Sweet Little Sixteen",
+      "artist": "Chuck Berry",
+      "artistSort": "chuck berry",
+      "searchText": "sweet little sixteen chuck berry",
+      "year": 1977,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album, Compilation, Stereo",
+      "label": "Impact",
+      "catalogNumber": "6995 402",
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Rock & Roll"
+      ],
+      "coverUrl": "https://i.discogs.com/FGau_qr-3Ro96ji-x8mQkHh5It_pkCbhgmKCweX6iME/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzMTkx/ODItMTMyNTg2ODAy/Ny5qcGVn.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/3319182",
+      "addedAt": "2026-08-01T13:34:19.000Z",
+      "country": "France",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Hoochi' Coochi' Man",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Rock Cradle Rock",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Oh Baby Doll",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "School Days \"Ring Goes The Bell\"",
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "title": "Soul Rockin'",
+          "duration": ""
+        },
+        {
+          "position": "A6",
+          "title": "Johnny B. Goode",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "Oh Captain",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Wee Baby Blues",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "Ma Dear, Ma Dear",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "Rambling Rose",
+          "duration": ""
+        },
+        {
+          "position": "B5",
+          "title": "Misery",
+          "duration": ""
+        },
+        {
+          "position": "B6",
+          "title": "Sweet Little Sixteen",
+          "duration": ""
+        },
+        {
+          "position": "C1",
+          "title": "Thirty Days",
+          "duration": ""
+        },
+        {
+          "position": "C2",
+          "title": "The Love I Lost",
+          "duration": ""
+        },
+        {
+          "position": "C3",
+          "title": "I Can't Believe",
+          "duration": ""
+        },
+        {
+          "position": "C4",
+          "title": "Check Me Out",
+          "duration": ""
+        },
+        {
+          "position": "C5",
+          "title": "Louis To Frisco",
+          "duration": ""
+        },
+        {
+          "position": "C6",
+          "title": "Fillmore Blues",
+          "duration": ""
+        },
+        {
+          "position": "D1",
+          "title": "It Hurts Me Too",
+          "duration": ""
+        },
+        {
+          "position": "D2",
+          "title": "Sweet Little Rock'N Roller",
+          "duration": ""
+        },
+        {
+          "position": "D3",
+          "title": "My Tambourine",
+          "duration": ""
+        },
+        {
+          "position": "D4",
+          "title": "Little Fox",
+          "duration": ""
+        },
+        {
+          "position": "D5",
+          "title": "I Love Her I Love Her",
+          "duration": ""
+        },
+        {
+          "position": "D6",
+          "title": "Carol",
+          "duration": ""
+        }
+      ],
+      "coverFile": "2169478412-2bedafc9.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169487296,
+      "releaseId": 2777288,
+      "title": "Filthy Lucre Live",
+      "artist": "Sex Pistols",
+      "artistSort": "sex pistols",
+      "searchText": "filthy lucre live sex pistols",
+      "year": 1996,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album",
+      "label": "Virgin",
+      "catalogNumber": "7 24384 19261 7",
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Rock & Roll",
+        "Punk"
+      ],
+      "coverUrl": "https://i.discogs.com/zXJlpCXoXtQAVB_9ZtsBEgn9Pv_bHx3cwY2GDTEXFC8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI3Nzcy/ODgtMTUxMzkzOTQx/NS05OTM5LmpwZWc.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/2777288",
+      "addedAt": "2026-08-01T14:05:21.000Z",
+      "country": "UK & Europe",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Bodies",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Seventeen",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "New York",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "No Feelings",
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "title": "Did You No Wrong",
+          "duration": ""
+        },
+        {
+          "position": "A6",
+          "title": "God Save The Queen",
+          "duration": ""
+        },
+        {
+          "position": "A7",
+          "title": "Liar!",
+          "duration": ""
+        },
+        {
+          "position": "A8",
+          "title": "Satellite",
+          "duration": ""
+        },
+        {
+          "position": "A9",
+          "title": "(I'm Not Your) Steppin' Stone",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "Holidays In The Sun",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Submission",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "Pretty Vacant",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "EMI",
+          "duration": ""
+        },
+        {
+          "position": "B5",
+          "title": "Anarchy In The UK",
+          "duration": ""
+        },
+        {
+          "position": "B6",
+          "title": "Problems",
+          "duration": ""
+        }
+      ],
+      "coverFile": "2169487296-45e9b1fd.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169487983,
+      "releaseId": 11136484,
+      "title": "Clandestino",
+      "artist": "Manu Chao",
+      "artistSort": "manu chao",
+      "searchText": "clandestino manu chao",
+      "year": 2013,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album, Reissue",
+      "label": "Because Music",
+      "catalogNumber": "BEC5161605",
+      "genres": [
+        "Latin",
+        "Pop",
+        "Folk, World, & Country"
+      ],
+      "styles": [
+        "Pachanga"
+      ],
+      "coverUrl": "https://i.discogs.com/WpBX5gTlfodCb7kttHLDGl83xNsoVzz98gTSlvVVHC4/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMTM2/NDg0LTE1Mjc1MzI2/MTAtNTE3My5qcGVn.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/11136484",
+      "addedAt": "2026-08-01T14:07:34.000Z",
+      "country": "France",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Clandestino",
+          "duration": "2:30"
+        },
+        {
+          "position": "A2",
+          "title": "Desaparecido",
+          "duration": "3:47"
+        },
+        {
+          "position": "A3",
+          "title": "Bongo Bong",
+          "duration": "2:38"
+        },
+        {
+          "position": "A4",
+          "title": "Je Ne T'Aime Plus",
+          "duration": "2:02"
+        },
+        {
+          "position": "B1",
+          "title": "Mentira...",
+          "duration": "4:37"
+        },
+        {
+          "position": "B2",
+          "title": "Lagrimas De Oro",
+          "duration": "2:57"
+        },
+        {
+          "position": "B3",
+          "title": "Mama Call",
+          "duration": "2:21"
+        },
+        {
+          "position": "C1",
+          "title": "Luna Y Sol",
+          "duration": "3:07"
+        },
+        {
+          "position": "C2",
+          "title": "Por El Suelo",
+          "duration": "2:21"
+        },
+        {
+          "position": "C3",
+          "title": "Welcome To Tijuana",
+          "duration": "4:04"
+        },
+        {
+          "position": "C4",
+          "title": "Dia Luna... Dia Pena",
+          "duration": "1:30"
+        },
+        {
+          "position": "D1",
+          "title": "Malegria",
+          "duration": "2:55"
+        },
+        {
+          "position": "D2",
+          "title": "La Vie À 2",
+          "duration": "3:00"
+        },
+        {
+          "position": "D3",
+          "title": "Minha Galera",
+          "duration": "2:21"
+        },
+        {
+          "position": "D4",
+          "title": "La Despedida",
+          "duration": "3:09"
+        },
+        {
+          "position": "D5",
+          "title": "El Viento",
+          "duration": "2:26"
+        }
+      ],
+      "coverFile": "2169487983-dad92f6e.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169489578,
+      "releaseId": 14040843,
+      "title": "Are You Experienced",
+      "artist": "The Jimi Hendrix Experience",
+      "artistSort": "jimi hendrix experience",
+      "searchText": "are you experienced the jimi hendrix experience",
+      "year": 2014,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album, Reissue, Remastered, Repress, Stereo",
+      "label": "Legacy",
+      "catalogNumber": "88843059851",
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Blues Rock",
+        "Psychedelic Rock"
+      ],
+      "coverUrl": "https://i.discogs.com/1g8k7Q7wQfF11NGk7H8F5lLB08h3MBq5yfSy5Xx-D9Y/rs:fit/g:sm/q:90/h:600/w:590/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MDQw/ODQzLTE2MjcyMDgz/MTYtOTAxMy5qcGVn.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/14040843",
+      "addedAt": "2026-08-01T14:12:35.000Z",
+      "country": "Europe",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Purple Haze",
+          "duration": "2:50"
+        },
+        {
+          "position": "A2",
+          "title": "Manic Depression",
+          "duration": "3:42"
+        },
+        {
+          "position": "A3",
+          "title": "Hey Joe",
+          "duration": "3:30"
+        },
+        {
+          "position": "A4",
+          "title": "Love Or Confusion",
+          "duration": "3:12"
+        },
+        {
+          "position": "A5",
+          "title": "May This Be Love",
+          "duration": "3:10"
+        },
+        {
+          "position": "A6",
+          "title": "I Don't Live Today",
+          "duration": "3:54"
+        },
+        {
+          "position": "B1",
+          "title": "The Wind Cries Mary",
+          "duration": "3:20"
+        },
+        {
+          "position": "B2",
+          "title": "Fire",
+          "duration": "2:43"
+        },
+        {
+          "position": "B3",
+          "title": "3rd Stone From The Sun",
+          "duration": "6:44"
+        },
+        {
+          "position": "B4",
+          "title": "Foxey Lady",
+          "duration": "3:18"
+        },
+        {
+          "position": "B5",
+          "title": "Are You Experienced?",
+          "duration": "4:14"
+        }
+      ],
+      "coverFile": "2169489578-db29aa8c.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169490815,
+      "releaseId": 10227747,
+      "title": "Rage Against The Machine",
+      "artist": "Rage Against The Machine",
+      "artistSort": "rage against the machine",
+      "searchText": "rage against the machine rage against the machine",
+      "year": 2015,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album, Reissue, Remastered, Stereo",
+      "label": "Epic Associated",
+      "catalogNumber": "88875111751",
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Funk Metal"
+      ],
+      "coverUrl": "https://i.discogs.com/I7ZM3wLlpvrgB7ghnLV7GQkBe7chEWGYR0hQgqNLx18/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMjI3/NzQ3LTE0OTM3NDEw/OTMtNzg4OS5qcGVn.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/10227747",
+      "addedAt": "2026-08-01T14:16:21.000Z",
+      "country": "Europe",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Bombtrack",
+          "duration": "4:04"
+        },
+        {
+          "position": "A2",
+          "title": "Killing In The Name",
+          "duration": "5:13"
+        },
+        {
+          "position": "A3",
+          "title": "Take The Power Back",
+          "duration": "5:36"
+        },
+        {
+          "position": "A4",
+          "title": "Settle For Nothing",
+          "duration": "4:47"
+        },
+        {
+          "position": "A5",
+          "title": "Bullet In The Head",
+          "duration": "4:46"
+        },
+        {
+          "position": "B1",
+          "title": "Know Your Enemy",
+          "duration": "4:54"
+        },
+        {
+          "position": "B2",
+          "title": "Wake Up",
+          "duration": "6:04"
+        },
+        {
+          "position": "B3",
+          "title": "Fistful Of Steel",
+          "duration": "5:30"
+        },
+        {
+          "position": "B4",
+          "title": "Township Rebellion",
+          "duration": "5:24"
+        },
+        {
+          "position": "B5",
+          "title": "Freedom",
+          "duration": "6:06"
+        }
+      ],
+      "coverFile": "2169490815-5032836a.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169491387,
+      "releaseId": 357499,
+      "title": "People Are People",
+      "artist": "Depeche Mode",
+      "artistSort": "depeche mode",
+      "searchText": "people are people depeche mode",
+      "year": 1984,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, 7\", 45 RPM, Single, Stereo",
+      "label": "Mute",
+      "catalogNumber": "101897",
+      "genres": [
+        "Electronic"
+      ],
+      "styles": [
+        "Synth-pop"
+      ],
+      "coverUrl": "https://i.discogs.com/2RCC61v_b1n7dOiZjZIWY7FBTjGuA1noyKQND3lMB_I/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM1NzQ5/OS0xNjUxNDgyMzU0/LTk5MzMuanBlZw.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/357499",
+      "addedAt": "2026-08-01T14:18:02.000Z",
+      "country": "France",
+      "tracklist": [
+        {
+          "position": "A",
+          "title": "People Are People",
+          "duration": "3:45"
+        },
+        {
+          "position": "B",
+          "title": "In Your Memory",
+          "duration": "4:02"
+        }
+      ],
+      "coverFile": "2169491387-5e3aa3f3.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169491938,
+      "releaseId": 34766258,
+      "title": "Metal Forth",
+      "artist": "Babymetal",
+      "artistSort": "babymetal",
+      "searchText": "metal forth babymetal",
+      "year": 2025,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album",
+      "label": "Capitol Records",
+      "catalogNumber": "00602478153549",
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Heavy Metal",
+        "Metalcore",
+        "J-Rock"
+      ],
+      "coverUrl": "https://i.discogs.com/DmF8O07BRXpjVlykb2e7Sj41RZAbTVWQyTkYkQi3oQk/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM0NzY2/MjU4LTE3NTQ2NjM4/MDItOTczMi5qcGVn.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/34766258",
+      "addedAt": "2026-08-01T14:19:37.000Z",
+      "country": "Europe",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "From Me To U",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "RATATATA",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Song 3",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "Kon! Kon!",
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "title": "KxAxWxAxIxI",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "Sunset Kiss",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "My Queen",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "Algorism ",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "METALI!! ",
+          "duration": ""
+        },
+        {
+          "position": "B5",
+          "title": "White Flame -白炎-",
+          "duration": ""
+        }
+      ],
+      "coverFile": "2169491938-8d7b0c47.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169492650,
+      "releaseId": 300697,
+      "title": "Concerto Pour Détraqués",
+      "artist": "Bérurier Noir",
+      "artistSort": "bérurier noir",
+      "searchText": "concerto pour détraqués bérurier noir",
+      "year": 1985,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album",
+      "label": "Bondage Records",
+      "catalogNumber": "RRR009",
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Alternative Rock",
+        "Punk"
+      ],
+      "coverUrl": "https://i.discogs.com/fntFSf5lW7KD13MXFWWCoQNepM2JoUA7o5IfVH_ee8E/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwMDY5/Ny0xMjgwMjEyNjI2/LmpwZWc.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/300697",
+      "addedAt": "2026-08-01T14:21:46.000Z",
+      "country": "France",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Petit Agité",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Vivre Libre Ou Mourir",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Conte Cruel De La Jeunesse",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "Le Renard",
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "title": "Les Rebelles",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "Porcherie",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Commando Pernod",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "Les Éléphants",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "Fils De...",
+          "duration": ""
+        },
+        {
+          "position": "B5",
+          "title": "Hélène Et Le Sang",
+          "duration": ""
+        },
+        {
+          "position": "B6",
+          "title": "Il Tua Son Petit Frère",
+          "duration": ""
+        }
+      ],
+      "coverFile": "2169492650-ef730945.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169493060,
+      "releaseId": 749323,
+      "title": "Marche À L'Ombre",
+      "artist": "Renaud",
+      "artistSort": "renaud",
+      "searchText": "marche à l'ombre renaud",
+      "year": 1980,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album",
+      "label": "Polydor",
+      "catalogNumber": "2473 111",
+      "genres": [
+        "Rock",
+        "Pop"
+      ],
+      "styles": [
+        "Alternative Rock",
+        "Chanson"
+      ],
+      "coverUrl": "https://i.discogs.com/O9hHJgRVat7I8KWWpjh3Brw2Q6ffVnmOowe5Z5KP4qg/rs:fit/g:sm/q:90/h:591/w:588/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc0OTMy/My0xMjU0MjUyODQz/LmpwZWc.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/749323",
+      "addedAt": "2026-08-01T14:23:08.000Z",
+      "country": "France",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Marche À L'Ombre",
+          "duration": "3:16"
+        },
+        {
+          "position": "A2",
+          "title": "Les Aventures De Gérard Lambert",
+          "duration": "3:46"
+        },
+        {
+          "position": "A3",
+          "title": "Dans Mon H.L.M.",
+          "duration": "6:00"
+        },
+        {
+          "position": "A4",
+          "title": "La Teigne",
+          "duration": "2:43"
+        },
+        {
+          "position": "A5",
+          "title": "Où C'Est Qu'J'Ai Mis Mon Flingue",
+          "duration": "3:03"
+        },
+        {
+          "position": "B1",
+          "title": "It Is Not Because You Are",
+          "duration": "3:20"
+        },
+        {
+          "position": "B2",
+          "title": "Baston !",
+          "duration": "5:30"
+        },
+        {
+          "position": "B3",
+          "title": "Mimi L'Ennui",
+          "duration": "3:56"
+        },
+        {
+          "position": "B4",
+          "title": "L'Auto-Stoppeuse",
+          "duration": "3:07"
+        },
+        {
+          "position": "B5",
+          "title": "Pourquoi D'Abord ?",
+          "duration": "3:21"
+        }
+      ],
+      "coverFile": "2169493060-5bfc9a2a.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169494006,
+      "releaseId": 12582251,
+      "title": "Favourite Worst Nightmare",
+      "artist": "Arctic Monkeys",
+      "artistSort": "arctic monkeys",
+      "searchText": "favourite worst nightmare arctic monkeys",
+      "year": 2018,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album, Reissue, Stereo",
+      "label": "Domino",
+      "catalogNumber": "WIGLP188",
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Alternative Rock",
+        "Indie Rock"
+      ],
+      "coverUrl": "https://i.discogs.com/CY3sIMzYlaZlREfdMgPycyiax2CujNtmid6y_zClTp8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNTgy/MjUxLTE2OTc5Nzky/MjktNTE0NC5qcGVn.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/12582251",
+      "addedAt": "2026-08-01T14:26:06.000Z",
+      "country": "Europe",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Brianstorm",
+          "duration": "2:50"
+        },
+        {
+          "position": "A2",
+          "title": "Teddy Picker",
+          "duration": "2:43"
+        },
+        {
+          "position": "A3",
+          "title": "D Is For Dangerous",
+          "duration": "2:16"
+        },
+        {
+          "position": "A4",
+          "title": "Balaclava",
+          "duration": "2:49"
+        },
+        {
+          "position": "A5",
+          "title": "Fluorescent Adolescent",
+          "duration": "2:57"
+        },
+        {
+          "position": "A6",
+          "title": "Only Ones Who Know",
+          "duration": "3:02"
+        },
+        {
+          "position": "B1",
+          "title": "Do Me A Favour",
+          "duration": "3:27"
+        },
+        {
+          "position": "B2",
+          "title": "This House Is A Circus",
+          "duration": "3:09"
+        },
+        {
+          "position": "B3",
+          "title": "If You Were There, Beware",
+          "duration": "4:34"
+        },
+        {
+          "position": "B4",
+          "title": "The Bad Thing",
+          "duration": "2:23"
+        },
+        {
+          "position": "B5",
+          "title": "Old Yellow Bricks",
+          "duration": "3:11"
+        },
+        {
+          "position": "B6",
+          "title": "505",
+          "duration": "4:13"
+        }
+      ],
+      "coverFile": "2169494006-374f3937.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169494258,
+      "releaseId": 31862987,
+      "title": "Collision Course",
+      "artist": "Jay-Z, Linkin Park",
+      "artistSort": "jay-z, linkin park",
+      "searchText": "collision course jay-z, linkin park",
+      "year": 2024,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album, Reissue, Repress",
+      "label": "Warner Records",
+      "catalogNumber": "093624896210",
+      "genres": [
+        "Hip Hop",
+        "Rock"
+      ],
+      "styles": [
+        "Nu Metal"
+      ],
+      "coverUrl": "https://i.discogs.com/AgIQZX4eXB6KW4jpNsQ5YOH9rV8-fPfeTVA80m6ADGE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxODYy/OTg3LTE3Mjc3Mjcz/MzMtOTA1NS5qcGVn.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/31862987",
+      "addedAt": "2026-08-01T14:26:55.000Z",
+      "country": "USA & Europe",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Dirt Off Your Shoulder / Lying From You",
+          "duration": "4:05"
+        },
+        {
+          "position": "A2",
+          "title": "Big Pimpin' / Papercut",
+          "duration": "2:36"
+        },
+        {
+          "position": "A3",
+          "title": "Jigga What / Faint",
+          "duration": "3:31"
+        },
+        {
+          "position": "B1",
+          "title": "Numb / Encore",
+          "duration": "3:25"
+        },
+        {
+          "position": "B2",
+          "title": "Izzo / In The End",
+          "duration": "2:45"
+        },
+        {
+          "position": "B3",
+          "title": "Points Of Authority / 99 Problems / One Step Closer",
+          "duration": "4:56"
+        }
+      ],
+      "coverFile": "2169494258-24f7eeca.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169494909,
+      "releaseId": 12477585,
+      "title": "Follow The Leader",
+      "artist": "Korn",
+      "artistSort": "korn",
+      "searchText": "follow the leader korn",
+      "year": 2018,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album, Reissue, Stereo",
+      "label": "Immortal Records",
+      "catalogNumber": "19075865851",
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Nu Metal"
+      ],
+      "coverUrl": "https://i.discogs.com/nS-hGS_UhIUiQxA9JKi-u48z0_vJerZw09_HvSIZRAE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNDc3/NTg1LTE1MzY1NzUz/MzQtMzU0MC5qcGVn.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/12477585",
+      "addedAt": "2026-08-01T14:29:04.000Z",
+      "country": "Europe",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "It's On!",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Freak On A Leash",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Got The Life",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "Dead Bodies Everywhere",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Children Of The Korn",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "B.B.K.",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "Pretty",
+          "duration": ""
+        },
+        {
+          "position": "C1",
+          "title": "All In The Family",
+          "duration": ""
+        },
+        {
+          "position": "C2",
+          "title": "Reclaim My Place",
+          "duration": ""
+        },
+        {
+          "position": "C3",
+          "title": "Justin",
+          "duration": ""
+        },
+        {
+          "position": "D1",
+          "title": "Seed",
+          "duration": ""
+        },
+        {
+          "position": "D2",
+          "title": "Cameltosis",
+          "duration": ""
+        },
+        {
+          "position": "D3a",
+          "title": "My Gift To You",
+          "duration": ""
+        },
+        {
+          "position": "D3b",
+          "title": "[Conversation]",
+          "duration": ""
+        }
+      ],
+      "coverFile": "2169494909-8916af57.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169495374,
+      "releaseId": 26508728,
+      "title": "Toxicity",
+      "artist": "System Of A Down",
+      "artistSort": "system of a down",
+      "searchText": "toxicity system of a down",
+      "year": 2023,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album, Reissue, Stereo",
+      "label": "American Recordings",
+      "catalogNumber": "19075865591",
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Nu Metal"
+      ],
+      "coverUrl": "https://i.discogs.com/yGJIhf5pQ8UZnBUFP3V3jTQnHj6D1N-gNX3pg0zza3U/rs:fit/g:sm/q:90/h:599/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI2NTA4/NzI4LTE2Nzk1MTM0/MTQtOTUxNi5qcGVn.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/26508728",
+      "addedAt": "2026-08-01T14:30:36.000Z",
+      "country": "Europe",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Prison Song",
+          "duration": "3:21"
+        },
+        {
+          "position": "A2",
+          "title": "Needles",
+          "duration": "3:13"
+        },
+        {
+          "position": "A3",
+          "title": "Deer Dance",
+          "duration": "2:54"
+        },
+        {
+          "position": "A4",
+          "title": "Jet Pilot",
+          "duration": "2:06"
+        },
+        {
+          "position": "A5",
+          "title": "X",
+          "duration": "1:58"
+        },
+        {
+          "position": "A6",
+          "title": "Chop Suey!",
+          "duration": "3:30"
+        },
+        {
+          "position": "A7",
+          "title": "Bounce",
+          "duration": "1:54"
+        },
+        {
+          "position": "A8",
+          "title": "Forest",
+          "duration": "4:00"
+        },
+        {
+          "position": "B1",
+          "title": "ATWA",
+          "duration": "2:56"
+        },
+        {
+          "position": "B2",
+          "title": "Science",
+          "duration": "2:42"
+        },
+        {
+          "position": "B3",
+          "title": "Shimmy",
+          "duration": "1:50"
+        },
+        {
+          "position": "B4",
+          "title": "Toxicity",
+          "duration": "3:38"
+        },
+        {
+          "position": "B5",
+          "title": "Psycho",
+          "duration": "3:45"
+        },
+        {
+          "position": "B6",
+          "title": "Aerials",
+          "duration": "6:11"
+        }
+      ],
+      "coverFile": "2169495374-05df0fa4.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169496113,
+      "releaseId": 13700061,
+      "title": "L'Olymputaindepia",
+      "artist": "Utlra Vomit",
+      "artistSort": "utlra vomit",
+      "searchText": "l'olymputaindepia utlra vomit",
+      "year": 2019,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album / DVD, DVD-Video / All Media",
+      "label": "Verycords",
+      "catalogNumber": "6022046224",
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Death Metal",
+        "Parody",
+        "Punk",
+        "Grindcore"
+      ],
+      "coverUrl": "https://i.discogs.com/-dy2fBlW0sUII7RrEMdS1vcGoWDQ-AiMWKGYhujRRnQ/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNzAw/MDYxLTE1NTkyOTkw/MjktNzQ3OS5qcGVn.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/13700061",
+      "addedAt": "2026-08-01T14:32:52.000Z",
+      "country": "France",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Darry Cowl Chamber",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Les Bonne Manières",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Un Chien Géant",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "E-Tron (Digital Caca)",
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "title": "Mechanical Chiwawa",
+          "duration": ""
+        },
+        {
+          "position": "A6",
+          "title": "Je ne t'es Jamait Autans Aimer",
+          "duration": ""
+        },
+        {
+          "position": "A7",
+          "title": "Mountains Of Maths",
+          "duration": ""
+        },
+        {
+          "position": "A8",
+          "title": "Calojira",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "Takoyaki",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Boulangerie Patisserie",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "Super Sexe",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "Hyper Sexe",
+          "duration": ""
+        },
+        {
+          "position": "B5",
+          "title": "Pauv' Connard",
+          "duration": ""
+        },
+        {
+          "position": "B6",
+          "title": "Batman",
+          "duration": ""
+        },
+        {
+          "position": "B7",
+          "title": "Une Souris Verte",
+          "duration": ""
+        },
+        {
+          "position": "B8",
+          "title": "Phoned To Death",
+          "duration": ""
+        },
+        {
+          "position": "C1",
+          "title": "La Ch'nille",
+          "duration": ""
+        },
+        {
+          "position": "C2",
+          "title": "La Bouillie",
+          "duration": ""
+        },
+        {
+          "position": "C3",
+          "title": "Poker Face",
+          "duration": ""
+        },
+        {
+          "position": "C4",
+          "title": "Keken",
+          "duration": ""
+        },
+        {
+          "position": "C5",
+          "title": "Pink Pantera",
+          "duration": ""
+        },
+        {
+          "position": "C6",
+          "title": "Anthracte",
+          "duration": ""
+        },
+        {
+          "position": "C7",
+          "title": "Je Possède Un Cousin",
+          "duration": ""
+        },
+        {
+          "position": "C8",
+          "title": "Judas Prost",
+          "duration": ""
+        },
+        {
+          "position": "C9",
+          "title": "I Like To Vomit",
+          "duration": ""
+        },
+        {
+          "position": "C10",
+          "title": "Pipi Vs Caca",
+          "duration": ""
+        },
+        {
+          "position": "D1",
+          "title": "Je Collectionne des Canards (Vivants)",
+          "duration": ""
+        },
+        {
+          "position": "D2",
+          "title": "Kammthaar",
+          "duration": ""
+        },
+        {
+          "position": "D3",
+          "title": "Quand J'étais Petit",
+          "duration": ""
+        },
+        {
+          "position": "D4",
+          "title": "Evier Métal",
+          "duration": ""
+        },
+        {
+          "position": "DVD-1",
+          "title": "Darry Cowl Chamber",
+          "duration": ""
+        },
+        {
+          "position": "DVD-2",
+          "title": "Les Bonnes Manières",
+          "duration": ""
+        },
+        {
+          "position": "DVD-3",
+          "title": "Un Chien Géant",
+          "duration": ""
+        },
+        {
+          "position": "DVD-4",
+          "title": "E-Tron (Digital Caca)",
+          "duration": ""
+        },
+        {
+          "position": "DVD-5",
+          "title": "Mechanical Chiwawa",
+          "duration": ""
+        },
+        {
+          "position": "DVD-6",
+          "title": "Je Ne T'es Jamait Autans Aimer",
+          "duration": ""
+        },
+        {
+          "position": "DVD-7",
+          "title": "Mountains Of Maths",
+          "duration": ""
+        },
+        {
+          "position": "DVD-8",
+          "title": "Calojira",
+          "duration": ""
+        },
+        {
+          "position": "DVD-9",
+          "title": "Takoyaki",
+          "duration": ""
+        },
+        {
+          "position": "DVD-10",
+          "title": "Boulangerie Pâtisserie",
+          "duration": ""
+        },
+        {
+          "position": "DVD-11",
+          "title": "Super Sexe",
+          "duration": ""
+        },
+        {
+          "position": "DVD-12",
+          "title": "Hyper Sexe",
+          "duration": ""
+        },
+        {
+          "position": "DVD-13",
+          "title": "Pauv' Connard",
+          "duration": ""
+        },
+        {
+          "position": "DVD-14",
+          "title": "Batman",
+          "duration": ""
+        },
+        {
+          "position": "DVD-15",
+          "title": "Une Souris Verte",
+          "duration": ""
+        },
+        {
+          "position": "DVD-16",
+          "title": "Phoned To Death",
+          "duration": ""
+        },
+        {
+          "position": "DVD-17",
+          "title": "La Ch'nille",
+          "duration": ""
+        },
+        {
+          "position": "DVD-18",
+          "title": "La Bouillie",
+          "duration": ""
+        },
+        {
+          "position": "DVD-19",
+          "title": "Poker Face",
+          "duration": ""
+        },
+        {
+          "position": "DVD-20",
+          "title": "Keken",
+          "duration": ""
+        },
+        {
+          "position": "DVD-21",
+          "title": "Pink Pantera",
+          "duration": ""
+        },
+        {
+          "position": "DVD-22",
+          "title": "Anthracte",
+          "duration": ""
+        },
+        {
+          "position": "DVD-23",
+          "title": "Je Possède Un Cousin",
+          "duration": ""
+        },
+        {
+          "position": "DVD-24",
+          "title": "Judas Prost",
+          "duration": ""
+        },
+        {
+          "position": "DVD-25",
+          "title": "I Like To Vomit",
+          "duration": ""
+        },
+        {
+          "position": "DVD-26",
+          "title": "Pipi VS Caca",
+          "duration": ""
+        },
+        {
+          "position": "DVD-27",
+          "title": "Outro (C'était Pas Mal Là)",
+          "duration": ""
+        },
+        {
+          "position": "DVD-28",
+          "title": "Je Collectionne Des Canards (Vivants)",
+          "duration": ""
+        },
+        {
+          "position": "DVD-29",
+          "title": "Kammthaar",
+          "duration": ""
+        },
+        {
+          "position": "DVD-30",
+          "title": "Quand J'étais Petit",
+          "duration": ""
+        },
+        {
+          "position": "DVD-31",
+          "title": "Évier Metal",
+          "duration": ""
+        },
+        {
+          "position": "DVD-32",
+          "title": "Les Commentaires Odieux",
+          "duration": ""
+        },
+        {
+          "position": "DVD-33",
+          "title": "L'ITW Vérité",
+          "duration": ""
+        },
+        {
+          "position": "DVD-34",
+          "title": "Le 1er Concert d'UV (2001)",
+          "duration": ""
+        }
+      ],
+      "coverFile": "2169496113-bdd687a5.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169497179,
+      "releaseId": 695957,
+      "title": "Who The Fuck Are Arctic Monkeys?",
+      "artist": "Arctic Monkeys",
+      "artistSort": "arctic monkeys",
+      "searchText": "who the fuck are arctic monkeys? arctic monkeys",
+      "year": 2006,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, 10\", 33 ⅓ RPM, EP",
+      "label": "Domino",
+      "catalogNumber": "RUG226",
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Indie Rock"
+      ],
+      "coverUrl": "https://i.discogs.com/jmUXfqHb-6rc49oRLqgCnE5svoF0vil3CtJX35Vt-tI/rs:fit/g:sm/q:90/h:584/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY5NTk1/Ny0xNTA2MDY2Nzk5/LTMxMzAuanBlZw.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/695957",
+      "addedAt": "2026-08-01T14:36:07.000Z",
+      "country": "Europe",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "The View From The Afternoon",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Cigarette Smoker Fiona",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Despair In The Departure Lounge",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "No Buses",
+          "duration": ""
+        },
+        {
+          "position": "B5",
+          "title": "Who The Fuck Are Arctic Monkeys?",
+          "duration": ""
+        }
+      ],
+      "coverFile": "2169497179-737f25e4.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169497402,
+      "releaseId": 6200982,
+      "title": "Où Veux-Tu Qu'Je R'garde",
+      "artist": "Noir Désir",
+      "artistSort": "noir désir",
+      "searchText": "où veux-tu qu'je r'garde noir désir",
+      "year": 2014,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Mini-Album, Repress",
+      "label": "Barclay",
+      "catalogNumber": "831 484-1",
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Alternative Rock"
+      ],
+      "coverUrl": "https://i.discogs.com/YoSY26mZTlhLjLaqdb6Iex4ABIeba3_sGBl1z7_esM8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyMDA5/ODItMTQyMTg3MjY3/OC02MDAwLmpwZWc.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/6200982",
+      "addedAt": "2026-08-01T14:36:53.000Z",
+      "country": "France",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Où Veux-Tu Qu'Je R'garde",
+          "duration": "4:35"
+        },
+        {
+          "position": "A2",
+          "title": "Toujours Etre Ailleurs",
+          "duration": "4:25"
+        },
+        {
+          "position": "A3",
+          "title": "La Rage",
+          "duration": "3:10"
+        },
+        {
+          "position": "B1",
+          "title": "Pyromane",
+          "duration": "4:15"
+        },
+        {
+          "position": "B2",
+          "title": "Danse Sur Le Feu Maria",
+          "duration": "3:50"
+        },
+        {
+          "position": "B3",
+          "title": "Lola",
+          "duration": "5:05"
+        }
+      ],
+      "coverFile": "2169497402-a2a63074.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169497639,
+      "releaseId": 23764400,
+      "title": "The Phoenix",
+      "artist": "Grey Daze",
+      "artistSort": "grey daze",
+      "searchText": "the phoenix grey daze",
+      "year": 2022,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album",
+      "label": "Loma Vista",
+      "catalogNumber": "00888072419940",
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Grunge"
+      ],
+      "coverUrl": "https://i.discogs.com/VzDAcaom3YffV3P1UYJgRUcc0COer0PBqxJDWVwo64k/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzNzY0/NDAwLTE2NTY3OTcz/NzQtOTU5NS5wbmc.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/23764400",
+      "addedAt": "2026-08-01T14:37:40.000Z",
+      "country": "Europe",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Saturation (Strange Love)",
+          "duration": "3:55"
+        },
+        {
+          "position": "A2",
+          "title": "Starting To Fly",
+          "duration": "3:28"
+        },
+        {
+          "position": "A3",
+          "title": "Be Your Man",
+          "duration": "3:40"
+        },
+        {
+          "position": "A4",
+          "title": "Holding You",
+          "duration": "4:15"
+        },
+        {
+          "position": "A5",
+          "title": "Hole",
+          "duration": "4:35"
+        },
+        {
+          "position": "B1",
+          "title": "Drag",
+          "duration": "3:33"
+        },
+        {
+          "position": "B2",
+          "title": "Believe Me",
+          "duration": "3:53"
+        },
+        {
+          "position": "B3",
+          "title": "Anything, Anything",
+          "duration": "3:48"
+        },
+        {
+          "position": "B4",
+          "title": "Spin",
+          "duration": "4:06"
+        },
+        {
+          "position": "B5",
+          "title": "Wake Me",
+          "duration": "3:25"
+        }
+      ],
+      "coverFile": "2169497639-0cb27f1a.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169499478,
+      "releaseId": 8644845,
+      "title": "Whatever People Say I Am, That's What I'm Not",
+      "artist": "Arctic Monkeys",
+      "artistSort": "arctic monkeys",
+      "searchText": "whatever people say i am, that's what i'm not arctic monkeys",
+      "year": null,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Album",
+      "label": "Domino",
+      "catalogNumber": "WIGLP162",
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Indie Rock"
+      ],
+      "coverUrl": "https://i.discogs.com/Uj0kfUDuuIPlN7ee_CrQGP1JAbbJ9qM0PuqoLasE2cI/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg2NDQ4/NDUtMTQ2NTgxMTMz/NS00MzQ0LmpwZWc.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/8644845",
+      "addedAt": "2026-08-01T14:42:40.000Z",
+      "country": "Europe",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "The View From The Afternoon",
+          "duration": "3:38"
+        },
+        {
+          "position": "A2",
+          "title": "I Bet You Look Good On The Dancefloor",
+          "duration": "2:53"
+        },
+        {
+          "position": "A3",
+          "title": "Fake Tales Of San Francisco",
+          "duration": "2:56"
+        },
+        {
+          "position": "A4",
+          "title": "Dancing Shoes",
+          "duration": "2:22"
+        },
+        {
+          "position": "A5",
+          "title": "You Probably Couldn't See For The Lights But You Were Staring Straight At Me",
+          "duration": "2:10"
+        },
+        {
+          "position": "A6",
+          "title": "Still Take You Home",
+          "duration": "2:50"
+        },
+        {
+          "position": "B1",
+          "title": "Riot Van",
+          "duration": "2:12"
+        },
+        {
+          "position": "B2",
+          "title": "Red Light Indicates Doors Are Secured",
+          "duration": "2:22"
+        },
+        {
+          "position": "B3",
+          "title": "Mardy Bum",
+          "duration": "2:26"
+        },
+        {
+          "position": "B4",
+          "title": "Perhaps Vampires Is A Bit Strong But..",
+          "duration": "4:25"
+        },
+        {
+          "position": "B5",
+          "title": "When The Sun Goes Down",
+          "duration": "3:17"
+        },
+        {
+          "position": "B6",
+          "title": "From The Ritz To The Rubble",
+          "duration": "3:11"
+        },
+        {
+          "position": "B7",
+          "title": "A Certain Romance",
+          "duration": "5:27"
+        }
+      ],
+      "coverFile": "2169499478-65dc5e57.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    },
+    {
+      "instanceId": 2169850168,
+      "releaseId": 32149737,
+      "title": "Dark Rainbow [Deluxe 2LP]",
+      "artist": "Frank Carter & The Rattlesnakes",
+      "artistSort": "frank carter & the rattlesnakes",
+      "searchText": "dark rainbow [deluxe 2lp] frank carter & the rattlesnakes",
+      "year": 2024,
+      "format": "VINYL",
+      "formatDetail": "Vinyl, LP, Deluxe Edition",
+      "label": "International Death Cult",
+      "catalogNumber": "IDC031LP",
+      "genres": [
+        "Rock"
+      ],
+      "styles": [],
+      "coverUrl": "https://i.discogs.com/rVakdeNNl2zQd1BbL5i4Gd48tXaM2U3T4zhpOJzaONI/rs:fit/g:sm/q:90/h:586/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyMTQ5/NzM3LTE3MzAzMDMz/NDctMjcxOS5qcGVn.jpeg",
+      "discogsUrl": "https://www.discogs.com/release/32149737",
+      "addedAt": "2026-08-02T14:18:50.000Z",
+      "country": "Germany",
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Honey",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Man Of The Hour",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Can I Take You Home",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "American Spirit",
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "title": "Happier Days",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "Brambles",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Queen Of Hearts",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "Sun Bright Golden Happening",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "Superstar",
+          "duration": ""
+        },
+        {
+          "position": "B5",
+          "title": "Self Love",
+          "duration": ""
+        },
+        {
+          "position": "B6",
+          "title": "A Dark Rainbow",
+          "duration": ""
+        },
+        {
+          "position": "C1",
+          "title": "Can I Take You Home (Paris)",
+          "duration": ""
+        },
+        {
+          "position": "C2",
+          "title": "Brambles (Manchester)",
+          "duration": ""
+        },
+        {
+          "position": "C3",
+          "title": "American Spirit (Cologne)",
+          "duration": ""
+        },
+        {
+          "position": "C4",
+          "title": "Self Love (Wolverhampton)",
+          "duration": ""
+        },
+        {
+          "position": "C5",
+          "title": "Honey (Berlin)",
+          "duration": ""
+        },
+        {
+          "position": "C6",
+          "title": "Sun Bright Golden Happening (Tilburg)",
+          "duration": ""
+        },
+        {
+          "position": "D1",
+          "title": "Queen Of Hearts (London)",
+          "duration": ""
+        },
+        {
+          "position": "D2",
+          "title": "Superstar (Bristol)",
+          "duration": ""
+        },
+        {
+          "position": "D3",
+          "title": "Happier Days (Newcastle)",
+          "duration": ""
+        },
+        {
+          "position": "D4",
+          "title": "A Dark Rainbow (Cardiff)",
+          "duration": ""
+        },
+        {
+          "position": "D5",
+          "title": "Man Of The Hour (Glasgow)",
+          "duration": ""
+        }
+      ],
+      "coverFile": "2169850168-0fbd06e1.jpg",
+      "archivedAt": null,
+      "isFavorite": false,
+      "customOrder": null
+    }
+  ]
 }
