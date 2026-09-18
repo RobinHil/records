@@ -59,6 +59,20 @@ jobs:
 
       - run: pnpm lint
 
+      # Les pochettes ne sont pas versionnees : une collection entiere de JPEG
+      # n'a pas a grossir le depot. Le cache les reporte d'une execution a la
+      # suivante ; la cle suit l'etat de la collection, et la cle de repli
+      # restaure le cache le plus recent, de sorte qu'un disque ajoute ne fait
+      # retelecharger que sa propre pochette.
+      #
+      # Restauree avant de decider s'il faut synchroniser : cette decision
+      # depend de ce que le cache a rendu.
+      - uses: actions/cache@v6
+        with:
+          path: public/covers
+          key: covers-${{ hashFiles('data/collection.json') }}
+          restore-keys: covers-
+
       # Qui synchronise, et quand.
       #
       # Un push ne fait que reconstruire a partir de l'etat committe : publier
@@ -66,33 +80,32 @@ jobs:
       # pas a toucher aux secrets. La synchronisation est le travail de
       # l'execution planifiee, ou d'un declenchement manuel qui la demande.
       #
-      # Exception : tant que data/collection.json est vide, il faut bien un
-      # premier remplissage, sinon le tout premier deploiement publierait un
-      # site sans disques.
+      # Deux exceptions, et ce sont elles qui rendent le tout auto-reparable :
+      # un etat vide, qui publierait un site sans disques, et des pochettes
+      # manquantes, que seule la synchronisation sait retelecharger. La seconde
+      # arrive des que le cache est froid - premiere execution, ou eviction
+      # apres une semaine sans build.
       - name: Decide whether to sync
         id: decide
         run: |
           set -euo pipefail
-          count=$(node -e 'process.stdout.write(String(require("./data/collection.json").records.length))')
-          echo "etat actuel : $count disques"
+          read -r records covers < <(node -e '
+            const fs = require("node:fs");
+            const c = require("./data/collection.json");
+            const live = c.records.filter((r) => r.archivedAt === null);
+            const want = live.filter((r) => r.coverFile);
+            const have = want.filter((r) => fs.existsSync(`public/covers/${r.coverFile}`));
+            process.stdout.write(`${live.length} ${want.length - have.length}`);
+          ')
+          echo "etat : $records disques, $covers pochette(s) manquante(s)"
           if [ "${{ github.event_name }}" = "schedule" ] \
             || [ "${{ inputs.sync }}" = "true" ] \
-            || [ "$count" = "0" ]; then
+            || [ "$records" = "0" ] \
+            || [ "$covers" != "0" ]; then
             echo "sync=true" >> "$GITHUB_OUTPUT"
           else
             echo "sync=false" >> "$GITHUB_OUTPUT"
           fi
-
-      # Les pochettes ne sont pas versionnees : une collection entiere de JPEG
-      # n'a pas a grossir le depot. Le cache les reporte d'une execution a la
-      # suivante ; la cle suit l'etat de la collection, et la cle de repli
-      # restaure le cache le plus recent, de sorte qu'un disque ajoute ne fait
-      # retelecharger que sa propre pochette.
-      - uses: actions/cache@v6
-        with:
-          path: public/covers
-          key: covers-${{ hashFiles('data/collection.json') }}
-          restore-keys: covers-
 
       - name: Sync the collection from Discogs
         if: steps.decide.outputs.sync == 'true'
