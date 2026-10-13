@@ -100,15 +100,14 @@ export async function runSync(): Promise<SyncResult> {
         tracklist: null,
         coverFile: null,
         archivedAt: null,
-        isFavorite: false,
         customOrder: null,
       });
       result.added += 1;
     } else {
       if (prev.archivedAt) result.restored += 1;
       else result.updated += 1;
-      // mapItem ne produit que les champs Discogs : le favori, l'ordre manuel,
-      // la tracklist, le pays et la pochette deja prise survivent a l'ecrasement.
+      // mapItem ne produit que les champs Discogs : l'ordre manuel, la
+      // tracklist, le pays et la pochette deja prise survivent a l'ecrasement.
       Object.assign(prev, fields, { archivedAt: null });
     }
   }
@@ -152,8 +151,8 @@ export async function runSync(): Promise<SyncResult> {
     }
   }
 
-  // Suppression douce de ce qui a quitte la collection Discogs : le favori et
-  // l'ordre manuel d'un disque retire puis remis sont ainsi preserves.
+  // Suppression douce de ce qui a quitte la collection Discogs : l'ordre
+  // manuel d'un disque retire puis remis est ainsi preserve.
   for (const rec of byInstanceId.values()) {
     if (!seen.has(rec.instanceId) && !rec.archivedAt) {
       rec.archivedAt = now;

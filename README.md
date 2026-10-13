@@ -6,7 +6,7 @@ A minimal, gallery-style web app for browsing a personal vinyl and CD collection
 The collection itself lives on [Discogs](https://www.discogs.com) - you add and
 remove records there (site, app, barcode scan). This app synchronizes your
 Discogs collection and layers on what Discogs does not offer: a premium
-wall-of-records display, custom manual ordering, favorites, and fast filtering.
+wall-of-records display, custom manual ordering, and fast filtering.
 
 The site is **fully static**. The build synchronizes the collection, writes it
 to a single `collection.json`, and the browser does the searching, filtering and
@@ -53,8 +53,8 @@ repository**. `pnpm sync` brings it up to date with Discogs:
 1. Fetches the full Discogs collection, one request per 100 records.
 2. Inserts new records, refreshes the Discogs fields of existing ones, and
    **soft-deletes** records that disappeared - they are kept with an
-   `archivedAt` date, not erased, so favorites and manual order survive an
-   accidental removal and re-add.
+   `archivedAt` date, not erased, so the manual order survives an accidental
+   removal and re-add.
 3. Fetches the tracklist and country **only for records that never got them**.
 4. Downloads **only the covers that are missing** from `public/covers/`.
 
@@ -69,17 +69,16 @@ growing the repository. The workflow caches them between runs and re-downloads
 what the cache lost, which is why `sync` checks that the file is actually on
 disk and not merely named in the state.
 
-## Favorites and manual order
+## Manual order
 
-Discogs knows neither. They are fields of each record in
+Discogs does not know it. It is a field of each record in
 `data/collection.json`, edited by hand, and every synchronization preserves
-them - `sync` only ever overwrites the fields that come from Discogs.
+it - `sync` only ever overwrites the fields that come from Discogs.
 
 ```json
 {
   "instanceId": 1234567890,
   "title": "Kind of Blue",
-  "isFavorite": true,
   "customOrder": 1
 }
 ```
@@ -87,14 +86,14 @@ them - `sync` only ever overwrites the fields that come from Discogs.
 `customOrder` sorts ascending under the "My order" sort; records without one
 come after those that have one.
 
-To carry over the favorites and ordering from the old server deployment, read
-them out of its SQLite database and paste them into the matching records:
+To carry over the ordering from the old server deployment, read it out of its
+SQLite database and paste it into the matching records:
 
 ```bash
 sqlite3 records.db "
-  SELECT instanceId, isFavorite, customOrder
+  SELECT instanceId, customOrder
   FROM Record
-  WHERE isFavorite = 1 OR customOrder IS NOT NULL
+  WHERE customOrder IS NOT NULL
   ORDER BY customOrder;
 "
 ```
@@ -125,11 +124,12 @@ drag-and-drop ordering, and a button to trigger a sync. A static host executes
 nothing, so there is no server to hold a session or accept a write, and an
 editing interface would have had nothing to write to.
 
-The public gallery never wrote anything, so it lost no feature: favorites and
-manual order are still displayed and still filterable. What changed is how they
-are edited - by hand in `data/collection.json` instead of by dragging tiles.
+The manual order is still applied by the "My order" sort. What changed is how
+it is edited - by hand in `data/collection.json` instead of by dragging tiles.
+Favorites did not survive: with the toggle gone nothing set them any more, so
+the field and the gallery filter that read it were removed as well.
 
-Prisma and SQLite went with it. The database had become a file that only the
+Prisma and SQLite went with the back-office. The database had become a file that only the
 build read, once; the state it used to hold is now the versioned JSON, which a
 human can read and a diff can show.
 
@@ -153,5 +153,5 @@ lib/
   records.ts                turns the state into what the site publishes
   base-path.ts              deployment sub-path, for the URLs the code builds
 scripts/sync.ts             pnpm sync
-data/collection.json        the state: collection, favorites, manual order
+data/collection.json        the state: collection and manual order
 ```

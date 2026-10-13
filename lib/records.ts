@@ -31,7 +31,6 @@ function toDTO(r: LibraryRecord, basePath: string): RecordDTO {
     coverSrc: r.coverFile ? `${basePath}/covers/${r.coverFile}` : r.coverUrl,
     discogsUrl: r.discogsUrl,
     addedAt: r.addedAt,
-    isFavorite: r.isFavorite,
     customOrder: r.customOrder,
     searchText: r.searchText,
     artistSort: r.artistSort,

@@ -18,7 +18,6 @@ export interface GalleryFilters {
   format: FormatFilter;
   sort: SortKey;
   genres: string[];
-  favorites: boolean;
   recentEnabled: boolean;
   recentCount: number;
 }
@@ -28,7 +27,6 @@ export const DEFAULT_FILTERS: GalleryFilters = {
   format: "both",
   sort: "custom",
   genres: [],
-  favorites: false,
   recentEnabled: false,
   recentCount: 20,
 };
@@ -91,7 +89,6 @@ export function applyFilters(
     if (needle && !r.searchText.includes(needle)) return false;
     if (filters.format === "vinyl" && r.format !== "VINYL") return false;
     if (filters.format === "cd" && r.format !== "CD") return false;
-    if (filters.favorites && !r.isFavorite) return false;
     if (wanted) {
       const hit =
         r.genres.some((g) => wanted.has(g)) || r.styles.some((s) => wanted.has(s));

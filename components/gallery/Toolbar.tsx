@@ -6,7 +6,6 @@ import {
   ChevronDown,
   Search,
   SlidersHorizontal,
-  Star,
   X,
 } from "lucide-react";
 import Popover from "@/components/gallery/Popover";
@@ -262,25 +261,6 @@ export default function Toolbar({
               )}
             </div>
           </Popover>
-
-          <button
-            type="button"
-            aria-pressed={filters.favorites}
-            onClick={() => onChange({ favorites: !filters.favorites })}
-            className={`flex items-center gap-1.5 rounded-full border px-3 py-1.5 font-medium transition-colors ${
-              filters.favorites
-                ? "border-line-strong bg-ink text-canvas"
-                : "border-transparent text-ink-soft hover:text-ink"
-            }`}
-          >
-            <Star
-              className="h-3.5 w-3.5"
-              strokeWidth={1.75}
-              fill={filters.favorites ? "currentColor" : "none"}
-              aria-hidden
-            />
-            Favorites
-          </button>
         </div>
 
         <span className="ml-auto hidden tabular-nums text-xs text-ink-muted md:block">
