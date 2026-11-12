@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-11-11T11:45:20.170Z",
+  "syncedAt": "2026-11-12T12:24:03.521Z",
   "records": [
     {
       "instanceId": 2154457300,
@@ -285,7 +285,7 @@
         "Electro",
         "French House"
       ],
-      "coverUrl": "https://i.discogs.com/9omVF7Ur_lP25cJS_AUeKEXhSWncOr_VllpR1UdVHV4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5Mjc3/MDEwLTE3MzMwODAz/ODEtMzE5Ni5qcGVn.jpeg",
+      "coverUrl": "https://i.discogs.com/v1VW0CSdWfF1OMU_Vc5t1pEn5h-s59Oqu8oUSfXdax8/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5Mjc3/MDEwLTE3OTQ0ODAz/MzAtMTE3NS5qcGVn.jpeg",
       "discogsUrl": "https://www.discogs.com/release/29277010",
       "addedAt": "2026-06-12T20:07:56.000Z",
       "country": "Europe",
@@ -361,7 +361,7 @@
           "duration": ""
         }
       ],
-      "coverFile": "2154462076-f6d1cdfa.jpg",
+      "coverFile": "2154462076-d1ded760.jpg",
       "archivedAt": null,
       "customOrder": null
     },
