@@ -233,8 +233,8 @@ function uniformGrid(
 /**
  * Grille qui remplit la page : pour chaque nombre de colonnes, autant de
  * rangees que la hauteur en loge, et inversement. Les cases en trop sont
- * absorbees par des pochettes de quatre cases (chacune en libere trois),
- * jamais plus d'une sur trois. Gagne la grille qui couvre la plus grande
+ * absorbees par des pochettes de quatre cases (chacune en occupe trois de
+ * plus qu'une pochette simple), jamais plus d'une sur trois. Gagne la grille qui couvre la plus grande
  * surface ; a surface presque egale, celle qui laisse le moins de trous,
  * puis le moins de grandes pochettes.
  */
@@ -268,8 +268,8 @@ function mixedGrid(
     .filter((g) => (!framed || g.block) && g.capacity >= n && g.tile > 0);
   // Une case de moins de 68 % du cote de la meilleure ne peut pas gagner :
   // meme avec une grande pochette sur trois, elle couvre moins que la
-  // meilleure grille sans aucune. Inutile d'y chercher la place des grandes,
-  // qui est la partie couteuse.
+  // meilleure grille sans aucune, tolerance comprise. Inutile d'y chercher la
+  // place des grandes, qui est la partie couteuse.
   const maxTile = Math.max(0, ...fitting.map((g) => g.tile));
 
   const scored: (Grid & { area: number })[] = [];

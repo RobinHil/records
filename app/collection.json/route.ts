@@ -9,10 +9,9 @@ import { loadCollection } from "@/lib/records";
  * serveur - il ne peut donc rien lire de la requete, ce qui tombe bien : il
  * renvoie toujours la meme chose.
  *
- * C'est aussi le seul endroit du build qui touche a la base. Celle-ci n'est
- * plus un stockage mais un artefact : le workflow la cree a partir des
- * migrations, la remplit depuis Discogs, y applique les annotations du depot,
- * et elle disparait avec le runner.
+ * C'est aussi le seul endroit du build qui lit l'etat de la collection,
+ * data/collection.json, et il n'appelle rien : seule la synchronisation parle
+ * a Discogs.
  */
 export const dynamic = "force-static";
 

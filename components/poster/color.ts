@@ -1,5 +1,6 @@
 /*
- * Couleur dominante d'une pochette, et ordre chromatique des pochettes.
+ * Couleur dominante d'une pochette, ordre chromatique des pochettes, et
+ * familles de couleurs pour choisir celles qui entrent dans l'affiche.
  *
  * Tout se calcule dans OKLab, un espace ou les distances suivent a peu pres la
  * perception : deux teintes voisines en angle y paraissent voisines a l'oeil,

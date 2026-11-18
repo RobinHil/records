@@ -1,8 +1,8 @@
 name: Pages
 
-# Records est un site statique : `next build` en mode export rend l'unique page
-# et le fichier de collection dans out/, et un hebergeur de fichiers sert le
-# tout. Il n'y a ni base, ni session, ni API.
+# Records est un site statique : `next build` en mode export rend les pages -
+# la galerie et l'affiche - et le fichier de collection dans out/, et un
+# hebergeur de fichiers sert le tout. Il n'y a ni base, ni session, ni API.
 #
 # L'etat de la collection vit dans data/collection.json, versionne. C'est ce
 # qui rend la synchronisation quotidienne bon marche : Discogs n'est interroge

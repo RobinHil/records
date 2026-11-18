@@ -3,7 +3,7 @@ import type { NextConfig } from "next";
 /*
  * Export statique.
  *
- * L'application n'a plus de serveur : `next build` rend l'unique page et le
+ * L'application n'a plus de serveur : `next build` rend les pages et le
  * fichier de collection dans out/, et un hebergeur de fichiers sert le tout.
  * Les en-tetes de securite que ce fichier posait sont partis avec lui - la
  * cle `headers()` ne fonctionne pas en export statique, et GitHub Pages ne

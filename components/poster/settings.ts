@@ -23,10 +23,6 @@ export type Background = "white" | "black";
 /** Ordre des pochettes : le degrade de couleurs, ou le hasard. */
 export type Order = "color" | "random";
 
-// Au-dela, les echanges les plus anciens sont oublies : la liste ne doit pas
-// grossir sans fin au fil des seances.
-const MAX_EDITS = 300;
-
 export interface PosterSettings {
   paperId: string;
   orientation: Orientation;
@@ -56,6 +52,10 @@ export interface PosterSettings {
    * Retouches a la main, rejouees dans l'ordre : [a, b] met la pochette b a
    * la place de a. Si b est deja sur l'affiche, les deux echangent leur
    * place ; sinon b entre et a sort.
+   *
+   * La liste n'est jamais tronquee : chaque retouche depend de celles qui la
+   * precedent, et oublier les plus anciennes changerait l'affiche sans
+   * prevenir. "Reset" la vide.
    */
   edits: [number, number][];
 }
@@ -133,7 +133,6 @@ export function loadSettings(): PosterSettings {
             (e): e is [number, number] =>
               Array.isArray(e) && e.length === 2 && e.every((id) => Number.isInteger(id))
           )
-          .slice(-MAX_EDITS)
       : d.edits,
   };
 }
@@ -173,7 +172,6 @@ export function getDefaultSettings(): PosterSettings {
 
 export function updateSettings(patch: Partial<PosterSettings>): void {
   current = { ...getSettings(), ...patch };
-  if (current.edits.length > MAX_EDITS) current.edits = current.edits.slice(-MAX_EDITS);
   saveSettings(current);
   for (const listener of listeners) listener();
 }

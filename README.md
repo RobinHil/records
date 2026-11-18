@@ -9,9 +9,11 @@ Discogs collection and layers on what Discogs does not offer: a premium
 wall-of-records display, fast filtering, and a printable poster of the
 collection's covers sorted by color.
 
-The site is **fully static**. The build synchronizes the collection, writes it
-to a single `collection.json`, and the browser does the searching, filtering and
-sorting. Nothing runs in production: no database, no session, no API.
+The site is **fully static**. A synchronization brings `data/collection.json`
+up to date with Discogs, the build publishes it as a single `collection.json`,
+and the browser does the rest: searching, filtering and sorting the gallery,
+reading the cover colors for the poster. Nothing runs in production: no
+database, no session, no API.
 
 Stack: Next.js (App Router, TypeScript, static export), TailwindCSS, Framer
 Motion, react-virtuoso. No database. Package manager: pnpm.
@@ -84,7 +86,8 @@ covers.
 
 Then comes the arrangement. "By color" keeps the gradient, and Shuffle covers
 swaps covers of neighbouring hues, so places change everywhere while the
-gradient survives; "Random" drops the gradient. Shuffle shapes moves the
+gradient survives; "Random" drops the gradient. When the number of covers is
+limited, Shuffle covers also draws a new set. Shuffle shapes moves the
 large covers elsewhere on the grid. On top of that, every spot can be edited
 by hand: drag a cover onto another to swap them (each keeps the size of the
 spot it lands in), or use a cover's replace button to pick any cover of the
@@ -156,9 +159,9 @@ Favorites and the manual order did not survive: with the toggle and the
 drag-and-drop gone nothing set them any more, so the fields, the gallery
 filter and the "My order" sort that read them were removed as well.
 
-Prisma and SQLite went with the back-office. The database had become a file that only the
-build read, once; the state it used to hold is now the versioned JSON, which a
-human can read and a diff can show.
+Prisma and SQLite went with the back-office. The database had become a file
+that only the build read, once; the state it used to hold is now the versioned
+JSON, which a human can read and a diff can show.
 
 Also gone with the server: the security headers `next.config.ts` used to set.
 GitHub Pages sets no custom headers. Behind a reverse proxy, that proxy has to
@@ -184,9 +187,11 @@ components/poster/
   export.ts                 the poster rendered as a print-resolution JPEG
 lib/
   discogs.ts                Discogs API client
+  covers.ts                 downloads covers into public/covers
   library.ts                reads and writes data/collection.json
   sync.ts                   the synchronization itself
   records.ts                turns the state into what the site publishes
+  types.ts                  what the site publishes, and the gallery's filters
   base-path.ts              deployment sub-path, for the URLs the code builds
   use-collection.ts         loads collection.json in the browser
 scripts/sync.ts             pnpm sync
