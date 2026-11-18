@@ -155,3 +155,53 @@ export function compareColors(x: CoverColor, y: CoverColor): number {
   const [gy, ky] = rank(y);
   return gx - gy || kx - ky || y.l - x.l;
 }
+
+/*
+ * Familles de couleurs, pour choisir ce qui entre dans l'affiche.
+ *
+ * Les gris sont coupes en deux comme dans l'ordre de l'affiche : les clairs
+ * vont avec les blancs, les fonces avec les noirs. Les bornes de teinte sont
+ * des angles OKLCH : le rose vif tombe vers 350, d'ou sa place avec les
+ * violets plutot qu'avec les rouges.
+ */
+export const FAMILIES = [
+  { id: "white", label: "White", fallback: "#f2f2ee" },
+  { id: "red", label: "Red", fallback: "#c8312c" },
+  { id: "orange", label: "Orange", fallback: "#e08a2c" },
+  { id: "yellow", label: "Yellow", fallback: "#e3c23a" },
+  { id: "green", label: "Green", fallback: "#4d9a5b" },
+  { id: "blue", label: "Blue", fallback: "#2f62b8" },
+  { id: "pink", label: "Pink", fallback: "#b04f9a" },
+  { id: "black", label: "Black", fallback: "#1c1c1f" },
+] as const;
+
+export type Family = (typeof FAMILIES)[number]["id"];
+
+export function familyOf(color: CoverColor): Family {
+  const [group] = rank(color);
+  if (group === 0) return "white";
+  if (group === 2) return "black";
+  const h = color.h;
+  if (h < 45 || h >= 350) return "red";
+  if (h < 80) return "orange";
+  if (h < 125) return "yellow";
+  if (h < 185) return "green";
+  if (h < 280) return "blue";
+  return "pink";
+}
+
+/** Couleur moyenne d'un ensemble, pour la pastille de sa famille. */
+export function averageColor(colors: CoverColor[]): string | null {
+  if (colors.length === 0) return null;
+  let L = 0;
+  let a = 0;
+  let b = 0;
+  for (const c of colors) {
+    const rad = (c.h * Math.PI) / 180;
+    L += c.l;
+    a += c.c * Math.cos(rad);
+    b += c.c * Math.sin(rad);
+  }
+  const n = colors.length;
+  return toHex(L / n, a / n, b / n);
+}

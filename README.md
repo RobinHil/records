@@ -72,9 +72,34 @@ disk and not merely named in the state.
 
 ## Poster
 
-`/poster` lays every cover of the collection out as a mosaic sorted by
-dominant color, sized for print: A3, A2, A1, 50 x 70 cm or 24 x 36 in, portrait
-or landscape, with margin, gap, background and an optional caption.
+`/poster` lays the covers of the collection out as a mosaic sorted by
+dominant color, sized for print: A4, A3, A2, A1, 50 x 70 cm or 24 x 36 in,
+portrait or landscape, with margin, gap, background and an optional caption
+set above, below, across the middle or framed by the covers.
+
+What goes into it is chosen in three steps: color families (white, red,
+orange, yellow, green, blue, pink, black, any combination), covers left out
+with their hide button, and optionally a random draw of a given number of
+covers.
+
+Then comes the arrangement. "By color" keeps the gradient, and Shuffle covers
+swaps covers of neighbouring hues, so places change everywhere while the
+gradient survives; "Random" drops the gradient. Shuffle shapes moves the
+large covers elsewhere on the grid. On top of that, every spot can be edited
+by hand: drag a cover onto another to swap them (each keeps the size of the
+spot it lands in), or use a cover's replace button to pick any cover of the
+collection for that spot. These edits name covers, not spots, so they survive
+a change of paper or margin; Reset undoes them.
+
+The grid is chosen to fit the paper. With "Fill the page", it fills the
+printable area and a few covers take four cells to absorb what would
+otherwise be left blank; with "All the same", every cover has the same size
+and the grid is centered, leaving margins where the count does not divide
+evenly.
+
+The settings, the covers left out and the manual edits are kept in the
+browser's local storage: a poster worked on over several visits stays as it
+was left, on that browser.
 
 The covers it uses are the ones `pnpm sync` already downloaded from Discogs
 into `public/covers/`: served by the site itself, they can be read pixel by
@@ -150,8 +175,11 @@ components/gallery/
   filtering.ts              search, filters and sorts, in the browser
   Gallery.tsx               loads collection.json, renders the virtualized grid
 components/poster/
-  Poster.tsx                reads the covers, preview, settings, print
-  color.ts                  dominant color and color order
+  Poster.tsx                reads the covers, selection, preview, print
+  CoverPicker.tsx           the dialog that picks the cover of a spot
+  controls.tsx              the settings panel's inputs
+  settings.ts               settings, kept in local storage
+  color.ts                  dominant color, color order and families
   layout.ts                 paper sizes and grid, in millimeters
   export.ts                 the poster rendered as a print-resolution JPEG
 lib/

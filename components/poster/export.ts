@@ -61,7 +61,6 @@ export async function renderPoster(
   ctx.imageSmoothingEnabled = true;
   ctx.imageSmoothingQuality = "high";
 
-  const side = layout.tile * scale;
   layout.cells.forEach((cell, i) => {
     const img = images[i];
     if (!img) return;
@@ -77,8 +76,8 @@ export async function renderPoster(
       crop,
       cell.x * scale,
       cell.y * scale,
-      side,
-      side
+      cell.size * scale,
+      cell.size * scale
     );
   });
 
@@ -94,7 +93,7 @@ export async function renderPoster(
     if (spacing) ctx.letterSpacing = `${spacing}px`;
     ctx.fillText(
       options.caption.toUpperCase(),
-      canvas.width / 2 + spacing / 2,
+      layout.caption.x * scale + spacing / 2,
       layout.caption.y * scale
     );
   }
