@@ -12,8 +12,7 @@ import type { RecordFormat, Track } from "@/lib/types";
  * archive, et chaque nuit aurait retelecharge toutes les tracklists et toutes
  * les pochettes, a 1,1 seconde par appel Discogs.
  *
- * L'etat vit donc ici, versionne. Ce que Discogs ignore - l'ordre manuel -
- * s'edite directement dans ce fichier, et la synchronisation le preserve.
+ * L'etat vit donc ici, versionne, et seule la synchronisation l'ecrit.
  */
 
 export const LIBRARY_PATH = "data/collection.json";
@@ -42,8 +41,6 @@ export interface LibraryRecord {
   tracklist: Track[] | null;
   /** Suppression douce : le disque a quitte la collection Discogs. */
   archivedAt: string | null;
-  /** Ce que Discogs ne connait pas, et qui s'edite a la main ici. */
-  customOrder: number | null;
 }
 
 export interface Library {

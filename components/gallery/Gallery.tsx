@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 import { VirtuosoGrid } from "react-virtuoso";
 import { Disc3 } from "lucide-react";
 import DetailModal from "@/components/gallery/DetailModal";
@@ -12,8 +12,8 @@ import {
   DEFAULT_FILTERS,
   type GalleryFilters,
 } from "@/components/gallery/filtering";
-import { withBasePath } from "@/lib/base-path";
-import type { Collection, RecordDTO } from "@/lib/types";
+import { useCollection } from "@/lib/use-collection";
+import type { RecordDTO } from "@/lib/types";
 
 /*
  * La galerie chargeait la collection page par page depuis /api/records, une
@@ -25,28 +25,9 @@ import type { Collection, RecordDTO } from "@/lib/types";
  */
 export default function Gallery() {
   const [filters, setFilters] = useState<GalleryFilters>(DEFAULT_FILTERS);
-  const [collection, setCollection] = useState<Collection | null>(null);
-  const [failed, setFailed] = useState(false);
+  const { collection, failed } = useCollection();
   const [hovered, setHovered] = useState<RecordDTO | null>(null);
   const [selected, setSelected] = useState<RecordDTO | null>(null);
-
-  useEffect(() => {
-    let cancelled = false;
-    fetch(withBasePath("/collection.json"))
-      .then((r) => {
-        if (!r.ok) throw new Error(`HTTP ${r.status}`);
-        return r.json() as Promise<Collection>;
-      })
-      .then((data) => {
-        if (!cancelled) setCollection(data);
-      })
-      .catch(() => {
-        if (!cancelled) setFailed(true);
-      });
-    return () => {
-      cancelled = true;
-    };
-  }, []);
 
   const items = useMemo(
     () => (collection ? applyFilters(collection.records, filters) : []),

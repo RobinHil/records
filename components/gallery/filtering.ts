@@ -25,15 +25,15 @@ export interface GalleryFilters {
 export const DEFAULT_FILTERS: GalleryFilters = {
   q: "",
   format: "both",
-  sort: "custom",
+  sort: "added",
   genres: [],
   recentEnabled: false,
   recentCount: 20,
 };
 
 // Ordre des valeurs nulles : l'ancienne requete posait `nulls: "last"` sur
-// `year` et `customOrder`. Un disque sans annee ou sans rang manuel passe donc
-// apres les autres, dans les deux sens de tri.
+// `year`. Un disque sans annee passe donc apres les autres, dans les deux
+// sens de tri.
 function nullsLast(a: number | null, b: number | null, dir: 1 | -1): number {
   if (a === null && b === null) return 0;
   if (a === null) return 1;
@@ -58,13 +58,8 @@ function compare(sort: SortKey): (a: RecordDTO, b: RecordDTO) => number {
       return (a, b) =>
         nullsLast(a.year, b.year, -1) || a.artistSort.localeCompare(b.artistSort);
     case "added":
-      return (a, b) => b.addedAt.localeCompare(a.addedAt);
-    case "custom":
     default:
-      return (a, b) =>
-        nullsLast(a.customOrder, b.customOrder, 1) ||
-        a.artistSort.localeCompare(b.artistSort) ||
-        a.title.localeCompare(b.title);
+      return (a, b) => b.addedAt.localeCompare(a.addedAt);
   }
 }
 

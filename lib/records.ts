@@ -31,7 +31,6 @@ function toDTO(r: LibraryRecord, basePath: string): RecordDTO {
     coverSrc: r.coverFile ? `${basePath}/covers/${r.coverFile}` : r.coverUrl,
     discogsUrl: r.discogsUrl,
     addedAt: r.addedAt,
-    customOrder: r.customOrder,
     searchText: r.searchText,
     artistSort: r.artistSort,
   };
@@ -41,7 +40,7 @@ function toDTO(r: LibraryRecord, basePath: string): RecordDTO {
  * La collection vivante et ses genres.
  *
  * L'ordre du tableau n'a pas d'importance : la galerie trie toujours
- * elle-meme, selon le tri choisi, dont "custom" par defaut. Les disques
+ * elle-meme, selon le tri choisi. Les disques
  * sortent donc dans l'ordre du fichier, qui est celui des instanceId - stable,
  * donc sans diff parasite d'un build a l'autre.
  */

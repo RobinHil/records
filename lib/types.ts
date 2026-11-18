@@ -25,7 +25,6 @@ export interface RecordDTO {
   coverSrc: string | null;
   discogsUrl: string | null;
   addedAt: string;
-  customOrder: number | null;
   // Colonnes de tri et de recherche de la base, exposees parce que le
   // filtrage se fait desormais dans le navigateur : searchText est deja en
   // minuscules, artistSort est l'artiste sans son article initial.
@@ -38,8 +37,8 @@ export interface RecordDTO {
  * liste des genres deja dedoublonnee et triee.
  *
  * Les disques archives n'y figurent pas. La suppression douce sert a ne pas
- * perdre l'ordre manuel d'un disque retire puis remis dans la collection
- * Discogs ; elle n'a aucune raison d'etre publiee.
+ * reinterroger Discogs pour un disque retire puis remis dans la collection ;
+ * elle n'a aucune raison d'etre publiee.
  */
 export interface Collection {
   records: RecordDTO[];
@@ -48,7 +47,6 @@ export interface Collection {
 }
 
 export type SortKey =
-  | "custom"
   | "album"
   | "artist"
   | "year_asc"

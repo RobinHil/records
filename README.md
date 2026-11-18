@@ -6,7 +6,8 @@ A minimal, gallery-style web app for browsing a personal vinyl and CD collection
 The collection itself lives on [Discogs](https://www.discogs.com) - you add and
 remove records there (site, app, barcode scan). This app synchronizes your
 Discogs collection and layers on what Discogs does not offer: a premium
-wall-of-records display, custom manual ordering, and fast filtering.
+wall-of-records display, fast filtering, and a printable poster of the
+collection's covers sorted by color.
 
 The site is **fully static**. The build synchronizes the collection, writes it
 to a single `collection.json`, and the browser does the searching, filtering and
@@ -53,8 +54,8 @@ repository**. `pnpm sync` brings it up to date with Discogs:
 1. Fetches the full Discogs collection, one request per 100 records.
 2. Inserts new records, refreshes the Discogs fields of existing ones, and
    **soft-deletes** records that disappeared - they are kept with an
-   `archivedAt` date, not erased, so the manual order survives an accidental
-   removal and re-add.
+   `archivedAt` date, not erased, so an accidental removal and re-add does not
+   cost another round of Discogs calls.
 3. Fetches the tracklist and country **only for records that never got them**.
 4. Downloads **only the covers that are missing** from `public/covers/`.
 
@@ -69,34 +70,36 @@ growing the repository. The workflow caches them between runs and re-downloads
 what the cache lost, which is why `sync` checks that the file is actually on
 disk and not merely named in the state.
 
-## Manual order
+## Poster
 
-Discogs does not know it. It is a field of each record in
-`data/collection.json`, edited by hand, and every synchronization preserves
-it - `sync` only ever overwrites the fields that come from Discogs.
+`/poster` lays every cover of the collection out as a mosaic sorted by
+dominant color, sized for print: A3, A2, A1, 50 x 70 cm or 24 x 36 in, portrait
+or landscape, with margin, gap, background and an optional caption.
 
-```json
-{
-  "instanceId": 1234567890,
-  "title": "Kind of Blue",
-  "customOrder": 1
-}
-```
+The covers it uses are the ones `pnpm sync` already downloaded from Discogs
+into `public/covers/`: served by the site itself, they can be read pixel by
+pixel in a canvas, which a Discogs URL does not allow (Discogs sends no CORS
+header). A record whose cover is missing is left out, and the page says how
+many.
 
-`customOrder` sorts ascending under the "My order" sort; records without one
-come after those that have one.
+The dominant color is computed in the browser, in OKLab: each cover is shrunk
+to 40 x 40 pixels, every pixel is binned by hue and lightness (or by lightness
+alone for greys), and the fullest bin wins, colorful pixels weighing slightly
+more so that a white or black background does not win every time. The poster
+then runs from whites and light greys, through the hues from red to magenta,
+to dark greys and black, along rows, columns or a diagonal.
 
-To carry over the ordering from the old server deployment, read it out of its
-SQLite database and paste it into the matching records:
+Two outputs:
 
-```bash
-sqlite3 records.db "
-  SELECT instanceId, customOrder
-  FROM Record
-  WHERE customOrder IS NOT NULL
-  ORDER BY customOrder;
-"
-```
+- **Print or save as PDF** opens the browser's print dialog with the page set
+  to the poster's size. Pick that paper size and turn headers and footers off.
+- **Download JPEG** renders the poster at 300 dpi, lowered on the largest
+  formats to stay within what browsers allow a canvas, and records that
+  resolution in the file.
+
+Discogs covers are at most 600 pixels wide, so past a few centimeters per cover
+they set the sharpness, not the output. The page shows the resolution the
+smallest cover will print at and warns below 150 dpi.
 
 ## Deployment
 
@@ -124,10 +127,9 @@ drag-and-drop ordering, and a button to trigger a sync. A static host executes
 nothing, so there is no server to hold a session or accept a write, and an
 editing interface would have had nothing to write to.
 
-The manual order is still applied by the "My order" sort. What changed is how
-it is edited - by hand in `data/collection.json` instead of by dragging tiles.
-Favorites did not survive: with the toggle gone nothing set them any more, so
-the field and the gallery filter that read it were removed as well.
+Favorites and the manual order did not survive: with the toggle and the
+drag-and-drop gone nothing set them any more, so the fields, the gallery
+filter and the "My order" sort that read them were removed as well.
 
 Prisma and SQLite went with the back-office. The database had become a file that only the
 build read, once; the state it used to hold is now the versioned JSON, which a
@@ -142,16 +144,23 @@ put them back.
 ```
 app/
   page.tsx                  the gallery page
+  poster/page.tsx           the poster page
   collection.json/route.ts  force-static handler: writes out/collection.json
 components/gallery/
   filtering.ts              search, filters and sorts, in the browser
   Gallery.tsx               loads collection.json, renders the virtualized grid
+components/poster/
+  Poster.tsx                reads the covers, preview, settings, print
+  color.ts                  dominant color and color order
+  layout.ts                 paper sizes and grid, in millimeters
+  export.ts                 the poster rendered as a print-resolution JPEG
 lib/
   discogs.ts                Discogs API client
   library.ts                reads and writes data/collection.json
   sync.ts                   the synchronization itself
   records.ts                turns the state into what the site publishes
   base-path.ts              deployment sub-path, for the URLs the code builds
+  use-collection.ts         loads collection.json in the browser
 scripts/sync.ts             pnpm sync
-data/collection.json        the state: collection and manual order
+data/collection.json        the state of the collection
 ```

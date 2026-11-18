@@ -1,9 +1,11 @@
 "use client";
 
+import Link from "next/link";
 import {
   ArrowUpDown,
   Check,
   ChevronDown,
+  Palette,
   Search,
   SlidersHorizontal,
   X,
@@ -15,12 +17,11 @@ import type { GalleryFilters } from "@/components/gallery/filtering";
 import type { FormatFilter, SortKey } from "@/lib/types";
 
 const SORT_LABELS: Record<SortKey, string> = {
-  custom: "My order",
+  added: "Recently added",
   album: "Album A-Z",
   artist: "Artist A-Z",
   year_asc: "Oldest first",
   year_desc: "Newest first",
-  added: "Recently added",
 };
 
 const FORMAT_OPTIONS: { value: FormatFilter; label: string }[] = [
@@ -261,6 +262,14 @@ export default function Toolbar({
               )}
             </div>
           </Popover>
+
+          <Link
+            href="/poster"
+            className="flex items-center gap-1.5 whitespace-nowrap rounded-full border border-transparent px-3 py-1.5 font-medium text-ink-soft transition-colors hover:text-ink"
+          >
+            <Palette className="h-3.5 w-3.5" strokeWidth={1.75} aria-hidden />
+            Poster
+          </Link>
         </div>
 
         <span className="ml-auto hidden tabular-nums text-xs text-ink-muted md:block">

@@ -165,7 +165,7 @@ jobs:
           cd out
           base="${BASE_PATH%/}"
 
-          for file in index.html 404.html collection.json; do
+          for file in index.html 404.html poster.html collection.json; do
             test -f "$file" || { echo "missing: $file"; exit 1; }
           done
 
